@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O semeador</title>
+        <!-- Fonte -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
+            rel="stylesheet">
+        <!-- Estilos -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!-- Progress Bar -->
+        <script src="js/progressbar.min.js"></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <!-- Parallax -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    </head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, (33, 118, 255), (51, 161, 253));
+        }
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <img
+                        id="logo"
+                        src="IMAGENS/Logo-Semeador-50-anos.svg">
+                    <ul>
+                        <li>
+                            <a href="index.html">Página inicial</a>
+                        </li>
+                        <li>
+                            <a href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li>
+                            <a href="doacao.html">Doações</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">Contato</a>
+                        </li>
+                        <li>
+                            <a href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                    <a href="agende.html">
+                        <button class="agendar-visita">AGENDE SUA VISITA</button>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="h1"></div>
+                    <h1 class="title">Doe seu cupom fiscal</b>.</h1>
+                    <!-- formulario para doação de cupom fiscal -->
+                    <div class="row">
+                        <style>
+                            form {
+                                margin-left: 150px;
+                                margin-right: 0px;
+                                padding: 30px;
+                                background-color: rgb(247, 152, 36);
+                                border: solid rgb(0, 0, 0);
+                                border-right: 0px;
+                                border-top-left-radius: 10px;
+                                border-bottom-left-radius: 10px;                                
+                                width: 500px;
+                                height: 450px;
+                                padding: 0px;
+                            }
+                            #imagem-mulher-contando-dinheiro {
+                                color: aliceblue;
+                                margin-left: 0px;
+                                background-color: rgb(70, 70, 70);
+                                border: solid rgb(0,0,0);
+                                border-top-right-radius: 10px;
+                                border-bottom-right-radius: 10px;
+                                border-left: 0px;
+                                height: 450px;
+                                width: 430px;
+                                padding: 0px;
+                            }
+                        </style>
+                        <form class="col-5" action="doacao">
+                            <fieldset>
+                                <div class="box">
+                                    <fieldset>
+                                        <legend>
+                                            <b>Insira seus dados</b>
+                                        </legend>
+                                        <p>Seu nome e sobrenome:
+                                            <input type="text" name="nome" id="nome"></p>
+                                        <p>Número do código de<br>barras do cupom fiscal:
+                                            <input type="text" name="numero" id="numero"></p>
+                                        <p>ou se você preferir,<br>insira uma foto de boa<br>qualidade do codigo de barras.
+                                            <input type="file" name="codigo-barras" id="codigo-barras"></p>
+                                        <p><input type="submit" value="Enviar"></p>
+                                    </fieldset>
+                                </div>
+                            </fieldset>
+                        </form>
+                        
+                        <div class="col-5">
+                            <div class="imagem" id="imagem-mulher-contando-dinheiro">
+                                <fieldset>
+                                    COLOCAREMOS UMA IMAGEM AQUI
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="subtitle">
+                        Ou faça uma doação por PIX.</h3>
+                    Número da chave PIX (CNPJ):
+                    <p>48.569.263.0001/42</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts" class="justify-content-center">
+                    <div class="footer_logo">
+                        <img class="semeador_footer" src="img/logo.jpg" alt="">
+                    </div>
+                    <div id="footer_social_media">
+                        <a href="#" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Endereço:</h3>
+                        </li>
+                        <li>
+                            <p>R. dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, 09580-300</p>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Email:</h3>
+                        </li>
+                        <li>
+                            <p>atendimento@osemeador.com</p>
+                        </li>
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <h3>Telefone:</h3>
+                        </li>
+                        <li>
+                            <p>+55 11 9999-9999</p>
+                        </li>
+                    </ul>
+            </ul>
+            <section class="mapa">
+                <div class="mapa-conteudo">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8812624613415!2d-46.57121392370248!3d-23.644422964650893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1699562066834!5m2!1spt-BR!2sbr"
+                        width="100%"
+                        height="250"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </div>
+        <div id="footer_copyright">
+            &#169 Alunos Insituto Mauá de Tecnologia (Dev Luiz Miguel Seixeiro/Paulo
+            Vinicius Campos)
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <div vw="vw" class="enabled">
+        <div vw-access-button="vw-access-button" class="active"></div>
+        <div vw-plugin-wrapper="vw-plugin-wrapper">
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window
+            .VLibras
+            .Widget('https://vlibras.gov.br/app');
+    </script>
+
+</body>
+</html>
