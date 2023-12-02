@@ -1,218 +1,63 @@
-/* Gerais */
-.row {
-    margin: 0;
-}
-
-.container {
-    padding-top:45px ;
-}
-
-#primeirohead{
-    padding: 0px;
-}
-#logo {
-    border-radius: 5px;
-}
-
-li,
-p {
-    color: #444;
-    font-size: 14px;
-}
-a {
-    padding: 8px;
-}
-
-/* Barra de navegação */
-header {
-    background-color: #ffc28a;
-}
-
-#nav-container {
-    display: block;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-#nav-bar-principal{
-    position: fixed;
-    top: 50px;
-  top: 0;
-  z-index: 2000;
-}
-
-#header2{
-    position: relative;
-    top: 0;
-    z-index: 10;
-}
-
-
-#logo-principal{
-    width: 100px;
-    border-radius: 5px;
-}
-
-@media(max-width: 1500px){.navbar{
-    background-color: #dbdada;
-    height: 200%;
-}}
-
-.navbar{
-    background-color: #ffc28a;
-    height: 12%;
-}
-
-.divlogo{
-    display: flex;
-    border-left: 100px;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.menu-text{
-    padding: 10px;
-   
-}
-
-.menu-text:hover{
-    color: #952e4f;
-    border-color: #952e4f;
-}
-
-.navbar-brand {
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+* {
     padding: 0;
-    color: #444;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background:white;
+}
+body {
+    overflow-x: hidden;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 30px;
+    padding-top: 15px;
+}
+
+.logo {
+
+    width: 80px;
+    height: 80px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
     justify-content: center;
-}
-
-.navbar-brand:hover {
-    color: #444;
-}
-
-#navbar-links a {
-    color: #444;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding: 30px;
-}
-
-.nav-item.active {
-    border-bottom: 3px solid #444;
+    list-style: none;
 }
 
 .nav-item {
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-
-}
-
-#agendar{
-    background-color: #ffb352;
-}
-
-
-/* ////////////////////////////////////////////////////////////////////////// */
-
-/* geral */
-html{
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-h1, h2, h3, h4, h5, p, span{
-    margin: 0;
-    color: #242424;
-}
-
-.container {
-    max-width: 1920px;
-    width: 100%;
-}
-
-/* header */
-header {
-    position: relative;
-    top: 0;
-    height: auto;
-    width: 100%
-}
-
-/* navbar */
-nav{
-    position: fixed;
-    top: 0;
-    height: 100px;
-    width: 100%;
-    z-index: 1;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-}
-
-nav:after{
-    clear:both;
-    content: "";
-    display: block;
-}
-
-.nav-container {
-    max-width: 1200px;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#logo {
-    width: 80px;
-    height: 80px;
-    margin-top: 15px;
-    position: absolute;
-    right: 1170px;
-}
-
-.nav-container ul {
-    float: right;
-    height: 100px;
-    line-height: 100px;
-    margin: 0;
-    margin-right: 350px;
-    
-}
-
-.nav-container li {
-    list-style: none;
-    float: left;
     margin: 0 15px;
-    margin-right: 400;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     transition: transform 0.5s;
     transform: translateX(0) scale(1.0);
 }
 
-.nav-container li:hover {
+.nav-item:hover {
     transform: scale(1.1)
 }
 
-.nav-container li a {
+.nav-link {
     text-decoration: none;
     color: #242424;
     transition: .5s;
-    
 }
 
-.nav-container a :hover {
+.nav-link:hover {
     color: #242424;
 }
 
-.agendar-visita {
+.nav-bar .login-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
     border-radius: 3px;
@@ -222,173 +67,115 @@ nav:after{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    position: absolute;
-    top: 30px;
-    right: 10px;
+    margin-top: 23px;
     transition: transform 0.5s, background-color 0.3s ease-out 10ms;
   transform: translateX(0) scale(1);
-  
+}
 
-} 
-
-.agendar-visita:hover {
+.login-button button:hover {
     border: solid 1px #F79824 ;
     background-color: #F79824;
     color: white;
     transform: scale(1.1)
-    
-
 }
 
-#main-banner {
-    background: url(../Fotos/IMG-fundo-pag-inicial.png) no-repeat;
-    background-position: 0 55%;
-    position: relative;
-    margin-top: 0px;
-    background-size: cover;
-    flex-shrink: 0;
-
+.login-button a {
+    text-decoration: none;
+    color: #242424;
 }
 
-#banner {
-    font-family: 'Poppins';
-}
-
-#banner h1 {
+.login-button a:hover {
+    text-decoration: none;
     color: white;
-    flex-shrink: 0;
-    font-size: 50px;
-    font-style: normal;
-    font-family: 'Poppins';
+}
+
+.mobile-menu .login-button button {
+    border: solid 1px #6D6D6D;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 6px 18px;
+    color: #242424;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    transition: transform 0.5s, background-color 0.3s ease-out 10ms;
+  transform: translateX(0) scale(1);
 }
 
-#banner p {
-    color:white;
-    font-size: 10px;
-    font-weight: 100px;
-    padding-bottom: 20px ;
-    position: relative;
-}
-
-.veja-mais {
+.mobile-menu .login-button button:hover{
+    border: solid 1px #F79824 ;
     background-color: #F79824;
     color: white;
-    border: #F79824;
-    border-radius: 4;
-    padding: 6px 16px;
-    font-family: 'poppins', sans-serif;
-    position: relative;
-
+    transform: scale(1.1)
 }
 
-.veja-mais:hover {
-    background-color: #242424;
-    border: #242424;
-    color: white;
+.mobile-menu-icon {
+    display: none;
 }
 
-#banner {
-    position: relative;
-    width: 50%;
-    margin-left: auto ;
-    margin-right: auto;
-    padding-top: 15em;
-    padding-bottom: 15em;
-    text-align: center;
+.mobile-menu {
+    display: none;
 }
 
-#gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+@media screen and (max-width: 900px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
 
-#gallery h1 {
-    position: relative;
-    color: #242424;
-    font-size: 60px;
-    margin-left: 20px ;
-}
+    .nav-item {
+        display: none;
+    }
 
-#gallery #seta {
-    position: absolute;
-    top: 660px;
-    left: 230px;
-    transform: rotate(90deg);
-}
+    .login-button {
+        display: none;
+    }
 
-.redirect-message {
-    text-align: center;
-}
+    .mobile-menu-icon {
+        display: block;
+    }
 
+    .mobile-menu-icon button {
+        background-color: transparent;
+        color: #242424;
+        border: none;
+        cursor: pointer;
+    }
 
-.gallery-container {
-    position: relative;
-    width: 1300px;
-    height: 1400px;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+    .icon {
+        margin-top: 15px;
+        width: 40px;
+    }
     
-}
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
 
-.gallery-items img {
-    width: 350px;
-    height: 350px;
-    margin: 40px;
-    object-fit: cover;
-    -webkit-transition: -webkit-transform .5s ease;
-   transition: transform .5s ease;
-}
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
 
-.gallery-items img:hover {
-    -webkit-transform: scale(1.1);
-   transform: scale(1.1);
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
 
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
 
-}
+    .mobile-menu .login-button a {
+        text-decoration: none;
+        color: #242424;
+    }
 
-.rectangle,
-.rectangle * {
-  box-sizing: border-box;
-}
-.rectangle {
-  background: #d9d9d9;
-  width: 599px;
-  height: 4px;
-  position: relative;
-  margin-bottom: 30px;
-  margin-left: 370px;
-}
-
-.text-message{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 12px;
-    width: 500px;
-    
-}
-
-.projects {
-    font-family: "Poppins";
-    position: relative;
-    color: #242424;
-    font-size: 40px;
-    margin-left: 20px ;
-    display: flex;
-}
-
-.projects #seta {
-    transform: rotate(90deg);
-    margin-top: 40px;
+    .open{
+        display: block;
+    }
 }
 
 
@@ -451,7 +238,7 @@ nav:after{
     height: 60px;
     padding: 10px 20px;
     border-radius: 30px;
-    /* border: 3px solid transparent; */
+
     transition: 0.5s;
     border-top: 200px;
 }
