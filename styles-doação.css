@@ -10,6 +10,7 @@ header {
 }
 body {
     overflow-x: hidden;
+    font-family: 'Poppins',sans-serif;
 }
 .nav-bar {
     display: flex;
@@ -193,220 +194,165 @@ body {
     }
 }
 
-
-.bg {
-    background: #F79824;
-}
-.col-md-2{
-    text-align: center;
-}
-.bg h1 {
-    font-weight: 700;
-}
-.bg ul {
-    list-style: none;
-    text-align: center;
-}
-.bg a {
-    color: white;
-}
-.footer-item{
-    font-weight: 500;
-    transition: transform 0.5s;
-    transform: translateX(0) scale(1.0);
- }
-
- .footer-item:hover{
-    color: #d3d3d3;
-    transform: scale(1.1);
- }
- 
-
-/* footer {
-    width: 100%;
-    color: white;
-    font-family: 'Poppins';
-}
-
-.footer-content {
-    background-color: #F79824;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    padding: 1rem 1.5rem;
-    margin-top: 50px;
-}
-
-footer h1{
-    font-weight: 700;
-    font-size: 33px;
-}
-
-.footer-coluna-1 img{
-    width: 300px;
-    margin-top: 35px;
-    margin-left: 50px;
-}
-
-.footer-coluna-1 p {
-    font-size: 16px;
-    text-align: center;
-}
-
-.footer-coluna-2 {
-    margin-left: 140px;
-    margin-top: 14px;
-    
-}
-
-.footer-coluna-2 p{
-    font-size: 15px;
-}
-
-.footer-coluna-3 {
-    margin-left: 120px;
-    margin-top: 14px;
-    text-align: center;
-}
-
-.footer-coluna-3 p {
-    font-size: 15px;
-}
-
-footer ul {
-    margin-bottom: 15px;
-}
-
-.footer-social-media {
+.gallery{
     display: flex;
-    gap: 1rem;
-    margin-left: 60px;
-    margin-top: 5px;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: auto;
 }
- .nav-footer {
+
+.gallery h1 {
     position: relative;
-    margin-top: 16px;
-    left: 90px;
-    list-style: none;
-    font-family: 'Poppins';
+    color: #242424;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.gallery #seta {
+    transform: rotate(90deg);
+}
+
+.formulario1 {
+    background-color: #F79824;
+    padding-inline: 40px;
+}
+
+.formulario {
+    margin-left: 2px;
+}
+
+.ou {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight:bold;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.campo input {
+    background: white;
+    border:0px solid;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 40px;
+    
+}
+
+.campo input{
+    background: white;
+    border:0px solid;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 60px;
+    
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn {
+    background: #D46412;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
     text-align: center;
 
-    
- }
+}
 
- .nav-footer a {
+.btn:hover {
     color: white;
-    font-size: 12px;
-    text-decoration: none;
- }
+    background-color: #242424;
 
- .footer-item{
+}
+
+.enviar {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background: #D46412;
+    color: white;
+    display: block;
+}
+.enviar:hover {
+    color: white;
+    background-color: #af5210;
+
+}
+
+.upload {
+    padding-block: 10px;
+    width: 180px;
+    height: 40px;
+    margin-top: 0px;
+    background: white;
+    color: #706464;
+}
+
+.redirect-upload {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.redirect-upload p {
+    font-weight: 600;
+    color: white;
+}
+
+.redirect-upload img {
+    transform: rotate(-180deg);
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 0;
     font-weight: 500;
-    transition: transform 0.5s;
-    transform: translateX(0) scale(1.0);
- }
-
- .footer-item:hover{
-    color: #d3d3d3;
-    transform: scale(1.1);
- }
-
- .footer-copyright {
-    background: #F79824;
-    font-size: 10px;
-    padding-block: 20px;
-    padding: 4px;
-    text-align: center;
     color: white;
- }
+}
 
- @media screen and (max-width: 1100px) {
-    .footer-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height:600px;
-        width: 100%;
-    }
+.codigo {
+    top: 0px;
+}
 
-    .nav-footer {
-        margin-left: 50px;
-        position: relative;
-        bottom: 50px;
-        text-align: center;
-    }
+.foto-form {
+    height: 600px;
+    border-radius: 0;
+    object-fit: cover;
+}
 
-    .footer-coluna-1 img {
-        width: 300px;
-        margin-left: 130px;
-        position: relative;
-        bottom: 60px;
-    }
+.formulario-completo {
+    background-color: #F79824;
+}
 
-    .footer-coluna-2  {
-        bottom: 60px;
-        left: 190px;
-    }
+#input-file {
+    display: none;
+}
 
-    .footer-coluna-3 {
-        margin-right: 80px;
-        position: relative;
-        bottom: 95px;
-    }
+.file {
+    cursor: pointer;
+    margin-left: 10px;
+    padding-bottom: 20px;
+}
+.imagem-codigo {
+    padding-bottom: 10px;
+}
 
-    .footer-social-media {
-        width: 20%;
-        justify-content: center;
-    }
+.imagem-form {
+    background-image: url(/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/mulher-esta-contando-dinheiro-com-seu-telefone\ 1.png);
+}
 
- }
-
- @media screen and (max-width: 700px) {
-    
-    .footer {
-        height: 20%;
-    }
-
-    .footer-content {
-        grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 2rem;
-        height:1250px;
-    }
-
-    .footer-coluna-1 img{
-        width: 300px;
-        margin-left: 75px;
-        top: 2px;
-    }
-
-    .footer-coluna-2 {
-        text-align: center;
-        margin-bottom: 170px;
-        margin-right: 180px;
-    }
-
-    .footer-coluna-3 {
-        text-align: center;
-        position: relative;
-        bottom: 160px;
-    }
-
-    .footer-coluna-3 h1{
-        margin-right: 80px;
-    }
-
-    .footer-coluna-3 p{
-        margin-right: 100px
-    }
-
-    .footer-social-media {
-        width: 30%;
-        justify-content: center;
-    }
-
-    .nav-footer{
-        position: relative;
-        margin-top: 0px;
-        text-align: center;
-        margin-right: 270px;
-        bottom: 130px;
-    }
- } */

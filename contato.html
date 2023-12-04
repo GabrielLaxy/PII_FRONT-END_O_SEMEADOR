@@ -1,68 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=yy, initial-scale=1.0">
         <title>O semeador</title>
-        <!-- Fonte -->
+        <!-- Font Awesome -->
         <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap"
-            rel="stylesheet">
-        <!-- Estilos -->
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!-- Conexão - CSS -->
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
-        <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
-        <!-- Progress Bar -->
-        <script src="js/progressbar.min.js"></script>
-        <!-- Parallax -->
-        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+        <script defer="defer" src="/PII_FRONT-END_O_SEMEADOR-main/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles-contato.css">
+        <!-- Conexão - fonte -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav-container">
-                    <img
-                        id="logo"
-                        src="Logo-Semeador.png">
-                    <ul>
-                        <li>
-                            <a href="index.html">Página inicial</a>
-                        </li>
-                        <li>
-                            <a href="fotos.html">Fotos e Projetos</a>
-                        </li>
-                        <li>
-                            <a href="doacao.html">Doações</a>
-                        </li>
-                        <li>
-                            <a href="contato.html">Contato</a>
-                        </li>
-                        <li>
-                            <a href="matricula.html">Matrícula</a>
-                        </li>
-                    </ul>
-                    <a href="agende.html">
-                        <button class="agendar-visita">AGENDE SUA VISITA</button>
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
+                        <img
+                            id="logo"
+                            src="/TESTE/Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
                     </a>
                 </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="/TESTE/bars-solid (1).svg" alt="ícone do menu"></button>
+                </div>
             </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doacao.html">Doações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matrícula</a>
+                    </li>
+                </ul>
+
+                <div class="login-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
+            </div>
         </header>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos perferendis dolore accusantium voluptatibus harum exercitationem eius totam ea, distinctio illum excepturi blanditiis adipisci, commodi nihil eligendi, aperiam quaerat maxime. Nisi nihil cupiditate ratione odit, placeat facere optio quam, laborum neque in enim excepturi quia, molestias provident repudiandae ipsum alias tempora unde nobis? Ex esse iste harum adipisci dolores culpa quia! Dolores, a. Quo praesentium, unde aspernatur laboriosam quod dicta labore esse? Quae, vero. Repellendus est officiis, reprehenderit quis minima reiciendis perspiciatis soluta possimus. Veniam doloremque cupiditate dicta nemo error quasi cum ex sed quis provident sit, dolores porro voluptate repellat neque? Enim adipisci ad ut repellendus odio iste libero tenetur labore eaque quas, dicta hic quia facere velit earum assumenda obcaecati possimus aliquam architecto animi ex? Obcaecati ad voluptatem quis cum odit placeat magnam? Ipsa at optio sapiente sequi commodi doloremque molestiae harum. Similique magni officiis non ducimus eveniet dolorum, aliquid enim? Eius asperiores optio iure, totam quod quam cupiditate ipsum mollitia labore delectus aut officia hic? Aliquam quia necessitatibus ullam harum et hic dolores, voluptates atque autem, tempore, quaerat eos excepturi sit earum! Doloribus fugit minus veniam ipsum, quam ab corporis a magnam nisi vitae reprehenderit consequuntur obcaecati assumenda modi quaerat repellendus. Sit illum delectus tenetur error voluptatem expedita, perferendis commodi labore quasi praesentium fuga voluptatum dolorum porro consequatur veritatis. Voluptatem, corrupti qui! Recusandae, fugiat dolore. Asperiores sunt unde possimus delectus? Eligendi veritatis consequuntur repellendus commodi eveniet iusto quisquam. Consectetur, sequi doloribus unde rem maxime magni velit accusantium deserunt, accusamus illo sapiente eius beatae molestiae tenetur odit debitis? Exercitationem enim beatae eveniet deserunt, ipsum fuga dolorem et, vitae aliquam, quaerat amet! Eum aliquid quibusdam, quasi perspiciatis consequatur nam nisi totam quod reiciendis provident inventore facilis, dolorem aperiam. Reiciendis sed animi necessitatibus ipsum consequatur fuga! Sit error iusto distinctio, illum rerum voluptatum iure vitae eveniet, nesciunt quisquam minus itaque atque dicta assumenda non maiores aut animi cumque, id dolore! Ducimus cupiditate doloremque inventore corrupti praesentium quae modi placeat nam laudantium ullam impedit laboriosam accusamus rem omnis deleniti autem quibusdam commodi culpa, quos sint, iusto id ipsum molestiae? Explicabo labore illo placeat error, sed quo repellendus sunt earum adipisci harum praesentium perferendis ut magni, culpa debitis veniam, dolores est voluptates excepturi aliquam commodi? Magni, iste sint earum sequi quaerat consequuntur delectus. Dicta, ea facilis. Quidem temporibus totam soluta obcaecati sed, aut similique numquam. Quasi sed laudantium deleniti rerum libero nesciunt, esse tenetur optio. Laborum dolore, magni odio repellendus adipisci soluta obcaecati rem animi alias nesciunt sequi illum fugiat nam tempora ullam totam labore laboriosam voluptatem quos distinctio architecto! Vero animi, provident accusamus amet dolorem sunt at vel recusandae sequi repudiandae numquam veniam quis error hic aspernatur ipsam, perferendis quia molestias sint ad porro, nam ullam. Eveniet similique ipsa maiores dolorum vel ullam eius commodi veniam, quibusdam cum, laborum quidem cumque alias. Earum reprehenderit, repellendus ratione nisi quas perspiciatis. Ab ratione vitae vel recusandae consectetur minima officiis deleniti, id reprehenderit eos minus ea, tenetur eum voluptatibus. Veritatis, ut consectetur? Quidem laborum, cumque labore animi ut vero dolore doloremque laboriosam magnam nobis pariatur. Vel maxime ipsum ratione eos sequi distinctio tenetur nisi, ex repudiandae earum pariatur inventore accusantium, laboriosam saepe vitae dolor explicabo accusamus sint! Ipsam dignissimos eos, vel, quasi, molestiae ipsum hic velit esse quo odit similique animi saepe officia quae tenetur! Odio quas ex nihil saepe illo esse pariatur et nobis, facere ipsa est commodi neque voluptatibus at quasi maiores fugit magni, veritatis laborum vero, voluptatem inventore? Illum nulla aliquam, consectetur sed, iusto voluptatibus aliquid dignissimos maxime obcaecati, laboriosam ex eos mollitia neque praesentium minima earum deserunt nam minus? Maiores eligendi optio autem amet provident ex voluptatibus molestiae sequi? Odio rem porro, reprehenderit at asperiores maiores obcaecati labore illo ipsam laboriosam est accusantium nobis esse et odit commodi voluptatum veniam fugiat officia quidem molestiae corrupti tempora, hic aspernatur! Sunt iure fugiat doloribus, veniam sapiente facere ipsa ea porro nisi quas est veritatis odio neque dolorem sed? Quia nostrum repellat, odit distinctio ex pariatur esse fugiat rerum accusamus labore cupiditate? Velit eos consequatur eligendi voluptates facere est, perferendis, vel voluptas suscipit totam doloribus sit reiciendis sint beatae praesentium iure minus et corrupti debitis quis quod ipsa! Sequi, hic officia! Tempore aliquam odit eveniet deserunt laboriosam, odio maxime earum voluptatem corporis commodi vel repellat aspernatur, sit quaerat facilis vitae, temporibus modi minima molestiae hic quisquam. Numquam tempora cupiditate officiis minus praesentium, accusantium voluptate repellendus, veritatis culpa itaque eum voluptatem quibusdam magni mollitia dolorum laboriosam cumque, nemo maxime? Vero deleniti quod quia similique, laborum voluptate voluptates incidunt aliquid doloribus dolore ipsum, numquam pariatur rem quas, possimus impedit quidem eaque ad quos sequi maiores. Laudantium illum est, vero similique necessitatibus at pariatur, veritatis fugiat iusto accusantium eos nesciunt, consequatur expedita assumenda repellendus quae beatae ab adipisci alias officiis suscipit consectetur iste? Tempora atque eaque a!</p>
+    </body>
+</html>
        

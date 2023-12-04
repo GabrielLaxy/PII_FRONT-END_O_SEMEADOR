@@ -33,7 +33,7 @@
         <header class="header">
             <nav class="nav-bar">
                 <div class="logo">
-                    <a href="#">
+                    <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
                         <img
                             id="logo"
                             src="/TESTE/Logo-Semeador-50-anos copy.svg"
@@ -101,15 +101,15 @@
                     tempor incididunt velit esse officia deserunt mollit anim id est laborum.</p>
                 <button class="veja-mais">VEJA MAIS</button>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                <script>
-                    $(".veja-mais").click(function () {
-                        $('html, body').animate({
-                            scrollTop: $("#gallery")
-                                .offset()
-                                .top
-                        }, 500, "swing");
-                    });
-                </script>
+                    <script>
+                        $(".veja-mais").click(function () {
+                            $('html, body').animate({
+                                scrollTop: $(".gallery")
+                                    .offset()
+                                    .top
+                            }, 500, "swing");
+                        });
+                    </script>
             </div>
         </header>
 
@@ -190,48 +190,37 @@
                 <img id="seta" src="img/seta-png.png" alt="seta" width="52" height="52">
             </div>
         </div>
-        <main class="container-sm card-box">
-            <div class="row">
-                <section class="card col-12 col-md-4 col-lg-4">
-                    <img
-                        src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto 1.png"
-                        alt="Foto Projeto 1">
-                    <div class="card-content">
-                        <h1 id="Projeto1" class="Project">Projeto 1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="container py-5">
+            <div class="card-box row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="card m-5 m-lg-0">
+                        <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto_1.png" alt="Projeto 1" class="card-img-top">
+                        <div class="card-body">
+                            <h1 class="card-title">PROJETO 1</h1>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores assumenda!</p> 
+                        </div>
                     </div>
-                </section>
-                <section class="card col-12 col-md-4 col-lg-4">
-                    <img
-                        src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto 2.png"
-                        alt="Foto Projeto 2">
-                    <div class="card-content">
-                        <h1 id="Projeto2" class="Project">Projeto 2</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,                                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col">
+                    <div class="card m-5 m-lg-0">
+                        <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto_2.png" alt="Projeto 2" class="card-img-top">
+                        <div class="card-body">
+                            <h1 class="card-title">PROJETO 2</h1>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores assumenda!</p> 
+                        </div>
                     </div>
-                </section>
-                <section class="card col-12 col-md-4 col-lg-4">
-                    <img
-                        src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto 3.png"
-                        alt="Foto Projeto 3">
-                    <div class="card-content">
-                        <h1 id="Projeto3" class="Project">Projeto 3</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col">
+                    <div class="card m-5 m-lg-0">
+                        <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto_3.png" alt="Projeto 3" class="card-img-top">
+                        <div class="card-body">
+                            <h1 class="card-title">PROJETO 3</h1>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores assumenda!</p> 
+                        </div>
                     </div>
-                </section>
+                </div>
             </div>
-        </main>
+        </div>
 <!-- <section class="mapa"> <div class="mapa-conteudo"> <iframe
 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8812624613415!2d-46.57121392370248!3d-23.644422964650893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1699562066834!5m2!1spt-BR!2sbr"
 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"

@@ -53,6 +53,22 @@ body {
     transition: .5s;
 }
 
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #242424;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+
+.nav-link:hover:after {
+    background-color: #242424;
+    width: 100%;
+}
+
 .nav-link:hover {
     color: #242424;
 }
