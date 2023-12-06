@@ -530,12 +530,13 @@ body {
 }
 
 .bg {
-    background: #F79824;
+    background: #202249;
 }
 .col-md-2{
     text-align: center;
 }
 .bg h1 {
+    color: #F79824;
     font-weight: 700;
 }
 .bg ul {
@@ -555,3 +556,5 @@ body {
     color: #d3d3d3;
     transform: scale(1.1);
  }
+
+
