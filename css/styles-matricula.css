@@ -226,13 +226,16 @@ body {
 }
 
 
+/* Footer c/copyright */
+
 .bg {
-    background: #F79824;
+    background: #202249;
 }
 .col-md-2{
     text-align: center;
 }
 .bg h1 {
+    color: #F79824;
     font-weight: 700;
 }
 .bg ul {
@@ -252,6 +255,22 @@ body {
     color: #d3d3d3;
     transform: scale(1.1);
  }
+
+/* copyright */
+
+.copyright{
+    display: flex;
+    text-align: center;
+    background-color: #1a1c3b;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #1a1c3b;
+    font-weight: 500;
+    padding-top: 20px;
+}
  
  .container {
     margin-top: 50px;
