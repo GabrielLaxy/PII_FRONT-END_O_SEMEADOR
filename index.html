@@ -14,8 +14,8 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous">
-        <script defer="defer" src="/PII_FRONT-END_O_SEMEADOR-main/script.js"></script>
-        <link rel="stylesheet" href="styles.css">
+        <script defer="defer" src="js\script.js"></script>
+        <link rel="stylesheet" href="./css/styles.css">
 
         <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
         <script
@@ -55,7 +55,7 @@
                     <a href="#">
                         <img
                             id="logo"
-                            src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Logo-Semeador-50-anos copy.svg"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
                             alt="Logo do oSemeador">
                     </a>
                 </div>
@@ -85,7 +85,7 @@
                 </div>
 
                 <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/bars-solid (1).svg" alt="ícone do menu"></button>
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
                 </div>
             </nav>
 
@@ -114,7 +114,7 @@
                     </button>
                 </div>
             </div>
-    </header>
+        </header>
 
         <main id="main">
             <div class="container-fluid">
@@ -308,19 +308,19 @@
                 </footer>
             </div>
 
-                <script src="js/scripts.js"></script>
-                <div vw="vw" class="enabled">
-                    <div vw-access-button="vw-access-button" class="active"></div>
-                    <div vw-plugin-wrapper="vw-plugin-wrapper">
-                        <div class="vw-plugin-top-wrapper"></div>
-                    </div>
+            <script src="js/scripts.js"></script>
+            <div vw="vw" class="enabled">
+                <div vw-access-button="vw-access-button" class="active"></div>
+                <div vw-plugin-wrapper="vw-plugin-wrapper">
+                    <div class="vw-plugin-top-wrapper"></div>
                 </div>
-                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-                <script>
-                    new window
-                        .VLibras
-                        .Widget('https://vlibras.gov.br/app');
-                </script>
-            </body>
-        </main>
-    </html>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window
+                    .VLibras
+                    .Widget('https://vlibras.gov.br/app');
+            </script>
+        </body>
+    </main>
+</html>

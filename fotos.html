@@ -17,8 +17,8 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous">
-        <script defer="defer" src="/PII_FRONT-END_O_SEMEADOR-main/script.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles-fotos-e-projetos.css">
+        <script defer="defer" src="js\script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css\styles-fotos-e-projetos.css">
         <!-- Conexão - fonte -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
@@ -33,10 +33,10 @@
         <header class="header">
             <nav class="nav-bar">
                 <div class="logo">
-                    <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
+                    <a href="index.html">
                         <img
                             id="logo"
-                            src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Logo-Semeador-50-anos copy.svg"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
                             alt="Logo do oSemeador">
                     </a>
                 </div>
@@ -59,14 +59,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="login-button">
+                <div class="agendar-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
 
                 <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/bars-solid (1).svg" alt="ícone do menu"></button>
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
                 </div>
             </nav>
 
@@ -89,7 +89,7 @@
                     </li>
                 </ul>
 
-                <div class="login-button">
+                <div class="agendar-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
@@ -101,22 +101,22 @@
                     tempor incididunt velit esse officia deserunt mollit anim id est laborum.</p>
                 <button class="veja-mais">VEJA MAIS</button>
                 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                    <script>
-                        $(".veja-mais").click(function () {
-                            $('html, body').animate({
-                                scrollTop: $(".gallery")
-                                    .offset()
-                                    .top
-                            }, 500, "swing");
-                        });
-                    </script>
+                <script>
+                    $(".veja-mais").click(function () {
+                        $('html, body').animate({
+                            scrollTop: $(".gallery")
+                                .offset()
+                                .top
+                        }, 500, "swing");
+                    });
+                </script>
             </div>
         </header>
 
-        <div class="container-sm">
+        <div class="container-fluid">
             <div class="gallery d-flex justify-content-center justify-content-sm-start">
                 <h1>FOTOS</h1>
-                <img id="seta" src="img/seta-png.png" alt="seta" width="52" height="52">
+                <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
             </div>
         </div>
         <div class="container">
@@ -128,125 +128,150 @@
 
         <div class="container-fluid">
             <div class="row ml-5">
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/1.png" class="gallery-items">
-                            <img src="IMAGENS/1.png" id="foto1" alt="Menina assoprando um dente de leão">
-                        </a>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/1.png" class="gallery-items">
+                        <img src="IMAGENS/1.png" id="foto1" alt="Menina assoprando um dente de leão">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/2.png" class="gallery-items">
+                        <img src="IMAGENS/2.png" id="foto2" alt="Menina com óculos de sol">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/3.png" class="gallery-items">
+                        <img src="IMAGENS/3.png" id="foto3" alt="Menina segurando estojo">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/4.png" class="gallery-items">
+                        <img src="IMAGENS/4.png" id="foto4" alt="Menina vestida de líder de torcida">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/5.png" class="gallery-items">
+                        <img src="IMAGENS/5.png" id="foto5" alt="Homem ajudando idoso deficiente">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/6.png" class="gallery-items">
+                        <img src="IMAGENS/6.png" id="foto6" alt="Menina segurando uma flor">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/7.png" class="gallery-items">
+                        <img src="IMAGENS/7.png" id="foto7" alt="Menina sentada na cadeira">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/8.png" class="gallery-items">
+                        <img src="IMAGENS/8.png" id="foto8" alt="Menina tomando brisa na praia">
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                    <a href="IMAGENS/9.png" class="gallery-items">
+                        <img src="IMAGENS/9.png" id="foto9" alt="Mãe e filha pintando">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-message-container">
+        <p class="text-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="rectangle"></div>
+    <div class="container-sm">
+        <div class="projects d-flex justify-content-center justify-content-sm-start">
+            <h1>PROJETOS</h1>
+            <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
+        </div>
+    </div>
+    <div class="container py-5">
+        <div class="card-box row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="card m-5 m-lg-0">
+                    <img
+                        src="IMAGENS\Projeto_1.png"
+                        alt="Projeto 1"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h1 class="card-title">PROJETO 1</h1>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur
+                            eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores
+                            assumenda!</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/2.png" class="gallery-items">
-                            <img src="IMAGENS/2.png" id="foto2" alt="Menina com óculos de sol">
-                        </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-5 m-lg-0">
+                    <img
+                        src="IMAGENS\Projeto_2.png"
+                        alt="Projeto 2"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h1 class="card-title">PROJETO 2</h1>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur
+                            eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores
+                            assumenda!</p>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/3.png" class="gallery-items">
-                            <img src="IMAGENS/3.png" id="foto3" alt="Menina segurando estojo">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/4.png" class="gallery-items">
-                            <img src="IMAGENS/4.png" id="foto4" alt="Menina vestida de líder de torcida">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/5.png" class="gallery-items">
-                            <img src="IMAGENS/5.png" id="foto5" alt="Homem ajudando idoso deficiente">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/6.png" class="gallery-items">
-                            <img src="IMAGENS/6.png" id="foto6" alt="Menina segurando uma flor">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/7.png" class="gallery-items">
-                            <img src="IMAGENS/7.png" id="foto7" alt="Menina sentada na cadeira">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/8.png" class="gallery-items">
-                            <img src="IMAGENS/8.png" id="foto8" alt="Menina tomando brisa na praia">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                        <a href="IMAGENS/9.png" class="gallery-items">
-                            <img src="IMAGENS/9.png" id="foto9" alt="Mãe e filha pintando">
-                        </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-5 m-lg-0">
+                    <img
+                        src="IMAGENS\Projeto_3.png"
+                        alt="Projeto 3"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h1 class="card-title">PROJETO 3</h1>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur
+                            eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores
+                            assumenda!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-message-container">
-            <p class="text-message">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="rectangle"></div>
-        <div class="container-sm">
-            <div class="projects d-flex justify-content-center justify-content-sm-start">
-                <h1>PROJETOS</h1>
-                <img id="seta" src="img/seta-png.png" alt="seta" width="52" height="52">
-            </div>
-        </div>
-        <div class="container py-5">
-            <div class="card-box row row-cols-1 row-cols-md-2 row-cols-lg-3">
-                <div class="col">
-                    <div class="card m-5 m-lg-0">
-                        <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto_1.png" alt="Projeto 1" class="card-img-top">
-                        <div class="card-body">
-                            <h1 class="card-title">PROJETO 1</h1>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores assumenda!</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card m-5 m-lg-0">
-                        <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto_2.png" alt="Projeto 2" class="card-img-top">
-                        <div class="card-body">
-                            <h1 class="card-title">PROJETO 2</h1>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores assumenda!</p> 
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card m-5 m-lg-0">
-                        <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Projeto_3.png" alt="Projeto 3" class="card-img-top">
-                        <div class="card-body">
-                            <h1 class="card-title">PROJETO 3</h1>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dolore, voluptatum sit sunt, ducimus, amet quis quae placeat consequatur eveniet nesciunt harum totam. Adipisci saepe quasi itaque fugiat asperiores assumenda!</p> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-<!-- <section class="mapa"> <div class="mapa-conteudo"> <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8812624613415!2d-46.57121392370248!3d-23.644422964650893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1699562066834!5m2!1spt-BR!2sbr"
-width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </div>
+    <!-- <section class="mapa"> <div class="mapa-conteudo"> <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8812624613415!2d-46.57121392370248!3d-23.644422964650893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1699562066834!5m2!1spt-BR!2sbr"
+    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     <footer class="bg text-white pt-1 pb-4">
         <div class="containertext-center text-md-left">
             <div class="row mx-3">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img class="text-uppercase mb-4 font-weight-bold text-warning" src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Logo-Semeador-50-anos(2).svg" alt="Logo do oSemeador">
+                    <img
+                        class="text-uppercase mb-4 font-weight-bold text-warning"
+                        src="IMAGENS\Logo-Semeador-50-anos blue.svg"
+                        alt="Logo do oSemeador">
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
                     <h1>Horários</h1>
                     <p>segunda a sexta:
-                    <br>
-                    07:30 - 17:00</p>
+                        <br>
+                        07:30 - 17:00</p>
                     <br>
                     <h1>Endereço</h1>
                     <p>R. dos Meninos, 555 -
-                    <br>
-                    Nova Gerti, São Caetano
-                    <br>
-                    do Sul - SP, 09580-300</p>
+                        <br>
+                        Nova Gerti, São Caetano
+                        <br>
+                        do Sul - SP, 09580-300</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
                     <h1>Contato</h1>
-                    <p>(11) 1111-1111 <br> (22) 2222-2222 <br> lorem@impsum.com.br</p>
+                    <p>(11) 1111-1111
+                        <br>
+                        (22) 2222-2222
+                        <br>
+                        lorem@impsum.com.br</p>
                     <br>
                     <h1>Siga-nos</h1>
                     <div class="footer-social-media">
@@ -288,7 +313,7 @@ referrerpolicy="no-referrer-when-downgrade"></iframe> -->
                     </div>
                 </div>
             </div>
-    </footer>
+        </footer>
 
-</body>
+    </body>
 </html>

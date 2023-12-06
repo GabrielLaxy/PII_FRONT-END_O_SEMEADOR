@@ -127,6 +127,7 @@ body {
 
     width: 80px;
     height: 80px;
+    margin-bottom: 12px;
 }
 
 .nav-list {
@@ -177,7 +178,7 @@ body {
     color: #242424;
 }
 
-.nav-bar .login-button button {
+.nav-bar .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
     border-radius: 3px;
@@ -187,29 +188,29 @@ body {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    margin-top: 23px;
+    margin-top: 21px;
     transition: transform 0.5s, background-color 0.3s ease-out 10ms;
   transform: translateX(0) scale(1);
 }
 
-.login-button button:hover {
+.agendar-button button:hover {
     border: solid 1px #F79824 ;
     background-color: #F79824;
     color: white;
     transform: scale(1.1)
 }
 
-.login-button a {
+.agendar-button a {
     text-decoration: none;
     color: #242424;
 }
 
-.login-button a:hover {
+.agendar-button a:hover {
     text-decoration: none;
     color: white;
 }
 
-.mobile-menu .login-button button {
+.mobile-menu .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
     border-radius: 3px;
@@ -223,7 +224,7 @@ body {
   transform: translateX(0) scale(1);
 }
 
-.mobile-menu .login-button button:hover{
+.mobile-menu .agendar-button button:hover{
     border: solid 1px #F79824 ;
     background-color: #F79824;
     color: white;
@@ -247,7 +248,7 @@ body {
         display: none;
     }
 
-    .login-button {
+    .agendar-button {
         display: none;
     }
 
@@ -290,16 +291,16 @@ body {
         padding-top: 1.2rem;
     }
 
-    .mobile-menu .login-button {
+    .mobile-menu .agendar-button {
         display: block;
         padding: 1rem 2rem;
     }
 
-    .mobile-menu .login-button button {
+    .mobile-menu .agendar-button button {
         width: 100%;
     }
 
-    .mobile-menu .login-button a {
+    .mobile-menu .agendar-button a {
         text-decoration: none;
         color: #242424;
     }
@@ -310,7 +311,7 @@ body {
 }
 
 .main-banner {
-    background: url(img/IMG-fundo-pag-inicial.png) no-repeat center;
+    background: url(/IMAGENS/IMG-fundo-pag-inicial.png) no-repeat center;
     position: relative;
     background-size: cover;
     height: 600px;
@@ -388,6 +389,13 @@ body {
     flex-direction: row;
     align-items: center;
     margin-inline: auto;
+    margin-left: 58.5px;
+}
+
+@media screen and (max-width:700px){
+    .gallery{
+        margin-left: 0px;
+    }
 }
 
 .gallery h1 {
