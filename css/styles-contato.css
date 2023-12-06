@@ -244,7 +244,7 @@ body {
 .banner {
     padding-bottom: 60px;
     padding-top: 10px;
-    background-image: url(/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Rectangle\ 68.png);
+    background-image: url(/IMAGENS/Contato-banner.png);
     background-size: cover;
 }
 
@@ -480,13 +480,16 @@ label {
     color: #242424;
 }
 
+/* Footer c/copyright */
+
 .bg {
-    background: #F79824;
+    background: #202249;
 }
 .col-md-2{
     text-align: center;
 }
 .bg h1 {
+    color: #F79824;
     font-weight: 700;
 }
 .bg ul {
@@ -496,11 +499,6 @@ label {
 .bg a {
     color: white;
 }
-
-footer {
-    margin-top: 80px;
-}
-
 .footer-item{
     font-weight: 500;
     transition: transform 0.5s;
@@ -512,4 +510,19 @@ footer {
     transform: scale(1.1);
  }
 
+/* copyright */
+
+.copyright{
+    display: flex;
+    text-align: center;
+    background-color: #1a1c3b;
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: #1a1c3b;
+    font-weight: 500;
+    padding-top: 20px;
+}
  
