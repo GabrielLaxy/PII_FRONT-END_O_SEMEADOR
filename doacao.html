@@ -17,7 +17,7 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous">
-        <script defer="defer" src="/PII_FRONT-END_O_SEMEADOR-main/script.js"></script>
+        <script defer="defer" src="js\script.js"></script>
         <link rel="stylesheet" type="text/css" href="/css/styles-doação.css">
         <!-- Conexão - fonte -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,7 @@
                     <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
                         <img
                             id="logo"
-                            src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Logo-Semeador-50-anos copy.svg"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
                             alt="Logo do oSemeador">
                     </a>
                 </div>
@@ -99,25 +99,25 @@
         <div class="container-sm">
             <div class="gallery d-flex justify-content-center justify-content-sm-start">
                 <h1>INSIRA SEUS DADOS</h1>
-                <img id="seta" src="img/seta-png.png" alt="seta" width="35" height="35">
+                <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
             </div>
         </div>
         <!-- formulario para doação de cupom fiscal -->
         <div class="formulario-completo container">
             <div class="row">
                 <div class="formulario1 col-5">
-                    <form class="formulario row col-12 pt-3 px-0" action="doacao">
+                    <form class="formulario row col-12 pt-3 px-0" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
                         <div class="surname campo col-6">
                             <label for="nome" class="form-label">Nome:</label>
-                            <input class="form-control" type="text" name="nome" id="nome" placeholder="Primeiro nome" required>
+                            <input class="form-control" type="text" maxlength="30" name="nome" id="nome" placeholder="Primeiro nome" required>
                         </div>
                         <div class="name campo col-6">
                             <label for="sobrenome" class="form-label">Sobrenome:</label>
-                            <input class="form-control" type="text" name="sobrenome" id="sobrenome" placeholder="Segundo nome" required>
+                            <input class="form-control" type="text" maxlenght="50" name="sobrenome" id="sobrenome" placeholder="Segundo nome" required>
                         </div>
                         <div class="codigo campo col-12">
                             <label for="codigo" class="form-label">Número do código de barras:</label>
-                            <input class="form-control" type="text" name="codigo" id="codigo" placeholder="XXX-XXXXX-XXXX-X" required>
+                            <input class="form-control" type="text" maxlenght="30" name="codigo" id="codigo" placeholder="XXX-XXXXX-XXXX-X" required>
                         </div>
                         <button type="submit" class="btn enviar" >Enviar</button>
                         
@@ -129,8 +129,8 @@
                         <label class="file" for="input-file"><img src="/IMAGENS/Frame 3.png" width="150" alt=""><input id="input-file" type="file" name="codigo-barras" id="codigo-barras"></label>
                         <div class="redirect-upload d-flex">
                             <div class="row">
-                                <img src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/seta-branca-png.png" width="15" height="15" alt="">
-                                <p>INSIRA UMA IMAGEM</p>
+                                <img src="IMAGENS\seta-branca-png.png" width="15" height="15" alt="">
+                                <p>ARASTE UMA IMAGEM</p>
                             </div>
                             <button type="submit" class="btn upload">Realizar upload</button>
                         </div>
@@ -140,9 +140,10 @@
             </div>
         </div>
         <h3 class="subtitle">
-            Ou faça uma doação por PIX.</h3>
-        Número da chave PIX (CNPJ):
-        <p>48.569.263.0001/42</p>
+            <b>Ou faça uma doação por PIX.</b><br>
+            Número da chave PIX (CNPJ):
+        </h3>
+        <p class="cnpj">48.569.263.0001/42</p>
         </div>
         <footer>
             <div id="footer_content">
