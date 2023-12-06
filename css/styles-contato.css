@@ -196,6 +196,7 @@ body {
         display: block;
         padding: 1rem 2rem;
     }
+    
 
     .mobile-menu .login-button button {
         width: 100%;
@@ -203,10 +204,298 @@ body {
 
     .mobile-menu .login-button a {
         text-decoration: none;
-        color: #242424;
     }
 
     .open{
         display: block;
     }
 }
+
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.banner h6 {
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.banner {
+    padding-bottom: 60px;
+    padding-top: 10px;
+    background-image: url(/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/Rectangle\ 68.png);
+    background-size: cover;
+}
+
+.banner img {
+    margin-top: 10px;
+    height: 50px;
+    width: 6px;
+}
+
+
+.logo-semeador-main {
+    width: 170px;
+    margin-inline: auto;
+}
+
+.main {
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main p {
+    color: #858585;
+    font-size: 15px;
+}
+
+.main h1 {
+    font-weight: 700;
+    color: #202249;
+}
+
+.formulario1 {
+    background-color: #F79824;
+    padding-inline: 40px;
+}
+
+.formulario {
+    margin-left: 2px;
+}
+
+
+.campo input{
+    background: white;
+    border:0px solid;
+    box-shadow: 0px 4px 4px 0px rgba(63, 63, 63, 0.25) inset;
+    height: 45px;
+    
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.mensagem input::placeholder {
+    display: block;
+    background: #a78268;;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn {
+    background: #D46412;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: #242424;
+
+}
+
+.enviar {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background: #D46412;
+    color: white;
+    display: block;
+}
+.enviar:hover {
+    color: white;
+    background-color: #af5210;
+
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 500;
+    color: white;
+}
+
+.mapa-conteudo {
+    position: relative;
+    width: 665px;
+    height: 540px;
+    background: white;
+}
+
+@media screen and (max-width: 1200px){
+    .mapa-conteudo {
+        display: none;
+    }
+
+    .enviar {
+        margin-bottom: 30px ;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .formulario1 {
+        background: #ffffff;
+    }    
+
+    .form-label {
+        color: #b3b3b3;
+    }
+
+    .campo input{
+        border:1px solid #cccccc;
+        
+    }
+
+    .mensagem textarea {
+        border:1px solid #cccccc;
+    }
+    
+
+    .enviar {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        background: #7c7c7c;
+        color: white;
+        display: block;
+    }
+    .enviar:hover {
+        color: white;
+        background-color: #4d4d4d;
+    
+    }
+    
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.mapa-conteudo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.input-mensagem {
+    background: white;
+    border:0px solid;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 100px;
+    align-self: start;
+}
+
+.info {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    border:1px solid #9A9A9A;
+    background: white;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 800px) {
+    .info {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.info p {
+    font-size: 13px;
+    color: #7c7c7c;
+    
+}
+
+.localizacao-icon {
+    margin-right: 10px;
+}
+
+.telefone-icon {
+    margin-right: 10px;
+}
+
+.relogio-icon {
+    margin-right: 10px;
+}
+
+.horario p {
+    text-align: center;
+}
+
+.local p {
+    text-align: center;
+}
+
+.redirect-info {
+    justify-content: center;
+}
+
+.redirect-info img {
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.redirect-info p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #242424;
+}
+
+.bg {
+    background: #F79824;
+}
+.col-md-2{
+    text-align: center;
+}
+.bg h1 {
+    font-weight: 700;
+}
+.bg ul {
+    list-style: none;
+    text-align: center;
+}
+.bg a {
+    color: white;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+.footer-item{
+    font-weight: 500;
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.0);
+ }
+
+ .footer-item:hover{
+    color: #d3d3d3;
+    transform: scale(1.1);
+ }
+
+ 
