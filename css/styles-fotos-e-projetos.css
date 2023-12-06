@@ -200,6 +200,10 @@ body {
     transform: scale(1.1)
 }
 
+.agendar-button:hover {
+    color: white;
+}
+
 .agendar-button a {
     text-decoration: none;
     color: #242424;
@@ -303,6 +307,15 @@ body {
     .mobile-menu .agendar-button a {
         text-decoration: none;
         color: #242424;
+    }
+    
+    .mobile-menu .agendar-button a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-link:hover:after {
+        display: none;
     }
 
     .open{
@@ -410,122 +423,10 @@ body {
     transform: rotate(90deg);
 }
 
-/* @media screen and (max-width: 500px) {
-    #gallery{
-        justify-content: center;
-    }
-
-    .gallery-items {
-        margin-left: 100px;
-    }
-
-    .card-box {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-right: 80px;
-    }
-
-    .text-message-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .projects {
-        justify-content: center;
-    }
-
-    
-} */
-
-/* @media screen and (max-width: 1100px) {
-
-    .card-box {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .text-message-container {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .gallery-items {
-        margin-left: 40px;
-    }
-
-    .main-banner {
-        background: url(img/IMG-fundo-pag-inicial.png) no-repeat center;
-        position: relative;
-        background-size: cover;
-        height: 450px;
-        overflow: hidden;
-        margin-bottom: 30px;
-    
-    }
-
-
-    #banner h1 {
-        color: white;
-        flex-shrink: 0;
-        font-size: 55px;
-        font-style: normal;
-        font-family: 'Poppins';
-        font-weight: 600;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        bottom: 150px ;
-        text-align: center;
-    }
-    
-    #banner p {
-        color:white;
-        font-size: 7px;
-        font-weight: 100px;
-        padding-bottom: 20px ;
-        position: relative;
-        bottom: 150px ;
-    }
-
-    .veja-mais {
-        background-color: #F79824;
-        color: white;
-        border: #F79824;
-        border-radius: 4;
-        padding: 4px 16px;
-        font-size: 19px;
-        font-family: 'poppins', sans-serif;
-        font-weight: 500;
-        position: relative;
-        bottom: 150px ;
-    
-    }
-    
-    .veja-mais:hover {
-        background-color: #242424;
-        border: #242424;
-        color: white;
-    } 
-
-
-} */
 
 .redirect-message {
     text-align: center;
 }
-
-
-/* .gallery-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    
-} */
 
 .jf-center{
     justify-content: center;
@@ -586,6 +487,7 @@ body {
     flex-direction: row;
     align-items: center;
     margin-inline: auto;
+    margin-left: 58.5px;
 }
 
 .projects h1 {
@@ -595,6 +497,12 @@ body {
     font-size: 65px;
     font-weight: 700;
     margin-top: 7px;
+}
+
+@media screen and (max-width:700px){
+    .projects{
+        margin-left: 0px;
+    }
 }
 
 .projects #seta {
