@@ -557,4 +557,11 @@ body {
     transform: scale(1.1);
  }
 
-
+.copyright{
+    display: flex;
+    text-align: center;
+    background-color: #000000;
+}
+.copyright p{
+    color: white
+}
