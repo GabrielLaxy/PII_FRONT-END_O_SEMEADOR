@@ -1,8 +1,11 @@
-# T2-FRONT-END
+# Projeto de renovação do site da escola O Semeador.
 
-Participantes do grupo:
-- Gabriel Laxy: 23.00123-2
-- Gabriel Moreno de Oliveira: 23.01528-4
-- Henry Ojima: 23.01149-0
-- Paulo Vinicius Campos: 23.00607-2
-- Rodrigo Shiraishi: 23.00704-4
+Para executar o site, baixe todo o arquivo e comece abrindo o arquivo "index.html"
+
+Desenvolvido por alunos do Instituto Mauá de Tecnologia:
+-Gabriel Laxy
+-Luiz Miguel Rocha Seixeiro
+-Henry Minoru
+-Rodrigo Shiraishi
+-Paulo Vinicius de Campos
+-Gabriel Moreno
