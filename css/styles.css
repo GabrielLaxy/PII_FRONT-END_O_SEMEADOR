@@ -1,9 +1,16 @@
-/* Fonte */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 * {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -23,6 +30,7 @@ body {
 
     width: 80px;
     height: 80px;
+    margin-bottom: 12px;
 }
 
 .nav-list {
@@ -73,7 +81,7 @@ body {
     color: #242424;
 }
 
-.nav-bar .login-button button {
+.nav-bar .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
     border-radius: 3px;
@@ -83,29 +91,33 @@ body {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    margin-top: 23px;
+    margin-top: 21px;
     transition: transform 0.5s, background-color 0.3s ease-out 10ms;
   transform: translateX(0) scale(1);
 }
 
-.login-button button:hover {
+.agendar-button button:hover {
     border: solid 1px #F79824 ;
     background-color: #F79824;
     color: white;
     transform: scale(1.1)
 }
 
-.login-button a {
+.agendar-button:hover {
+    color: white;
+}
+
+.agendar-button a {
     text-decoration: none;
     color: #242424;
 }
 
-.login-button a:hover {
+.agendar-button a:hover {
     text-decoration: none;
     color: white;
 }
 
-.mobile-menu .login-button button {
+.mobile-menu .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
     border-radius: 3px;
@@ -119,7 +131,7 @@ body {
   transform: translateX(0) scale(1);
 }
 
-.mobile-menu .login-button button:hover{
+.mobile-menu .agendar-button button:hover{
     border: solid 1px #F79824 ;
     background-color: #F79824;
     color: white;
@@ -143,7 +155,7 @@ body {
         display: none;
     }
 
-    .login-button {
+    .agendar-button {
         display: none;
     }
 
@@ -157,6 +169,17 @@ body {
         border: none;
         cursor: pointer;
     }
+
+    .mobile-menu-icon button{
+        outline: thin dotted;
+            outline: 0px auto -webkit-focus-ring-color;
+            outline-offset: 0px;
+        }
+    .mobile-menu-icon button {
+        outline: thin dotted;
+            outline: 0px auto -webkit-focus-ring-color;
+            outline-offset: 0px;
+        }
 
     .icon {
         margin-top: 15px;
@@ -175,18 +198,27 @@ body {
         padding-top: 1.2rem;
     }
 
-    .mobile-menu .login-button {
+    .mobile-menu .agendar-button {
         display: block;
         padding: 1rem 2rem;
     }
 
-    .mobile-menu .login-button button {
+    .mobile-menu .agendar-button button {
         width: 100%;
     }
 
-    .mobile-menu .login-button a {
+    .mobile-menu .agendar-button a {
         text-decoration: none;
         color: #242424;
+    }
+    
+    .mobile-menu .agendar-button a:hover {
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-link:hover:after {
+        display: none;
     }
 
     .open{
@@ -272,15 +304,8 @@ body {
 
 /* Sobre a escola */
 
-#about-area1 {
-    background-color: #fff;
-}
-#about-areadiv{
-    margin-top: 30px;
-}
-
-#services-area{
-    margin-top: 15px;
+#about-area {
+    background-color: #F9F9F9;
 }
 
 h3{
@@ -737,7 +762,7 @@ footer {
 }
 
 .bg {
-    background: rgb(1, 101, 182);
+    background: #F79824;
 }
 .col-md-2{
     text-align: center;
@@ -752,3 +777,14 @@ footer {
 .bg a {
     color: white;
 }
+.footer-item{
+    font-weight: 500;
+    transition: transform 0.5s;
+    transform: translateX(0) scale(1.0);
+ }
+
+ .footer-item:hover{
+    color: #d3d3d3;
+    transform: scale(1.1);
+ }
+
