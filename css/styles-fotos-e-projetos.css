@@ -432,6 +432,9 @@ body {
     font-weight: 700;
 }
 
+
+/* Footer c/copyright */
+
 .bg {
     background: #202249;
 }
@@ -459,6 +462,8 @@ body {
     color: #d3d3d3;
     transform: scale(1.1);
  }
+
+/* copyright */
 
 .copyright{
     display: flex;
