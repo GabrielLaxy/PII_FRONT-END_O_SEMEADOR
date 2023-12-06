@@ -355,4 +355,10 @@ label {
 .imagem-form {
     background-image: url(/IMAGENS/mulher-esta-contando-dinheiro-com-seu-telefone\ 1.png);
 }
-
+.subtitle{
+    padding: 60px;
+}
+.cnpj{
+    margin-left: 50px;
+    font-size: 60px;
+}
