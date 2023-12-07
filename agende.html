@@ -14,7 +14,7 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles-agendar.css">
 
         <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
         <script
@@ -48,126 +48,230 @@
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     </head>
     <body>
-            <header>
-                <nav>
-                    <div class="nav-container">
-                        <img id="logo" src="Logo-Semeador.png">
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img
+                            id="logo"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="agendar-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="doacao.html">Doações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="matricula.html">Matrícula</a>
+                    </li>
+                </ul>
+
+                <div class="agendar-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container" id="teste">
+            <div class="form-container d-flex">
+                <h2 class="text-center mb-4" id="titulo-agenda">Agendar Visita</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome completo do responsável</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Digite seu e-mail"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone residencial</label>
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="telefone"
+                            placeholder="Digite seu telefone"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Celular</label>
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="telefone"
+                            placeholder="Digite seu telefone"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="nome">Nome completo do aluno</label>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nome"
+                            placeholder="Digite seu nome"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Data da Visita:</label>
+                        <input type="date" class="form-control" id="data" required="required">
+                    </div>
+                    <label>
+                        Opção para periodo
+                        <br>
+                        <span>
+                            <div>
+                                <select name="opções">
+                                    <option value="">Escolha uma opção</option>
+                                    <option value="manha">Manha</option>
+                                    <option value="manha">Tarde</option>
+                                </select>
+                            </div>
+                        </span>
+                    </label>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="botao-agnedar">Agendar Visita</button>
+                </form>
+            </div>
+        </div>
+
+        <footer class="bg text-white pt-1 pb-4">
+            <div class="containertext-center text-md-left">
+                <div class="row mx-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img
+                            class="text-uppercase mb-4 font-weight-bold text-warning"
+                            src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                            alt="Logo do oSemeador">
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                        <h1>Horários</h1>
+                        <p>segunda a sexta:
+                            <br>
+                            07:30 - 17:00</p>
+                        <br>
+                        <h1>Endereço</h1>
+                        <p>R. dos Meninos, 555 -
+                            <br>
+                            Nova Gerti, São Caetano
+                            <br>
+                            do Sul - SP, 09580-300</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                        <h1>Contato</h1>
+                        <p>(11) 1111-1111
+                            <br>
+                            (22) 2222-2222
+                            <br>
+                            lorem@impsum.com.br</p>
+                        <br>
+                        <h1>Siga-nos</h1>
+                        <div class="footer-social-media">
+                            <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
                         <ul>
                             <li>
-                                <a href="index.html">Página inicial</a>
+                                <h1>Acesso Rápido</h1>
                             </li>
-                            <li>
-                                <a href="fotos.html">Fotos e Projetos</a>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Página Inicial</a>
                             </li>
-                            <li>
-                                <a href="doacao.html">Doações</a>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Fotos e Projetos</a>
                             </li>
-                            <li>
-                                <a href="contato.html">Contato</a>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Doações</a>
                             </li>
-                            <li>
-                                <a href="matricula.html">Matrícula</a>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Contato</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Matrícula</a>
                             </li>
                         </ul>
-                        <a href="agende.html">
-                            <button class="agendar-visita">AGENDE SUA VISITA</button>
-                        </a>
                     </div>
-                </nav>
-            </header>
-            <div class="container" id="teste">
-                <div class="form-container">
-                    <h2 class="text-center mb-4" id="titulo-agenda">Agendar Visita</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="nome">Nome completo do responsável</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="nome"
-                                placeholder="Digite seu nome"
-                                required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="email"
-                                placeholder="Digite seu e-mail"
-                                required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone">Telefone residencial</label>
-                            <input
-                                type="tel"
-                                class="form-control"
-                                id="telefone"
-                                placeholder="Digite seu telefone"
-                                required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="telefone">Celular</label>
-                            <input
-                                type="tel"
-                                class="form-control"
-                                id="telefone"
-                                placeholder="Digite seu telefone"
-                                required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="nome">Nome completo do aluno</label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="nome"
-                                placeholder="Digite seu nome"
-                                required="required">
-                        </div>
-                        <div class="form-group">
-                            <label for="data">Data da Visita:</label>
-                            <input type="date" class="form-control" id="data" required="required">
-                        </div>
-                        <label>
-                            Opção para periodo
-                            <br>
-                            <span>
-                                <div>
-                                    <select name="opções">
-                                        <option value="">Escolha uma opção</option>
-                                        <option value="manha">Manha</option>
-                                        <option value="manha">Tarde</option>
-                                    </select>
-                                </div>
-                            </span>
-                        </label>
-
-                        <button type="submit" class="btn btn-primary btn-block" id="botao-agnedar">Agendar Visita</button>
-                    </form>
+    
+                    <hr class="mb-4">
+    
                 </div>
-            </div>
-
-            <footer>
-                <div id="footer_copyright">
-                    &#169 2023 all rights reserved
-                </div>
+    
             </footer>
 
-            <script src="js/scripts.js"></script>
-            <div vw="vw" class="enabled">
-                <div vw-access-button="vw-access-button" class="active"></div>
-                <div vw-plugin-wrapper="vw-plugin-wrapper">
-                    <div class="vw-plugin-top-wrapper"></div>
-                </div>
+        <script src="js/scripts.js"></script>
+        <div vw="vw" class="enabled">
+            <div vw-access-button="vw-access-button" class="active"></div>
+            <div vw-plugin-wrapper="vw-plugin-wrapper">
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-
-            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-            <script>
-                new window
-                    .VLibras
-                    .Widget('https://vlibras.gov.br/app');
-            </script>
         </div>
-    </body>
+
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window
+                .VLibras
+                .Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+</body>
 </main>
 </html>
