@@ -226,20 +226,48 @@ body {
     }
 }
 
+.banner h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
 
+/* Banner */
+
+.banner h6 {
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.banner {
+    padding-bottom: 45px;
+    padding-top: 45px;
+    background-image: url(/IMAGENS/feminino-turista-esperando-por-trem\ 1.png);
+    background-size: cover;
+}
+
+.banner img {
+    margin-top: 10px;
+    height: 50px;
+    width: 6px;
+}
 
 
 /* main */
 
 
-.gallery{
+.form-data{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-inline: auto;
 }
 
-.gallery h1 {
+.form-data h1 {
     position: relative;
     color: #242424;
     font-size: 40px;
@@ -247,7 +275,7 @@ body {
     margin-top: 7px;
 }
 
-.gallery #seta {
+.form-data #seta {
     transform: rotate(90deg);
     margin-top: 45px;
 }
@@ -255,10 +283,29 @@ body {
 .formulario1 {
     background-color: #F79824;
     padding-inline: 40px;
+    margin-bottom: 5px;
 }
 
 .formulario {
     margin-left: 2px;
+}
+
+.ou {
+    align-items: center;
+    justify-content: center;
+}
+
+.retangulo-ou{
+    height: 2px;
+    width: 150px;
+    margin-inline: 10px;
+}
+
+.retangulo-ou-preto{
+    height: 2px;
+    width: 150px;
+    margin-inline: 10px;
+    display: none;
 }
 
 .ou {
@@ -286,6 +333,7 @@ body {
     height: 60px;
     
 }
+
 
 input::placeholder {
     font-size: 14px;
@@ -357,6 +405,22 @@ form label {
     margin-right: 2px;
 }
 
+.descricao-semeador {
+    display: block;
+}
+
+.passos {
+    font-weight: 500;
+}
+
+.tutorial img {
+    opacity: 75%;
+}
+
+.tutorial{
+    margin-bottom: 50px;
+}
+
 label {
     margin-top: 10px;
     margin-bottom: 0;
@@ -374,10 +438,6 @@ label {
     object-fit: cover;
 }
 
-.formulario-completo {
-    background-color: #F79824;
-}
-
 #input-file {
     display: none;
 }
@@ -387,17 +447,47 @@ label {
     margin-left: 10px;
     padding-bottom: 20px;
 }
+
+.file-preto {
+    cursor: pointer;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    display: none;
+}
+
 .imagem-codigo {
     padding-bottom: 10px;
 }
 
-.imagem-form {
-    background-image: url(/IMAGENS/mulher-esta-contando-dinheiro-com-seu-telefone\ 1.png);
+.imagem-form img {
+    position: relative;
+    width: 530px;
+    height: 560px;
+    background: white;
+    object-fit: cover;
 }
+
+.seta-branca {
+    display: block;
+}
+
+.seta-preta {
+    display: none;
+}
+
+
 .subtitle{
-    margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 210px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 40px ;
+    justify-content: center;
 }
+
+.passo-a-passo {
+    margin-top: 150px;
+}
+
 #insert-data{
     margin-top: 50px;
     justify-content: center;
@@ -410,16 +500,11 @@ label {
 
 }
 
-#explications{
-    font-size: 30px;
-    margin-top: 100px;
-    margin-left: 150px;
-    justify-content: center;
-}
-#entenda{
+.entenda{
     margin-top: 50px;
     justify-content: center;
 }
+
 #footer{
     background-color: #202249;
 }
@@ -429,6 +514,113 @@ label {
     }
     #form{
         columns: -12px;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .formulario1 {
+        background: #ffffff;
+    }    
+
+    .form-label {
+        color: #5a5a5a;
+    }
+
+    .form-label-codigo {
+        margin-top: 30px;
+        color: #5a5a5a;
+    }
+    .campo input{
+        box-shadow: 0px 0px 0px 0px;
+        border:none;
+        border-bottom:1px solid #cccccc;
+        background: #ffffff;
+        border-radius: 0px;
+        
+    }
+
+    .campo input:focus {
+        box-shadow: 0px 0px 0px 0px;
+        border:none;
+        border-bottom:1px solid #cccccc;
+        background: #ffffff;
+        border-radius: 0px;
+    }
+
+    .enviar {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        background: #F79824;
+        color: white;
+        display: block;
+    }
+    .enviar:hover {
+        color: white;
+        background-color: #bd5911;
+    
+    }
+
+    .seta-branca {
+        display: none;
+    }
+
+    .seta-preta {
+        display: block;
+        opacity: 75%;
+    }
+
+    .redirect-upload p {
+        color: #505050;
+    }
+
+    .upload {
+        padding-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #F79824;
+        color: white;
+        display: block;
+    }
+
+    .upload:hover {
+        color: white;
+        background-color: #bd5911;
+    }
+
+    .retangulo-ou{
+        display: none;
+    }
+    
+    .retangulo-ou-preto{
+        display: block;
+        opacity: 20%;
+    }
+
+    .ou {
+        color: #999999;
+    }
+
+    .file-preto{
+        display: block;
+        opacity: 25%;
+    }
+
+    .file {
+        display: none;
+    }
+
+    .form-data h1 {
+        font-size: 30px;
+    }
+
+    .form-data #seta {
+        width: 24px;
+        height: 24px;
+        margin-top: 40px;
+        margin-left: 5px;
     }
 }
 
