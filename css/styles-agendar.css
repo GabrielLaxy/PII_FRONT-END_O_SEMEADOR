@@ -362,18 +362,36 @@ input::placeholder {
 
 /* BOTAO */
 
-    .enviar {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        background: #6D6D6D;
-        color: white;
-        display: block;
-        width: 553px;
-        height: 68px;
-        justify-content: center;
+.enviar {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background: #6D6D6D;
+    color: white;
+    display: block;
+    width: 553px;
+    height: 68px;
+    justify-content: center;
 }
+
+.enviar:disabled {
+    cursor: not-allowed;
+    background: #555b69;
+  }
+  
+  .success,
+  .error {
+    text-align: center;
+  }
+  
+  .success {
+    color: greenyellow;
+  }
+  
+  .error {
+    color: tomato;
+  }
 
 .enviar:hover {
     color: white;
