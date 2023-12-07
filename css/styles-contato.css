@@ -242,8 +242,8 @@ body {
 }
 
 .banner {
-    padding-bottom: 60px;
-    padding-top: 10px;
+    padding-bottom: 45px;
+    padding-top: 45px;
     background-image: url(/IMAGENS/Contato-banner.png);
     background-size: cover;
 }

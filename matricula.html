@@ -119,46 +119,50 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row "> 
-            <div class="imagem-matricula">
+        <div class="row"> 
+            <div class="imagem-matricula col-8">
                 <div class="titulos-banner d-flex">
-                    <p>MATRÍCULE-SE</p>
-                    <h3>Venha Conhecer o SEMEADOR!</h3>
+                    <h1>MATRÍCULE-SE</h1>
+                    <h3>Venha Conhecer o semeador!</h3>
                 </div>
-                <div class="row prencha" >
+                <div class="row redirect-preencha" >
                     <img src="/IMAGENS/Rectangle_White.png" alt="retangulo" class="retangulo">
                     <p>Preencha o formulário ao lado e <br> 
                         agende sua visita</p>
-
                 </div>
             </div>
-            <div class="form-container">
-                <div class=" matricula-text row">
-                    <h1>MATRÍCULA</h1>
-                    <img src="/IMAGENS/seta-png.png" alt="seta" width="60" height="60" class="seta">
-                </div>
-                <form class="matricula row" >
-                    <div class="surname campo ">
-                        <label for="nome" class="form-label">Nome:</label>
-                        <input
-                            class="form-control"
-                            type="text"
-                            name="nome"
-                            id="nome"
-                            placeholder="Primeiro nome"
-                            required="required">
+            <div class="container mt-0 col-4">
+                <div class="formulario">
+                    <div class="titulo">
+                        <div class=" matricula-text row">
+                            <h1>MATRÍCULA</h1>
+                            <img src="/IMAGENS/seta-png.png" alt="seta" width="40" height="40" class="seta">
+                        </div>
+                        <p>Preencha os dados abaixo:</p>
+                        <img class="rectangle-matricula" src="/IMAGENS/Rectangle-matricula.png" alt="">
                     </div>
-                    <div class="name campo ">
-                        <label for="sobrenome" class="form-label">Sobrenome:</label>
-                        <input
-                            class="form-control"
-                            type="text"
-                            name="sobrenome"
-                            id="sobrenome"
-                            placeholder="Sobrenome"
-                            required="required">
-                    </div>     
-                </form>
+                    <label for="nome" class="form-label ml-3 mt-4">Responsável:</label>
+                    <form class="matricula d-flex" >
+                        <div class="surname campo col-6 ">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                placeholder="Primeiro nome"
+                                required="required">
+                        </div>
+                        <div class="name campo col-6">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="sobrenome"
+                                id="sobrenome"
+                                placeholder="Sobrenome"
+                                required="required">
+                        </div>     
+                    </form>
+                </div>
             </div>
         </div>
     </div>
