@@ -226,6 +226,53 @@ body {
 }
 
 
+.seta{ 
+    transform: rotate(90deg);
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.matricula-text h1{
+    font-weight: 700;
+    font-size: 70px;
+}
+
+
+
+.imagem-matricula{
+    background-image: url(/IMAGENS/iep-1024x812\ 1.png);
+    color: white; 
+    padding-right: 1200px;
+    padding-bottom: 1000px;
+    padding-top: 30px; 
+    background-size: cover;
+    padding-left: 50px;
+}
+
+.titulos-banner p{
+    font-weight: 900;
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+.titulos-banner{
+    flex-direction: column;
+}
+.titulos-banner h3{
+    top: 100px;
+}
+
+.retangulo{
+    width: 2px;
+    height: 60px;
+    margin-left:10px ;
+}
+.prencha p{
+    font-size: 20px;
+    height: 15px;
+    margin-left:10px ;
+}
+
+
 /* Footer c/copyright */
 
 .bg {
@@ -278,7 +325,6 @@ body {
 
 .form-container {
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
