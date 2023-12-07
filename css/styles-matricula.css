@@ -234,45 +234,127 @@ body {
 
 .matricula-text h1{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 50px;
 }
 
+.titulo {
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.titulo h1 {
+    margin-left: 13px;
+}
+
+
+.matricula-text {
+    height: 50px;
+}
 
 
 .imagem-matricula{
     background-image: url(/IMAGENS/iep-1024x812\ 1.png);
     color: white; 
-    padding-right: 1200px;
-    padding-bottom: 1000px;
-    padding-top: 30px; 
     background-size: cover;
-    padding-left: 50px;
+    height: 100vh;
 }
 
-.titulos-banner p{
+.titulos-banner h1{
     font-weight: 900;
-    font-size: 100px;
+    font-size: 60px;
     margin-bottom: 0px;
+    height: 60px;
 }
+
+.titulos-banner h3 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 .titulos-banner{
     flex-direction: column;
-}
-.titulos-banner h3{
-    top: 100px;
+    margin-top: 20px;
 }
 
 .retangulo{
-    width: 2px;
-    height: 60px;
-    margin-left:10px ;
+    width: 1px;
+    height: 40px;
+    margin-left:20px ;
 }
-.prencha p{
-    font-size: 20px;
+
+.rectangle-matricula {
+    margin-left: 30px;
+}
+
+.redirect-preencha p{
+    font-size: 15px;
     height: 15px;
     margin-left:10px ;
+    font-weight: 200;
 }
 
+.redirect-preencha {
+    margin-top: 20px;
+}
+.form-label{
+    color: #696969;
+    font-weight: 700;
+}
 
+.matricula{
+    flex-wrap: wrap;
+    
+}
+
+.campo input{
+    background: #F1F1F1;
+    border:0px solid;
+    box-shadow: 0px 4px 4px 0px rgba(63, 63, 63, 0.25) inset;
+    height: 55px;
+    
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.btn {
+    background: #D46412;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: #242424;
+
+}
+
+    .enviar {
+        padding-bottom: ;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        background: #6D6D6D;
+        color: white;
+        display: block;
+}
+
+.enviar:hover {
+    color: white;
+    background-color: #3b3b3b;
+
+}
 /* Footer c/copyright */
 
 .bg {
@@ -333,9 +415,7 @@ body {
     margin-bottom: 20px;
 }
 
-label {
-    font-weight: bold;
-}
+
 
 .btn-matricular {
     background-color: #28a745;

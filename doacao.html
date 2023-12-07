@@ -95,20 +95,23 @@
                     </button>
                 </div>
             </header>
-            
-            <h3 class="subtitle"><b>Entenda como funciona a doação para O Semeador.</b></h3>
-            <p id="descrição-semeador">
-                Você sabia que as suas notas fiscais podem render uma quantia de volta em dinheiro?</br>
-                a nossa escola aceita doações de notas fiscais de compras feitas em qualquer estabelecimento.</br>
-                para realizar esta doação, você precisa recusar quando o atendente do estabelecimento</br>
-                perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras de prosseguir</br></br>
-                1: você insere os seus dados e o número que fica em baixo do código de barras da nota fiscal</br></br>
-                2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o importante é</br>
-                aparecer o código de barras para podermos utilizá-lo.</br></br>
-                Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você pode utilizar</br>
-                o CNPJ da nossa instituição para realizar uma transferência PIX.
+            <div class="container">
+                <h3 class="subtitle" id="explications"><b>Entenda como funciona a doação para O Semeador.</b></h3>
+                <div class="d-flex" id="entenda">
+                    <p id="descrição-semeador">
+                        Você sabia que as suas notas fiscais podem render uma quantia de volta em dinheiro?</br>
+                        a nossa escola aceita doações de notas fiscais de compras feitas em qualquer estabelecimento.</br>
+                        para realizar esta doação, você precisa recusar quando o atendente do estabelecimento</br>
+                        perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras de prosseguir:</br></br>
+                        1: você insere os seus dados e o número que fica em baixo do código de barras da nota fiscal;</br></br>
+                        2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o importante é</br>
+                        aparecer o código de barras para podermos utilizá-lo;</br></br>
+                        Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você pode utilizar</br>
+                        o CNPJ da nossa instituição para realizar uma transferência PIX.
 
-            </p>
+                    </p>
+                </div>
+            </div>
             <div class="container-sm">
                 <div class="gallery d-flex justify-content-center justify-content-sm-start">
                     <h1 id="insert-data">INSIRA SEUS DADOS</h1>
@@ -149,7 +152,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="imagem-form col-7"></div>
+                <div class="imagem-form col-7" id="imagem"></div>
             </div>
         </div>
         <h3 class="subtitle col-5">
@@ -158,67 +161,75 @@
         </h3>
         <p class="cnpj col-5">48.569.263.0001/42</p>
     </div>
-    <footer>
-        <div id="footer_content">
-            <div id="footer_contacts" class="justify-content-center">
-                <div class="footer_logo">
-                    <img class="semeador_footer" src="img/logo.jpg" alt="">
+    <footer class="bg text-white pt-1 pb-4" id="footer">
+        <div class="containertext-center text-md-left">
+            <div class="row mx-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img
+                        class="text-uppercase mb-4 font-weight-bold text-warning"
+                        src="IMAGENS\Logo-Semeador-50-anos blue.svg"
+                        alt="Logo do oSemeador">
                 </div>
-                <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="footer-link" id="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Horários</h1>
+                    <p>segunda a sexta:
+                        <br>
+                        07:30 - 17:00</p>
+                    <br>
+                    <h1>Endereço</h1>
+                    <p>R. dos Meninos, 555 -
+                        <br>
+                        Nova Gerti, São Caetano
+                        <br>
+                        do Sul - SP, 09580-300</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Contato</h1>
+                    <p>(11) 1111-1111
+                        <br>
+                        (22) 2222-2222
+                        <br>
+                        lorem@impsum.com.br</p>
+                    <br>
+                    <h1>Siga-nos</h1>
+                    <div class="footer-social-media">
+                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </a>
+                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <ul>
+                        <li>
+                            <h1>Acesso Rápido</h1>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Página Inicial</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Fotos e Projetos</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Doações</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Contato</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="mb-4">
+                <div class="row mx-auto mt-5">
+                    <div class="">
+                        <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
+                    </div>
                 </div>
             </div>
-            <ul class="footer-list">
-                <ul class="footer-list">
-                    <li>
-                        <h3>Endereço:</h3>
-                    </li>
-                    <li>
-                        <p>R. dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, 09580-300</p>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li>
-                        <h3>Email:</h3>
-                    </li>
-                    <li>
-                        <p>atendimento@osemeador.com</p>
-                    </li>
-                </ul>
-                <ul class="footer-list">
-                    <li>
-                        <h3>Telefone:</h3>
-                    </li>
-                    <li>
-                        <p>+55 11 9999-9999</p>
-                    </li>
-                </ul>
-            </ul>
-            <section class="mapa">
-                <div class="mapa-conteudo">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8812624613415!2d-46.57121392370248!3d-23.644422964650893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4333fd7caa7f%3A0xddaab097e5cf6dae!2sO%20Semeador%20Escola%20Metodista%20-%20AMAS!5e0!3m2!1spt-BR!2sbr!4v1699562066834!5m2!1spt-BR!2sbr"
-                        width="100%"
-                        height="250"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </section>
-        </div>
-        <div id="footer_copyright">
-            &#169 Alunos Insituto Mauá de Tecnologia (Dev Luiz Miguel Seixeiro/Paulo
-            Vinicius Campos)
         </div>
     </footer>
     <script src="js/scripts.js"></script>
