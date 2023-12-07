@@ -290,9 +290,17 @@ body {
 .campo input{
     background: white;
     border:0px solid;
-    box-shadow: 0px 4px 4px 0px rgba(63, 63, 63, 0.25) inset;
-    height: 45px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    height: 55px;
+    border-radius: 0;
+    outline: 0;
     
+}
+
+.campo input:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-bottom: 0px none;
+    outline: 0;
 }
 
 input::placeholder {
@@ -304,6 +312,12 @@ input::placeholder {
 .mensagem input::placeholder {
     display: block;
     background: #a78268;;
+}
+
+.mensagem textarea:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border-bottom: 0px none;
+    outline: 0;
 }
 
 form label {
@@ -353,7 +367,7 @@ label {
 .mapa-conteudo {
     position: relative;
     width: 665px;
-    height: 540px;
+    height: 570px;
     background: white;
 }
 

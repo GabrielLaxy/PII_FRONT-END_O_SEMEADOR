@@ -309,11 +309,19 @@ body {
 }
 
 .campo input{
-    background: #F1F1F1;
+    background: white;
     border:0px solid;
-    box-shadow: 0px 4px 4px 0px rgba(63, 63, 63, 0.25) inset;
+    border-bottom: 1px solid #b1b1b1;
     height: 55px;
+    border-radius: 0;
+    outline: 0;
     
+}
+
+.campo input:focus {
+    box-shadow: 0 0 0 0;
+    border-bottom: 1px solid #b1b1b1;
+    outline: 0;
 }
 
 input::placeholder {
@@ -339,15 +347,14 @@ input::placeholder {
 
 }
 
-    .enviar {
-        padding-bottom: ;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        background: #6D6D6D;
-        color: white;
-        display: block;
+.enviar {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background: #6D6D6D;
+    color: white;
+    display: block;
 }
 
 .enviar:hover {
