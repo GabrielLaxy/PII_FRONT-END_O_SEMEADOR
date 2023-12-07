@@ -383,10 +383,13 @@ label {
     justify-content: center;
 }
 #footer{
-    background-color: #F79824;
+    background-color: #202249;
 }
-@media screen and (max-width: 360px) {
-    #insert-data{
-        
+@media screen and (max-width: 1200px) {
+    .imagem-form{
+        display: none;
+    }
+    #form{
+        columns: -12px;
     }
 }
