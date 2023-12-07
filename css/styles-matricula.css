@@ -261,16 +261,15 @@ body {
 
 .titulos-banner h1{
     font-weight: 900;
-    font-size: 7vh;
+    font-size: 60px;
     margin-bottom: 0px;
     height: 60px;
 }
 
 .titulos-banner h3 {
-    font-size: 2vh;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
-    margin-top: 6px;
 }
 
 
