@@ -362,13 +362,31 @@ label {
 }
 #insert-data{
     margin-top: 50px;
+    justify-content: center;
 }
 .cnpj{
     margin-left: 50px;
     margin-top: 20px;
+    margin-bottom: 50px;
     font-size: 40px;
 
 }
-#descrição-semeador {
-    margin-left: 60px;
+
+#explications{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 150px;
+    justify-content: center;
+}
+#entenda{
+    margin-top: 50px;
+    justify-content: center;
+}
+#footer{
+    background-color: #F79824;
+}
+@media screen and (max-width: 360px) {
+    #insert-data{
+        
+    }
 }
