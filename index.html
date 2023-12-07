@@ -49,16 +49,47 @@
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     </head>
     <body>
-        <nav class="nav-bar">
-            <div class="logo">
-                <a href="index.html">
-                    <img
-                        id="logo"
-                        src="IMAGENS\Logo-Semeador-50-anos copy.svg"
-                        alt="Logo do oSemeador">
-                </a>
-            </div>
-            <div class="nav-list">
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img
+                            id="logo"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="doacao.html">Doações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="agendar-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
+                </div>
+            </nav>
+
+            <div class="mobile-menu">
                 <ul>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Página inicial</a>
@@ -76,229 +107,200 @@
                         <a class="nav-link" href="matricula.html">Matrícula</a>
                     </li>
                 </ul>
-            </div>
-            <div class="agendar-button">
-                <button>
-                    <a href="agende.html">AGENDE SUA VISITA</a>
-                </button>
-            </div>
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
+                <div class="agendar-button">
+                    <button>
+                        <a href="agende.html">AGENDE SUA VISITA</a>
+                    </button>
+                </div>
             </div>
-        </nav>
+        </header>
 
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Página inicial</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="fotos.html">Fotos e Projetos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="doacao.html">Doações</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contato.html">Contato</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matricula.html">Matrícula</a>
-                </li>
-            </ul>
+        <!-- slider -->
+        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#mainSlider" data-slide-to="1"></li>
+                <li data-target="#mainSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="/IMAGENS/banner-index-1.jpg"
+                        class="d-block w-100"
+                        alt="Projetos de e-commerce">
 
-            <div class="agendar-button">
-                <button>
-                    <a href="agende.html">AGENDE SUA VISITA</a>
-                </button>
+                    <div class="carousel-caption d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        id="banner-principal"
+                        src="/IMAGENS/banner-index-2.jpg"
+                        class="d-block w-100"
+                        alt="Engenharia de software">
+                    <div class="carousel-caption d-md-block"></div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="/IMAGENS/banner-index-3.jpg"
+                        class="d-block w-100"
+                        alt="Manutenção em software">
+                    <div class="carousel-caption d-md-block"></div>
+                </div>
+            </div>
+            <a
+                class="carousel-control-prev"
+                href="#mainSlider"
+                role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a
+                class="carousel-control-next"
+                href="#mainSlider"
+                role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Sobre o semeador -->
+        <div id="about-area">
+            <div class="container" id="about-areadiv">
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="gallery d-flex justify-content-center justify-content-sm-start">
+                            <h1>O SEMEADOR</h1>
+                            <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/8p7RJSkrP74?si=btpV76WcpcoZEQJl"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Desde 1974, a Escola Metodista "O Semeador" é uma instituição beneficente,
+                            sem fins lucrativos que atende crianças e adolescentes com deficiência
+                            intelectual, múltiplas deficiências e autismo a partir dos 06 anos de idade.
+                            Atualmente a escola é referência no atendimento de alunos com TEA (Transtorno do
+                            Espectro Autista). Nosso trabalho se baseia nas diversas formas de linguagem,
+                            usando educação, arte, tecnologia, cultura e o lúdico como estratégias para
+                            prover o aprendizado, desenvolvimento e formação dos alunos.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <main id="main">
-            <div class="container-fluid">
-                <!-- slider -->
-                <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-                        <li data-target="#mainSlider" data-slide-to="1"></li>
-                        <li data-target="#mainSlider" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                src="/IMAGENS/banner-index-1.jpg"
-                                class="d-block w-100"
-                                alt="Projetos de e-commerce">
+        <!-- Serviços -->
+        <div id="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                       
+                            <div class="gallery d-flex justify-content-center justify-content-sm-start">
+                                <h1>Nossos compromissos</h1>
+                                <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
+                            </div>
+                        
 
-                            <!-- tirar classe d-none -->
-
-                            <div class="carousel-caption d-md-block"></div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                id="banner-principal"
-                                src="/IMAGENS/banner-index-2.jpg"
-                                class="d-block w-100"
-                                alt="Engenharia de software">
-                            <div class="carousel-caption d-md-block"></div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/IMAGENS/banner-index-3.jpg"
-                                class="d-block w-100"
-                                alt="Manutenção em software">
-                            <div class="carousel-caption d-md-block"></div>
-                        </div>
                     </div>
-                    <a
-                        class="carousel-control-prev"
-                        href="#mainSlider"
-                        role="button"
-                        data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a
-                        class="carousel-control-next"
-                        href="#mainSlider"
-                        role="button"
-                        data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="col-md-4 service-box">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h4>O Colégio</h4>
+                        <p>It is a long established fact that a reader will be distracted by the
+                            readable content of a page.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h4>A História</h4>
+                        <p>It is a long established fact that a reader will be distracted by the
+                            readable content.</p>
+                    </div>
+                    <div class="col-md-4 service-box">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <h4>Missão</h4>
+                        <p>Be sure there isn't anything embarrassing hidden in the middle of text. All
+                            the Lorem Ipsum generators.</p>
+                    </div>
+                    <div class="col-md-4 service-box"></div>
                 </div>
-                <!-- Sobre a empresa -->
-                <div id="about-area">
-                    <div class="container" id="about-areadiv">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="main-title">O Semeador</h3>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- <h3 class="about-title">Faça parte dessa história, ajude-nos a mudar vidas,
-                                seja um doador!</h3> -->
-                                <p>Desde 1974, a Escola Metodista "O Semeador" é uma instituição beneficente,
-                                    sem fins lucrativos que atende crianças e adolescentes com deficiência
-                                    intelectual, múltiplas deficiências e autismo a partir dos 06 anos de idade.
-                                    Atualmente a escola é referência no atendimento de alunos com TEA (Transtorno do
-                                    Espectro Autista). Nosso trabalho se baseia nas diversas formas de linguagem,
-                                    usando educação, arte, tecnologia, cultura e o lúdico como estratégias para
-                                    prover o aprendizado, desenvolvimento e formação dos alunos.</p>
-                            </div>
-                            <div>
-                                <iframe
-                                    src="https://www.youtube.com/watch?v=yZgCenuSfts&ab_channel=TRINDADS"
-                                    frameborder="0"
-                                    allowfullscreen="allowfullscreen"
-                                    title="Colegio O Semeador"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Serviços da empresa -->
-                <div id="about-area1"style="display: flex; align-items: center; justify-content: center; margin: 20px 0;"><div style="flex-grow: 1; border-top: 1px solid #1261ff;"></div><div style="margin: 0 10px;">
-                    <h3 class="fs-font-italic fs-no-margin" style="color: #1a58a0 !important;">Nos compromentemos com a Educação!</h3>
-                </div><div style="flex-grow: 1; border-top: 1px solid #2c6cec;"></div></div>
-                <div id="services-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3 class="main-title">Nossos compromissos</h3>
-                            </div>
-                            <div class="col-md-4 service-box">
-                                <i class="fas fa-mobile-alt"></i>
-                                <h4>O Colégio</h4>
-                                <p>It is a long established fact that a reader will be distracted by the
-                                    readable content of a page.</p>
-                            </div>
-                            <div class="col-md-4 service-box">
-                                <i class="fas fa-shopping-cart"></i>
-                                <h4>A História</h4>
-                                <p>It is a long established fact that a reader will be distracted by the
-                                    readable content.</p>
-                            </div>
-                            <div class="col-md-4 service-box">
-                                <i class="fas fa-paint-brush"></i>
-                                <h4>Missão</h4>
-                                <p>Be sure there isn't anything embarrassing hidden in the middle of text. All
-                                    the Lorem Ipsum generators.</p>
-                            </div>
-                            <div class="col-md-4 service-box"></div>
-                        </div>
-                    </div>
-                    <footer class="bg text-white pt-1 pb-4">
-                        <div class="containertext-center text-md-left">
-                            <div class="row mx-3">
-                                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                    <img
-                                        class="text-uppercase mb-4 font-weight-bold text-warning"
-                                        src="IMAGENS\Logo-Semeador-50-anos blue.svg"
-                                        alt="Logo do oSemeador">
-                                </div>
-                                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                                    <h1>Horários</h1>
-                                    <p>segunda a sexta:
-                                        <br>
-                                        07:30 - 17:00</p>
-                                    <br>
-                                    <h1>Endereço</h1>
-                                    <p>R. dos Meninos, 555 -
-                                        <br>
-                                        Nova Gerti, São Caetano
-                                        <br>
-                                        do Sul - SP, 09580-300</p>
-                                </div>
-                                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                                    <h1>Contato</h1>
-                                    <p>(11) 1111-1111
-                                        <br>
-                                        (22) 2222-2222
-                                        <br>
-                                        lorem@impsum.com.br</p>
-                                    <br>
-                                    <h1>Siga-nos</h1>
-                                    <div class="footer-social-media">
-                                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
-                                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                                        </a>
-                                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
-                                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                                    <ul>
-                                        <li>
-                                            <h1>Acesso Rápido</h1>
-                                        </li>
-                                        <li class="footer-item">
-                                            <a class="footer-link" href="#">Página Inicial</a>
-                                        </li>
-                                        <li class="footer-item">
-                                            <a class="footer-link" href="#">Fotos e Projetos</a>
-                                        </li>
-                                        <li class="footer-item">
-                                            <a class="footer-link" href="#">Doações</a>
-                                        </li>
-                                        <li class="footer-item">
-                                            <a class="footer-link" href="#">Contato</a>
-                                        </li>
-                                        <li class="footer-item">
-                                            <a class="footer-link" href="#">Matrícula</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                
-                                <hr class="mb-4">
-                                <div class="row mx-auto mt-5">
-                                    <div class="">
-                                        <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </footer>
             </div>
 
+            <footer class="bg text-white pt-1 pb-4">
+                <div class="containertext-center text-md-left">
+                    <div class="row mx-3">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <img
+                                class="text-uppercase mb-4 font-weight-bold text-warning"
+                                src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                                alt="Logo do oSemeador">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <h1>Horários</h1>
+                            <p>segunda a sexta:
+                                <br>
+                                07:30 - 17:00</p>
+                            <br>
+                            <h1>Endereço</h1>
+                            <p>R. dos Meninos, 555 -
+                                <br>
+                                Nova Gerti, São Caetano
+                                <br>
+                                do Sul - SP, 09580-300</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <h1>Contato</h1>
+                            <p>(11) 1111-1111
+                                <br>
+                                (22) 2222-2222
+                                <br>
+                                lorem@impsum.com.br</p>
+                            <br>
+                            <h1>Siga-nos</h1>
+                            <div class="footer-social-media">
+                                <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                </a>
+                                <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <ul>
+                                <li>
+                                    <h1>Acesso Rápido</h1>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#">Página Inicial</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#">Fotos e Projetos</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#">Doações</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#">Contato</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="#">Matrícula</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="mb-4">
+                    </div>
+                </footer>
+            </div>
             <script src="js/scripts.js"></script>
             <div vw="vw" class="enabled">
                 <div vw-access-button="vw-access-button" class="active"></div>
@@ -313,5 +315,4 @@
                     .Widget('https://vlibras.gov.br/app');
             </script>
         </body>
-    </main>
-</html>
+    </html>
