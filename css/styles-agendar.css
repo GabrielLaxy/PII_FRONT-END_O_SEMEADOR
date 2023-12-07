@@ -291,10 +291,11 @@ label{
     transition: transform 0.2s ease-in-out;
 }
 
-.contact-form .submit-btn{
+.contact-form button{
+
     display: inline-block;
     text-transform: uppercase;
-    background-color: #6D6D6D;
+    background-color: #F79824;
     color: #ffff;
     letter-spacing: 2px;
     font-size: 25px;
@@ -306,6 +307,11 @@ label{
     border-radius: 1em;
     margin-left: 50px;
     
+}
+
+.contact-form button:disabled{
+    cursor: not-allowed;
+    background: #555b69;
 }
 
 .responsavel{

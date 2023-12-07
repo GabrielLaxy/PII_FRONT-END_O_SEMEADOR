@@ -116,86 +116,93 @@
         </header>
 
         <div class="container">
-            <section class="agendar">
+            <script src="/js/enviar_email.js"></script>
+            <form action="https://formsubmit.co/ajax/"
+            method="POST"
+            data-form
+            >
+                <section class="agendar">
+                        <div class="gallery d-flex justify-content-center justify-content-sm-start">
+                            <h1>AGENDE</h1>
+                            <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
+                        </div>
+                        <div class="contact-form row">
 
-                <div class="gallery d-flex justify-content-center justify-content-sm-start">
-                    <h1>AGENDE</h1>
-                    <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
-                </div>
-
-                <div class="contact-form row">
-
-                    <div class="form-field col-lg-12">
-                        <label for="responsavel" class="responsavel">Responsavel:</label>
-                    </div>
-
-                    <div class="form-field col=lg-6">
-                        <input id="name" class="input-text" type="text" name="">
-                        <label for="name" class="label">Nome</label>
-                    </div>
-                    <div class="form-field col-lg-6">
-                        <input id="sobrenome" class="input-text" type="text" name="">
-                        <label for="sobrenome" class="label">Sobrenome</label>
-                    </div>
-                    <div class="form-field col-lg-10">
-                        <input id="email" class="input-text" type="email" name="">
-                        <label for="email" class="label">E-mail</label>
-                    </div>
-
-                    <div class="form-field col-lg-12">
-                        <label for="responsavel" class="responsavel">Aluno:</label>
-                    </div>
-
-                    <div class="form-field col=lg-6">
-                        <input id="name" class="input-text" type="text" name="">
-                        <label for="name" class="label">Nome</label>
-                    </div>
-                    <div class="form-field col=lg-6">
-                        <input id="sobrenome" class="input-text" type="text" name="">
-                        <label for="sobrenome" class="label">Sobrenome</label>
-                    </div>
-                    <div class="form-field col=lg-6">
-                        <input id="telefone" class="input-text" type="tel" name="">
-                        <label for="telefone" class="label">Telefone Residencial</label>
-                    </div>
-                    <div class="form-field col=lg-6">
-                        <input id="celular" class="input-text" type="tel" name="">
-                        <label for="celular" class="label">Celular</label>
-                    </div>
-
-                    <div class="form-field col-lg-6">
-                        <label for="responsavel" class="responsavel">Periodo:</label>
-                    </div>
-                    <label class="form-field col-lg-6">
-                        Opção para periodo
-                        <br>
-                        <span>
-                            <div>
-                                <select name="opções">
-                                    <option value="">Escolha uma opção</option>
-                                    <option value="manha">Manha</option>
-                                    <option value="manha">Tarde</option>
-                                </select>
+                            <div class="form-field col-lg-12">
+                                <label for="responsavel" class="responsavel">Responsavel:</label>
                             </div>
-                        </span>
-                    </label>
 
-                    <div class="form-field col-lg-6">
-                        <label for="responsavel" class="responsavel">Data:</label>
-                    </div>
-                    <div class="form-field col-lg-6">
-                        <label for="data">Data da Visita:</label>
-                        <input type="date" class="form-control" id="data" required="required">
-                    </div>
+                            <div class="form-field col=lg-6">
+                                <input id="name" class="input-text" type="text" name="nome_do_responsavel">
+                                <label for="name" class="label">Nome</label>
+                            </div>
+                            <div class="form-field col-lg-6">
+                                <input
+                                    id="sobrenome"
+                                    class="input-text"
+                                    type="text"
+                                    name="sobrenome_do_responsavel">
+                                <label for="sobrenome" class="label">Sobrenome</label>
+                            </div>
+                            <div class="form-field col-lg-10">
+                                <input id="email" class="input-text" type="email" name="email_do_responsavel">
+                                <label for="email" class="label">E-mail</label>
+                            </div>
 
-                    <div class="form-field col=lg-12">
-                        <input class="submit-btn" type="submit" value="agendar visita" name="">
-                    </div>
+                            <div class="form-field col-lg-12">
+                                <label for="responsavel" class="responsavel">Aluno:</label>
+                            </div>
 
-                </div>
-            </div>
-        </section>
-    </div>
+                            <div class="form-field col=lg-6">
+                                <input id="name" class="input-text" type="text" name="nome_do_aluno">
+                                <label for="name" class="label">Nome</label>
+                            </div>
+                            <div class="form-field col=lg-6">
+                                <input id="sobrenome" class="input-text" type="text" name="sobrenome_do_aluno">
+                                <label for="sobrenome" class="label">Sobrenome</label>
+                            </div>
+                            <div class="form-field col=lg-6">
+                                <input id="telefone" class="input-text" type="tel" name="telefone_residencial">
+                                <label for="telefone" class="label">Telefone Residencial</label>
+                            </div>
+                            <div class="form-field col=lg-6">
+                                <input id="celular" class="input-text" type="tel" name="celular">
+                                <label for="celular" class="label">Celular</label>
+                            </div>
+
+                            <div class="form-field col-lg-6">
+                                <label for="responsavel" class="responsavel">Periodo:</label>
+                            </div>
+                            <label class="form-field col-lg-6">
+                                Opção para periodo
+                                <br>
+                                <span>
+                                    <div>
+                                        <select name="opções">
+                                            <option value="">Escolha uma opção</option>
+                                            <option value="manha">Manha</option>
+                                            <option value="manha">Tarde</option>
+                                        </select>
+                                    </div>
+                                </span>
+                            </label>
+
+                            <div class="form-field col-lg-6">
+                                <label for="responsavel" class="responsavel">Data:</label>
+                            </div>
+                            <div class="form-field col-lg-6">
+                                <label for="data">Data da Visita:</label>
+                                <input type="date" class="form-control" id="data" required="required">
+                            </div>
+
+                            <div class="form-button col-lg-12">
+                                <button class="submit-btn" type="submit" data-button>Enviar</button>
+                            </div>
+                        </div>
+                </section>
+            </form>
+        </div>
+        
 
     <footer class="bg text-white pt-1 pb-4">
         <div class="containertext-center text-md-left">
