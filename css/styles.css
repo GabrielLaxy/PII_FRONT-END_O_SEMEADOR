@@ -29,7 +29,6 @@ body {
 }
 
 .logo {
-
     width: 80px;
     height: 80px;
     margin-bottom: 12px;
@@ -285,17 +284,22 @@ body {
     text-decoration: none;
     color: #FFF;
     background-color: transparent;
-    border-color: #3EC1D5;
+    border-color: orange;
 }
 
 .carousel-indicators .active {
-    background-color: #65DAF9;
+    background-color: orange;
 }
 
 /* Sobre a escola */
 
+#about-area{
+    justify-content: space-around;
+}
+
 .gallery{
     margin-top: 100px;
+    
 }
 
 .gallery h1 {

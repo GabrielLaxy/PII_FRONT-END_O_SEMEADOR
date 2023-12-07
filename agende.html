@@ -115,61 +115,58 @@
             </div>
         </header>
 
+        <div class="container">
+            <section class="agendar">
 
-        <div class="container" id="teste">
-            <div class="form-container d-flex">
-                <h2 class="text-center mb-4" id="titulo-agenda">Agendar Visita</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="nome">Nome completo do responsável</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="nome"
-                            placeholder="Digite seu nome"
-                            required="required">
+                <div class="gallery d-flex justify-content-center justify-content-sm-start">
+                    <h1>AGENDE</h1>
+                    <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
+                </div>
+
+                <div class="contact-form row">
+
+                    <div class="form-field col-lg-12">
+                        <label for="responsavel" class="responsavel">Responsavel:</label>
                     </div>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Digite seu e-mail"
-                            required="required">
+
+                    <div class="form-field col=lg-6">
+                        <input id="name" class="input-text" type="text" name="">
+                        <label for="name" class="label">Nome</label>
                     </div>
-                    <div class="form-group">
-                        <label for="telefone">Telefone residencial</label>
-                        <input
-                            type="tel"
-                            class="form-control"
-                            id="telefone"
-                            placeholder="Digite seu telefone"
-                            required="required">
+                    <div class="form-field col-lg-6">
+                        <input id="sobrenome" class="input-text" type="text" name="">
+                        <label for="sobrenome" class="label">Sobrenome</label>
                     </div>
-                    <div class="form-group">
-                        <label for="telefone">Celular</label>
-                        <input
-                            type="tel"
-                            class="form-control"
-                            id="telefone"
-                            placeholder="Digite seu telefone"
-                            required="required">
+                    <div class="form-field col-lg-10">
+                        <input id="email" class="input-text" type="email" name="">
+                        <label for="email" class="label">E-mail</label>
                     </div>
-                    <div class="form-group">
-                        <label for="nome">Nome completo do aluno</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            id="nome"
-                            placeholder="Digite seu nome"
-                            required="required">
+
+                    <div class="form-field col-lg-12">
+                        <label for="responsavel" class="responsavel">Aluno:</label>
                     </div>
-                    <div class="form-group">
-                        <label for="data">Data da Visita:</label>
-                        <input type="date" class="form-control" id="data" required="required">
+
+                    <div class="form-field col=lg-6">
+                        <input id="name" class="input-text" type="text" name="">
+                        <label for="name" class="label">Nome</label>
                     </div>
-                    <label>
+                    <div class="form-field col=lg-6">
+                        <input id="sobrenome" class="input-text" type="text" name="">
+                        <label for="sobrenome" class="label">Sobrenome</label>
+                    </div>
+                    <div class="form-field col=lg-6">
+                        <input id="telefone" class="input-text" type="tel" name="">
+                        <label for="telefone" class="label">Telefone Residencial</label>
+                    </div>
+                    <div class="form-field col=lg-6">
+                        <input id="celular" class="input-text" type="tel" name="">
+                        <label for="celular" class="label">Celular</label>
+                    </div>
+
+                    <div class="form-field col-lg-6">
+                        <label for="responsavel" class="responsavel">Periodo:</label>
+                    </div>
+                    <label class="form-field col-lg-6">
                         Opção para periodo
                         <br>
                         <span>
@@ -183,79 +180,91 @@
                         </span>
                     </label>
 
-                    <button type="submit" class="btn btn-primary btn-block" id="botao-agnedar">Agendar Visita</button>
-                </form>
-            </div>
-        </div>
+                    <div class="form-field col-lg-6">
+                        <label for="responsavel" class="responsavel">Data:</label>
+                    </div>
+                    <div class="form-field col-lg-6">
+                        <label for="data">Data da Visita:</label>
+                        <input type="date" class="form-control" id="data" required="required">
+                    </div>
 
-        <footer class="bg text-white pt-1 pb-4">
-            <div class="containertext-center text-md-left">
-                <div class="row mx-3">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <img
-                            class="text-uppercase mb-4 font-weight-bold text-warning"
-                            src="/IMAGENS/Logo-Semeador-50-anos white.svg"
-                            alt="Logo do oSemeador">
+                    <div class="form-field col=lg-12">
+                        <input class="submit-btn" type="submit" value="agendar visita" name="">
                     </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                        <h1>Horários</h1>
-                        <p>segunda a sexta:
-                            <br>
-                            07:30 - 17:00</p>
-                        <br>
-                        <h1>Endereço</h1>
-                        <p>R. dos Meninos, 555 -
-                            <br>
-                            Nova Gerti, São Caetano
-                            <br>
-                            do Sul - SP, 09580-300</p>
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                        <h1>Contato</h1>
-                        <p>(11) 1111-1111
-                            <br>
-                            (22) 2222-2222
-                            <br>
-                            lorem@impsum.com.br</p>
-                        <br>
-                        <h1>Siga-nos</h1>
-                        <div class="footer-social-media">
-                            <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
-                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            </a>
-                            <a class="m-2" href="https://www.facebook.com/escolaosemeador">
-                                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                        <ul>
-                            <li>
-                                <h1>Acesso Rápido</h1>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Página Inicial</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Fotos e Projetos</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Doações</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Contato</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Matrícula</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <hr class="mb-4">
-    
+
                 </div>
-    
-            </footer>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg text-white pt-1 pb-4">
+        <div class="containertext-center text-md-left">
+            <div class="row mx-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img
+                        class="text-uppercase mb-4 font-weight-bold text-warning"
+                        src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                        alt="Logo do oSemeador">
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Horários</h1>
+                    <p>segunda a sexta:
+                        <br>
+                        07:30 - 17:00</p>
+                    <br>
+                    <h1>Endereço</h1>
+                    <p>R. dos Meninos, 555 -
+                        <br>
+                        Nova Gerti, São Caetano
+                        <br>
+                        do Sul - SP, 09580-300</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Contato</h1>
+                    <p>(11) 1111-1111
+                        <br>
+                        (22) 2222-2222
+                        <br>
+                        lorem@impsum.com.br</p>
+                    <br>
+                    <h1>Siga-nos</h1>
+                    <div class="footer-social-media">
+                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </a>
+                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <ul>
+                        <li>
+                            <h1>Acesso Rápido</h1>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Página Inicial</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Fotos e Projetos</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Doações</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Contato</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="#">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr class="mb-4">
+
+            </div>
+
+        </footer>
 
         <script src="js/scripts.js"></script>
         <div vw="vw" class="enabled">

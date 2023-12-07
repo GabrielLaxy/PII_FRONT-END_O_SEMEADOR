@@ -33,11 +33,11 @@
         <header class="header">
             <nav class="nav-bar">
                 <div class="logo">
-                    <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
+                    <a href="index.html">
                         <img
-                        id="logo"
-                        src="IMAGENS\Logo-Semeador-50-anos copy.svg"
-                        alt="Logo do oSemeador">
+                            id="logo"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
                     </a>
                 </div>
                 <div class="nav-list">
@@ -59,17 +59,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="login-button">
+                <div class="agendar-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
-                
+
                 <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/bars-solid (1).svg" alt="ícone do menu"></button>
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
                 </div>
             </nav>
-            
+
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item">
@@ -88,26 +88,39 @@
                         <a class="nav-link" href="matricula.html">Matrícula</a>
                     </li>
                 </ul>
-                
-                <div class="login-button">
+
+                <div class="agendar-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
-            </header>
-            <div class="container">
-                <h3 class="subtitle" id="explications"><b>Entenda como funciona a doação para O Semeador.</b></h3>
-                <div class="d-flex" id="entenda">
-                    <p id="descrição-semeador">
-                        Você sabia que as suas notas fiscais podem render uma quantia de volta em dinheiro?</br>
-                        a nossa escola aceita doações de notas fiscais de compras feitas em qualquer estabelecimento.</br>
-                        para realizar esta doação, você precisa recusar quando o atendente do estabelecimento</br>
-                        perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras de prosseguir:</br></br>
-                        1: você insere os seus dados e o número que fica em baixo do código de barras da nota fiscal;</br></br>
-                        2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o importante é</br>
-                        aparecer o código de barras para podermos utilizá-lo;</br></br>
-                        Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você pode utilizar</br>
-                        o CNPJ da nossa instituição para realizar uma transferência PIX.
+            </div>
+        </header>
+        <div class="container">
+            <h3 class="subtitle" id="explications">
+                <b>Entenda como funciona a doação para O Semeador.</b>
+            </h3>
+            <div class="d-flex" id="entenda">
+                <p id="descrição-semeador">
+                    Você sabia que as suas notas fiscais podem render uma quantia de volta em
+                    dinheiro?</br>
+                a nossa escola aceita doações de notas fiscais de compras feitas em qualquer
+                estabelecimento.</br>
+            para realizar esta doação, você precisa recusar quando o atendente do
+            estabelecimento</br>
+        perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras
+        de prosseguir:</br>
+</br>
+1: você insere os seus dados e o número que fica em baixo do código de barras da
+nota fiscal;</br>
+</br>
+2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o
+importante é</br>
+aparecer o código de barras para podermos utilizá-lo;</br>
+</br>
+Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você
+pode utilizar</br>
+o CNPJ da nossa instituição para realizar uma transferência PIX.
 
                     </p>
                 </div>
@@ -122,12 +135,12 @@
             <div class="formulario-completo container">
                 <div class="row">
                     <div class="formulario1 col-5">
-                    <form class="formulario row col-12 pt-3 px-0" id="form" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
-                        <div class="name campo col-6">
+                    <form class="formulario row col-12 pt-3 px-0" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
+                        <div class="surname campo col-6">
                             <label for="nome" class="form-label">Nome:</label>
                             <input class="form-control" type="text" maxlength="30" name="nome" id="nome" placeholder="Primeiro nome" required>
                         </div>
-                        <div class="surname campo col-6">
+                        <div class="name campo col-6">
                             <label for="sobrenome" class="form-label">Sobrenome:</label>
                             <input class="form-control" type="text" maxlenght="50" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
                         </div>
@@ -167,7 +180,7 @@
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <img
                         class="text-uppercase mb-4 font-weight-bold text-warning"
-                        src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                        src="IMAGENS\Logo-Semeador-50-anos blue.svg"
                         alt="Logo do oSemeador">
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
@@ -223,12 +236,15 @@
                         </li>
                     </ul>
                 </div>
-
                 <hr class="mb-4">
-                
+                <div class="row mx-auto mt-5">
+                    <div class="">
+                        <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
+                    </div>
+                </div>
             </div>
-            
-        </footer>
+        </div>
+    </footer>
     <script src="js/scripts.js"></script>
     <div vw="vw" class="enabled">
         <div vw-access-button="vw-access-button" class="active"></div>
