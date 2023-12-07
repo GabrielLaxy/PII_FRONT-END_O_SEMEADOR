@@ -33,11 +33,11 @@
         <header class="header">
             <nav class="nav-bar">
                 <div class="logo">
-                    <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
+                    <a href="index.html">
                         <img
-                        id="logo"
-                        src="IMAGENS\Logo-Semeador-50-anos copy.svg"
-                        alt="Logo do oSemeador">
+                            id="logo"
+                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                            alt="Logo do oSemeador">
                     </a>
                 </div>
                 <div class="nav-list">
@@ -59,17 +59,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="login-button">
+                <div class="agendar-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
-                
+
                 <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/bars-solid (1).svg" alt="ícone do menu"></button>
+                    <button onclick="menuShow()"><img class="icon" src="IMAGENS\bars-solid-mobile.svg" alt="ícone do menu"></button>
                 </div>
             </nav>
-            
+
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item">
@@ -88,163 +88,175 @@
                         <a class="nav-link" href="matricula.html">Matrícula</a>
                     </li>
                 </ul>
-                
-                <div class="login-button">
+
+                <div class="agendar-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
-            </header>
-            <div class="container">
-                <h3 class="subtitle" id="explications"><b>Entenda como funciona a doação para O Semeador.</b></h3>
-                <div class="d-flex" id="entenda">
-                    <p id="descrição-semeador">
-                        Você sabia que as suas notas fiscais podem render uma quantia de volta em dinheiro?</br>
-                        a nossa escola aceita doações de notas fiscais de compras feitas em qualquer estabelecimento.</br>
-                        para realizar esta doação, você precisa recusar quando o atendente do estabelecimento</br>
-                        perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras de prosseguir:</br></br>
-                        1: você insere os seus dados e o número que fica em baixo do código de barras da nota fiscal;</br></br>
-                        2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o importante é</br>
-                        aparecer o código de barras para podermos utilizá-lo;</br></br>
-                        Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você pode utilizar</br>
-                        o CNPJ da nossa instituição para realizar uma transferência PIX.
+            </div>
+        </header>
+        <div class="container">
+            <h3 class="subtitle" id="explications">
+                <b>Entenda como funciona a doação para O Semeador.</b>
+            </h3>
+            <div class="d-flex" id="entenda">
+                <p id="descrição-semeador">
+                    Você sabia que as suas notas fiscais podem render uma quantia de volta em
+                    dinheiro?</br>
+                a nossa escola aceita doações de notas fiscais de compras feitas em qualquer
+                estabelecimento.</br>
+            para realizar esta doação, você precisa recusar quando o atendente do
+            estabelecimento</br>
+        perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras
+        de prosseguir:</br>
+</br>
+1: você insere os seus dados e o número que fica em baixo do código de barras da
+nota fiscal;</br>
+</br>
+2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o
+importante é</br>
+aparecer o código de barras para podermos utilizá-lo;</br>
+</br>
+Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você
+pode utilizar</br>
+o CNPJ da nossa instituição para realizar uma transferência PIX.
 
-                    </p>
-                </div>
-            </div>
-            <div class="container-sm">
-                <div class="gallery d-flex justify-content-center justify-content-sm-start">
-                    <h1 id="insert-data">INSIRA SEUS DADOS</h1>
-                    <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
-                </div>
-            </div>
-            <!-- formulario para doação de cupom fiscal -->
-            <div class="formulario-completo container">
-                <div class="row">
-                    <div class="formulario1 col-5">
-                    <form class="formulario row col-12 pt-3 px-0" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
-                        <div class="surname campo col-6">
-                            <label for="nome" class="form-label">Nome:</label>
-                            <input class="form-control" type="text" maxlength="30" name="nome" id="nome" placeholder="Primeiro nome" required>
-                        </div>
-                        <div class="name campo col-6">
-                            <label for="sobrenome" class="form-label">Sobrenome:</label>
-                            <input class="form-control" type="text" maxlenght="50" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
-                        </div>
-                        <div class="codigo campo col-12">
-                            <label for="codigo" class="form-label">Número do código de barras:</label>
-                            <input class="form-control" type="text" maxlenght="30" name="codigo" id="codigo" placeholder="XXX-XXXXX-XXXX-X" required>
-                        </div>
-                        <button type="submit" class="btn enviar" >Enviar</button>
-                        
-                    </form>
-                    <div class="col-12">
-                        <p class="ou">OU</p>
-                    </div>
-                    <div class="imagem-codigo row col-12 ">
-                        <label class="file" for="input-file"><img src="/IMAGENS/Frame 3.png" width="150" alt=""><input id="input-file" type="file" name="codigo-barras" id="codigo-barras"></label>
-                        <div class="redirect-upload d-flex">
-                            <div class="row">
-                                <img src="IMAGENS\seta-branca-png.png" width="15" height="15" alt="">
-                                <p>ARASTE UMA IMAGEM</p>
-                            </div>
-                            <button type="submit" class="btn upload">Realizar upload</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="imagem-form col-7" id="imagem"></div>
-            </div>
-        </div>
-        <h3 class="subtitle col-5">
-            <b>Ou faça uma doação por PIX.</b><br>
-            Número da chave PIX (CNPJ):
-        </h3>
-        <p class="cnpj col-5">48.569.263.0001/42</p>
-    </div>
-    <footer class="bg text-white pt-1 pb-4" id="footer">
-        <div class="containertext-center text-md-left">
-            <div class="row mx-3">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img
-                        class="text-uppercase mb-4 font-weight-bold text-warning"
-                        src="IMAGENS\Logo-Semeador-50-anos blue.svg"
-                        alt="Logo do oSemeador">
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <h1>Horários</h1>
-                    <p>segunda a sexta:
-                        <br>
-                        07:30 - 17:00</p>
-                    <br>
-                    <h1>Endereço</h1>
-                    <p>R. dos Meninos, 555 -
-                        <br>
-                        Nova Gerti, São Caetano
-                        <br>
-                        do Sul - SP, 09580-300</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <h1>Contato</h1>
-                    <p>(11) 1111-1111
-                        <br>
-                        (22) 2222-2222
-                        <br>
-                        lorem@impsum.com.br</p>
-                    <br>
-                    <h1>Siga-nos</h1>
-                    <div class="footer-social-media">
-                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                        </a>
-                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <ul>
-                        <li>
-                            <h1>Acesso Rápido</h1>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Página Inicial</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Fotos e Projetos</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Doações</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Contato</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Matrícula</a>
-                        </li>
-                    </ul>
-                </div>
-                <hr class="mb-4">
-                <div class="row mx-auto mt-5">
-                    <div class="">
-                        <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="js/scripts.js"></script>
-    <div vw="vw" class="enabled">
-        <div vw-access-button="vw-access-button" class="active"></div>
-        <div vw-plugin-wrapper="vw-plugin-wrapper">
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window
-            .VLibras
-            .Widget('https://vlibras.gov.br/app');
-    </script>
+</p>
+</div></div><div class="container-sm">
+<div class="gallery d-flex justify-content-center justify-content-sm-start">
+<h1 id="insert-data">INSIRA SEUS DADOS</h1>
+<img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
+</div></div><!-- formulario para doação de cupom fiscal --><div class="formulario-completo container">
+<div class="row">
+<div class="formulario1 col-5">
+<form
+class="formulario row col-12 pt-3 px-0"
+action="mailto:gabrielmoreno19@hotmail.com.br"
+method="post"
+enctype="text/plain">
+<div class="surname campo col-6">
+<label for="nome" class="form-label">Nome:</label>
+<input
+class="form-control"
+type="text"
+maxlength="30"
+name="nome"
+id="nome"
+placeholder="Primeiro nome"
+required="required">
+</div>
+<div class="name campo col-6">
+<label for="sobrenome" class="form-label">Sobrenome:</label>
+<input
+class="form-control"
+type="text"
+maxlenght="50"
+name="sobrenome"
+id="sobrenome"
+placeholder="Sobrenome"
+required="required">
+</div>
+<div class="codigo campo col-12">
+<label for="codigo" class="form-label">Número do código de barras:</label>
+<input
+class="form-control"
+type="text"
+maxlenght="30"
+name="codigo"
+id="codigo"
+placeholder="XXX-XXXXX-XXXX-X"
+required="required">
+</div>
+<button type="submit" class="btn enviar">Enviar</button>
 
-</body>
-</html>
+</form>
+<div class="col-12">
+<p class="ou">OU</p>
+</div>
+<div class="imagem-codigo row col-12 ">
+<label class="file" for="input-file"><img src="/IMAGENS/Frame 3.png" width="150" alt=""><input id="codigo-barras" type="file" name="codigo-barras"></label>
+<div class="redirect-upload d-flex">
+<div class="row">
+<img src="IMAGENS\seta-branca-png.png" width="15" height="15" alt="">
+<p>ARASTE UMA IMAGEM</p>
+</div>
+<button type="submit" class="btn upload">Realizar upload</button>
+</div>
+</div>
+</div>
+<div class="imagem-form col-7" id="imagem"></div>
+</div></div><h3 class="subtitle col-5">
+<b>Ou faça uma doação por PIX.</b><br>
+Número da chave PIX (CNPJ):</h3><p class="cnpj col-5">48.569.263.0001/42</p> </div> <footer class="bg text-white pt-1 pb-4" id="footer"><div class="containertext-center text-md-left">
+<div class="row mx-3">
+<div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+<img
+class="text-uppercase mb-4 font-weight-bold text-warning"
+src="IMAGENS\Logo-Semeador-50-anos blue.svg"
+alt="Logo do oSemeador">
+</div>
+<div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+<h1>Horários</h1>
+<p>segunda a sexta:
+<br>
+07:30 - 17:00</p>
+<br>
+<h1>Endereço</h1>
+<p>R. dos Meninos, 555 -
+<br>
+Nova Gerti, São Caetano
+<br>
+do Sul - SP, 09580-300</p>
+</div>
+<div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+<h1>Contato</h1>
+<p>(11) 1111-1111
+<br>
+(22) 2222-2222
+<br>
+lorem@impsum.com.br</p>
+<br>
+<h1>Siga-nos</h1>
+<div class="footer-social-media">
+<a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+<i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+</a>
+<a class="m-2" href="https://www.facebook.com/escolaosemeador">
+<i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+</a>
+</div>
+</div>
+<div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+<ul>
+<li>
+<h1>Acesso Rápido</h1>
+</li>
+<li class="footer-item">
+<a class="footer-link" href="#">Página Inicial</a>
+</li>
+<li class="footer-item">
+<a class="footer-link" href="#">Fotos e Projetos</a>
+</li>
+<li class="footer-item">
+<a class="footer-link" href="#">Doações</a>
+</li>
+<li class="footer-item">
+<a class="footer-link" href="#">Contato</a>
+</li>
+<li class="footer-item">
+<a class="footer-link" href="#">Matrícula</a>
+</li>
+</ul>
+</div>
+<hr class="mb-4">
+<div class="row mx-auto mt-5">
+<div class="">
+<p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
+</div>
+</div>
+</div></div> </footer> <script src="js/scripts.js"></script> <div vw="vw" class="enabled"><div vw-access-button="vw-access-button" class="active"></div><div vw-plugin-wrapper="vw-plugin-wrapper">
+<div class="vw-plugin-top-wrapper"></div></div> </div> <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> <script>
+new window
+.VLibras
+.Widget('https://vlibras.gov.br/app'); </script></body></html>

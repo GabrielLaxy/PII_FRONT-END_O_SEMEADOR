@@ -293,8 +293,13 @@ body {
 
 /* Sobre a escola */
 
+#about-area{
+    justify-content: space-around;
+}
+
 .gallery{
     margin-top: 100px;
+    
 }
 
 .gallery h1 {
