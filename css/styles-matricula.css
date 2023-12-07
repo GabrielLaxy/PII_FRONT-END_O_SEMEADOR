@@ -256,7 +256,7 @@ body {
     background-image: url(/IMAGENS/iep-1024x812\ 1.png);
     color: white; 
     background-size: cover;
-    height: 600px;
+    height: 100vh;
 }
 
 .titulos-banner h1{
