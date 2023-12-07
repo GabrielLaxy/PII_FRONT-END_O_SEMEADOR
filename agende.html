@@ -117,177 +117,200 @@
 
         <div class="container">
             <script src="/js/enviar_email.js"></script>
-            <form action="https://formsubmit.co/ajax/"
-            method="POST"
-            data-form
-            >
+            <form action="https://formsubmit.co/ajax/" method="POST" data-form="data-form">
+
                 <section class="agendar">
-                        <div class="gallery d-flex justify-content-center justify-content-sm-start">
+                    <div class="titulo">
+                        <div class=" agende-text row">
                             <h1>AGENDE</h1>
-                            <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="52" height="52">
+                            <img src="/IMAGENS/seta-png.png" alt="seta" width="40" height="40" class="seta">
                         </div>
-                        <div class="contact-form row">
-
-                            <div class="form-field col-lg-12">
-                                <label for="responsavel" class="responsavel">Responsavel:</label>
-                            </div>
-
-                            <div class="form-field col=lg-6">
-                                <input id="name" class="input-text" type="text" name="nome_do_responsavel">
-                                <label for="name" class="label">Nome</label>
-                            </div>
-                            <div class="form-field col-lg-6">
-                                <input
-                                    id="sobrenome"
-                                    class="input-text"
-                                    type="text"
-                                    name="sobrenome_do_responsavel">
-                                <label for="sobrenome" class="label">Sobrenome</label>
-                            </div>
-                            <div class="form-field col-lg-10">
-                                <input id="email" class="input-text" type="email" name="email_do_responsavel">
-                                <label for="email" class="label">E-mail</label>
-                            </div>
-
-                            <div class="form-field col-lg-12">
-                                <label for="responsavel" class="responsavel">Aluno:</label>
-                            </div>
-
-                            <div class="form-field col=lg-6">
-                                <input id="name" class="input-text" type="text" name="nome_do_aluno">
-                                <label for="name" class="label">Nome</label>
-                            </div>
-                            <div class="form-field col=lg-6">
-                                <input id="sobrenome" class="input-text" type="text" name="sobrenome_do_aluno">
-                                <label for="sobrenome" class="label">Sobrenome</label>
-                            </div>
-                            <div class="form-field col=lg-6">
-                                <input id="telefone" class="input-text" type="tel" name="telefone_residencial">
-                                <label for="telefone" class="label">Telefone Residencial</label>
-                            </div>
-                            <div class="form-field col=lg-6">
-                                <input id="celular" class="input-text" type="tel" name="celular">
-                                <label for="celular" class="label">Celular</label>
-                            </div>
-
-                            <div class="form-field col-lg-6">
-                                <label for="responsavel" class="responsavel">Periodo:</label>
-                            </div>
-                            <label class="form-field col-lg-6">
-                                Opção para periodo
-                                <br>
-                                <span>
-                                    <div>
-                                        <select name="opções">
-                                            <option value="">Escolha uma opção</option>
-                                            <option value="manha">Manha</option>
-                                            <option value="manha">Tarde</option>
-                                        </select>
-                                    </div>
-                                </span>
-                            </label>
-
-                            <div class="form-field col-lg-6">
-                                <label for="responsavel" class="responsavel">Data:</label>
-                            </div>
-                            <div class="form-field col-lg-6">
-                                <label for="data">Data da Visita:</label>
-                                <input type="date" class="form-control" id="data" required="required">
-                            </div>
-
-                            <div class="form-button col-lg-12">
-                                <button class="submit-btn" type="submit" data-button>Enviar</button>
-                            </div>
+                        <p>Preencha os dados abaixo:</p>
+                        <img class="rectangle-matricula" src="/IMAGENS/Rectangle-matricula.png" alt="">
+                    </div>
+                    <label for="nome" class="form-label ml-3 mt-4">Responsavel:</label>
+                    <form class="matricula d-flex">
+                        <div class="surname campo col-6 ">
+                            <input
+                            class="form-control"
+                            type="text"
+                            name="nome"
+                            id="nome"
+                            placeholder="Nome do Responsavel"
+                            required="required">
                         </div>
+                        <div class="name campo col-6">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="sobrenome"
+                                id="sobrenome"
+                                placeholder="Sobrenome"
+                                required="required">
+                        </div>
+                        <div class="email campo col-12">
+                            <for="email" class="endereço de email col-12"></for>
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="email"
+                                id="email"
+                                placeholder="exemplo@gmail.com"
+                                required="required">
+                        </div>
+                    </form>
+                    <label for="nome" class="form-label ml-3 mt-4">Aluno:</label>
+                    <form class="matricula d-flex">
+                        <div class="surname campo col-6 ">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                placeholder="Primeiro nome"
+                                required="required">
+                        </div>
+                        <div class="name campo col-6">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="sobrenome"
+                                id="sobrenome"
+                                placeholder="Sobrenome"
+                                required="required">
+                        </div>
+                        <div class="campo col-6">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="telefone"
+                                id="telefone"
+                                placeholder="Telefone residencial"
+                                required="required">
+                        </div>
+                        <div class="campo col-6">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="telefone"
+                                id="telefone"
+                                placeholder="Celular"
+                                required="required">
+                        </div>
+                    </form>
+
+                    <label for="nome" class="form-label ml-3 mt-4">Periodo:</label>
+                    <form class="matricula d-flex">
+                        <div class="surname campo col-6 ">
+                            <input
+                                class="form-control"
+                                type="text"
+                                name="nome"
+                                id="nome"
+                                placeholder="Primeiro nome"
+                                required="required">
+                        </div>
+                    </form>
+                    <label for="nome" class="form-label ml-3 mt-4">Data:</label>
+                    <form class="matricula d-flex">
+                        <div class="surname campo col-6 ">
+                            <input 
+                                class="form-control"
+                                id="date" 
+                                type="date" >
+                        </div>
+                    </form>
+
+                    <button type="submit" class="btn enviar">Enviar</button>
                 </section>
             </form>
         </div>
-        
 
-    <footer class="bg text-white pt-1 pb-4">
-        <div class="containertext-center text-md-left">
-            <div class="row mx-3">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img
-                        class="text-uppercase mb-4 font-weight-bold text-warning"
-                        src="/IMAGENS/Logo-Semeador-50-anos white.svg"
-                        alt="Logo do oSemeador">
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <h1>Horários</h1>
-                    <p>segunda a sexta:
-                        <br>
-                        07:30 - 17:00</p>
-                    <br>
-                    <h1>Endereço</h1>
-                    <p>R. dos Meninos, 555 -
-                        <br>
-                        Nova Gerti, São Caetano
-                        <br>
-                        do Sul - SP, 09580-300</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <h1>Contato</h1>
-                    <p>(11) 1111-1111
-                        <br>
-                        (22) 2222-2222
-                        <br>
-                        lorem@impsum.com.br</p>
-                    <br>
-                    <h1>Siga-nos</h1>
-                    <div class="footer-social-media">
-                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                        </a>
-                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                        </a>
+
+
+        <footer class="bg text-white pt-1 pb-4">
+            <div class="containertext-center text-md-left">
+                <div class="row mx-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img
+                            class="text-uppercase mb-4 font-weight-bold text-warning"
+                            src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                            alt="Logo do oSemeador">
                     </div>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <ul>
-                        <li>
-                            <h1>Acesso Rápido</h1>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Página Inicial</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Fotos e Projetos</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Doações</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Contato</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Matrícula</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                        <h1>Horários</h1>
+                        <p>segunda a sexta:
+                            <br>
+                            07:30 - 17:00</p>
+                        <br>
+                        <h1>Endereço</h1>
+                        <p>R. dos Meninos, 555 -
+                            <br>
+                            Nova Gerti, São Caetano
+                            <br>
+                            do Sul - SP, 09580-300</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                        <h1>Contato</h1>
+                        <p>(11) 1111-1111
+                            <br>
+                            (22) 2222-2222
+                            <br>
+                            lorem@impsum.com.br</p>
+                        <br>
+                        <h1>Siga-nos</h1>
+                        <div class="footer-social-media">
+                            <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                        <ul>
+                            <li>
+                                <h1>Acesso Rápido</h1>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Página Inicial</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Fotos e Projetos</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Doações</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Contato</a>
+                            </li>
+                            <li class="footer-item">
+                                <a class="footer-link" href="#">Matrícula</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <hr class="mb-4">
+                    <hr class="mb-4">
 
+                </div>
+            </footer>
+
+            <script src="js/scripts.js"></script>
+            <div vw="vw" class="enabled">
+                <div vw-access-button="vw-access-button" class="active"></div>
+                <div vw-plugin-wrapper="vw-plugin-wrapper">
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
             </div>
 
-        </footer>
-
-        <script src="js/scripts.js"></script>
-        <div vw="vw" class="enabled">
-            <div vw-access-button="vw-access-button" class="active"></div>
-            <div vw-plugin-wrapper="vw-plugin-wrapper">
-                <div class="vw-plugin-top-wrapper"></div>
-            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window
+                    .VLibras
+                    .Widget('https://vlibras.gov.br/app');
+            </script>
         </div>
-
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-            new window
-                .VLibras
-                .Widget('https://vlibras.gov.br/app');
-        </script>
-    </div>
-</body>
+    </body>
 </main>
 </html>
