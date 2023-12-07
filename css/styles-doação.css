@@ -211,6 +211,7 @@ body {
 
 .gallery #seta {
     transform: rotate(90deg);
+    margin-top: 45px;
 }
 
 .formulario1 {
@@ -356,9 +357,18 @@ label {
     background-image: url(/IMAGENS/mulher-esta-contando-dinheiro-com-seu-telefone\ 1.png);
 }
 .subtitle{
-    padding: 60px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+#insert-data{
+    margin-top: 50px;
 }
 .cnpj{
     margin-left: 50px;
-    font-size: 60px;
+    margin-top: 20px;
+    font-size: 40px;
+
+}
+#descrição-semeador {
+    margin-left: 60px;
 }

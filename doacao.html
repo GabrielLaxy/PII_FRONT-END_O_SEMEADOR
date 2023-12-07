@@ -35,9 +35,9 @@
                 <div class="logo">
                     <a href="/PII_FRONT-END_O_SEMEADOR-main/index.html">
                         <img
-                            id="logo"
-                            src="IMAGENS\Logo-Semeador-50-anos copy.svg"
-                            alt="Logo do oSemeador">
+                        id="logo"
+                        src="IMAGENS\Logo-Semeador-50-anos copy.svg"
+                        alt="Logo do oSemeador">
                     </a>
                 </div>
                 <div class="nav-list">
@@ -64,12 +64,12 @@
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
-
+                
                 <div class="mobile-menu-icon">
                     <button onclick="menuShow()"><img class="icon" src="/PII_FRONT-END_O_SEMEADOR-main/IMAGENS/bars-solid (1).svg" alt="ícone do menu"></button>
                 </div>
             </nav>
-
+            
             <div class="mobile-menu">
                 <ul>
                     <li class="nav-item">
@@ -88,24 +88,37 @@
                         <a class="nav-link" href="matricula.html">Matrícula</a>
                     </li>
                 </ul>
-
+                
                 <div class="login-button">
                     <button>
                         <a href="agende.html">AGENDE SUA VISITA</a>
                     </button>
                 </div>
-        </header>
+            </header>
+            
+            <h3 class="subtitle"><b>Entenda como funciona a doação para O Semeador.</b></h3>
+            <p id="descrição-semeador">
+                Você sabia que as suas notas fiscais podem render uma quantia de volta em dinheiro?</br>
+                a nossa escola aceita doações de notas fiscais de compras feitas em qualquer estabelecimento.</br>
+                para realizar esta doação, você precisa recusar quando o atendente do estabelecimento</br>
+                perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras de prosseguir</br></br>
+                1: você insere os seus dados e o número que fica em baixo do código de barras da nota fiscal</br></br>
+                2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o importante é</br>
+                aparecer o código de barras para podermos utilizá-lo.</br></br>
+                Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você pode utilizar</br>
+                o CNPJ da nossa instituição para realizar uma transferência PIX.
 
-        <div class="container-sm">
-            <div class="gallery d-flex justify-content-center justify-content-sm-start">
-                <h1>INSIRA SEUS DADOS</h1>
-                <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
+            </p>
+            <div class="container-sm">
+                <div class="gallery d-flex justify-content-center justify-content-sm-start">
+                    <h1 id="insert-data">INSIRA SEUS DADOS</h1>
+                    <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
+                </div>
             </div>
-        </div>
-        <!-- formulario para doação de cupom fiscal -->
-        <div class="formulario-completo container">
-            <div class="row">
-                <div class="formulario1 col-5">
+            <!-- formulario para doação de cupom fiscal -->
+            <div class="formulario-completo container">
+                <div class="row">
+                    <div class="formulario1 col-5">
                     <form class="formulario row col-12 pt-3 px-0" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
                         <div class="surname campo col-6">
                             <label for="nome" class="form-label">Nome:</label>
@@ -113,7 +126,7 @@
                         </div>
                         <div class="name campo col-6">
                             <label for="sobrenome" class="form-label">Sobrenome:</label>
-                            <input class="form-control" type="text" maxlenght="50" name="sobrenome" id="sobrenome" placeholder="Segundo nome" required>
+                            <input class="form-control" type="text" maxlenght="50" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
                         </div>
                         <div class="codigo campo col-12">
                             <label for="codigo" class="form-label">Número do código de barras:</label>
@@ -139,55 +152,55 @@
                 <div class="imagem-form col-7"></div>
             </div>
         </div>
-        <h3 class="subtitle">
+        <h3 class="subtitle col-5">
             <b>Ou faça uma doação por PIX.</b><br>
             Número da chave PIX (CNPJ):
         </h3>
-        <p class="cnpj">48.569.263.0001/42</p>
-        </div>
-        <footer>
-            <div id="footer_content">
-                <div id="footer_contacts" class="justify-content-center">
-                    <div class="footer_logo">
-                        <img class="semeador_footer" src="img/logo.jpg" alt="">
-                    </div>
-                    <div id="footer_social_media">
-                        <a href="#" class="footer-link" id="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="footer-link" id="whatsapp">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
+        <p class="cnpj col-5">48.569.263.0001/42</p>
+    </div>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts" class="justify-content-center">
+                <div class="footer_logo">
+                    <img class="semeador_footer" src="img/logo.jpg" alt="">
                 </div>
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer-list">
                 <ul class="footer-list">
-                    <ul class="footer-list">
-                        <li>
-                            <h3>Endereço:</h3>
-                        </li>
-                        <li>
-                            <p>R. dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, 09580-300</p>
-                        </li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li>
-                            <h3>Email:</h3>
-                        </li>
-                        <li>
-                            <p>atendimento@osemeador.com</p>
-                        </li>
-                    </ul>
-                    <ul class="footer-list">
-                        <li>
-                            <h3>Telefone:</h3>
-                        </li>
-                        <li>
-                            <p>+55 11 9999-9999</p>
-                        </li>
-                    </ul>
+                    <li>
+                        <h3>Endereço:</h3>
+                    </li>
+                    <li>
+                        <p>R. dos Meninos, 555 - Nova Gerti, São Caetano do Sul - SP, 09580-300</p>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Email:</h3>
+                    </li>
+                    <li>
+                        <p>atendimento@osemeador.com</p>
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Telefone:</h3>
+                    </li>
+                    <li>
+                        <p>+55 11 9999-9999</p>
+                    </li>
+                </ul>
             </ul>
             <section class="mapa">
                 <div class="mapa-conteudo">
@@ -198,7 +211,8 @@
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </section>
         </div>
