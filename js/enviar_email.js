@@ -59,8 +59,14 @@ class FormSubmit {
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
-  success: "<h1 class='success'>Mensagem enviada!</h1>",
-  error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+  success: ``,
+  error: ` <div class="error-message">
+  <h1>Um problema inesperado ocorreu</h1>
+  <p>Aguarde alguns minutos e tente novamente. Caso o problema persista, entre em contato com os administradores do sistema.</p>
+  <button>
+      <a href="/teste2.html">OK</a>
+  </button>
+</div>`,
   
 });
 

@@ -8,3 +8,10 @@ function menuShow() {
         document.querySelector('.icon').src = "IMAGENS/xmark-solid.svg"
     }
 }
+
+ // Parallax
+
+  // setTimeout serve para carregar primeiro as imagens
+  setTimeout(function() {
+    $('#apply-area').parallax({imageSrc: '../IMAGENS/x\ 1.jpg'});
+  }, 200);
