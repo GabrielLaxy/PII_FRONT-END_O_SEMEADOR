@@ -301,22 +301,154 @@ body {
     margin-bottom: 50px;
 }
 
-.gallery{
+.titulo{
     margin-top: 100px;
     
 }
 
-.gallery h1 {
+.titulo h1 {
     position: relative;
     color: #242424;
     font-size: 65px;
     font-weight: 700;
 }
 
-.gallery img{
+.titulo img{
     transform: rotate(90deg);
     margin-top: 12px;
     margin-left: 10px;
+}
+
+.compromisso-text h1 {
+    position: relative;
+    color: #242424;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.compromisso-text img {
+    transform: rotate(90deg);
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.compromisso-text {
+    margin-top: 120px;
+}
+
+.video {
+    margin-top: 100px;
+    margin-left: 20px;
+    width: 600px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.sobre {
+    flex-direction: column;
+}
+
+.intro{
+    margin-bottom: 90px;
+}
+
+@media screen and (max-width:532px) {
+    .sobre h1 {
+        font-size: 35px;
+    }
+
+    .titulo img {
+        width: 28px;
+        height: 28px;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .carousel-indicators{
+        display: none;
+    }
+}
+
+@media screen and (max-width:798px) {
+    .compromisso-text {
+        justify-content: center;
+    }
+
+    .compromisso-text img {
+        display: none;
+    }
+
+    .compromisso-text h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .sobre img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    .sobre img {
+        display: block;
+    }
+
+    .titulo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .sobre p {
+        text-align: center;
+    }
+
+    .video {
+        width: 1000px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .compromisso-text h1 {
+        font-size: 45px;
+    }
+
+    .compromisso-text img {
+        width: 37px;
+        height: 37px;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+
+    .compromisso-text {
+        display: flex;
+        margin-top: 80px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .compromissos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .sobre-video {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:991px) {       
+    .service-box {
+        margin-top: 0px
+    }
+    .escola {
+        margin-top: 100px;
+    }
 }
 
 .row {

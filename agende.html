@@ -104,126 +104,86 @@
                 </ul>
 
                 <div class="agendar-button">
-                    <button>
-                        <a href="agende.html">AGENDE SUA VISITA</a>
-                    </button>
+                    <a href="agende.html"><button>AGENDE SUA VISITA</button></a>
                 </div>
             </div>
 
             <div class="container">
-                <script defer="defer" src="/js/enviar_email.js"></script>
+                <script defer src="/js/enviar_email.js"></script>
                 <form
+                    class="mensagem-enviada"
                     action="https://formsubmit.co/ajax/92a165f75dcbcf40aeee92803d67e4bb"
                     method="POST"
-                    data-form="data-form">
-                    <section class="agendar">
+                    data-form
+                    >
+                    <section class="agendar ">
                         <div class="titulo">
-                            <div class="agende-text row">
+                            <div class="agende-text d-flex">
                                 <h1>AGENDE</h1>
                                 <img src="/IMAGENS/seta-png.png" alt="seta" width="40" height="40" class="seta">
                             </div>
-                            <p>Preencha os dados abaixo:</p>
-                            <img class="rectangle-matricula" src="/IMAGENS/Rectangle-matricula.png" alt="">
+                            <p>Preencha os dados abaixo</p>
                         </div>
                         <input type="hidden" name="_subject" value="Nova requisição de agendamento!">
                         <!-- Responsável -->
-                        <div for="nome" class="form-label ml-3 mt-4">Responsavel:</div>
-                        <div class="matricula d-flex">
-                            <label class="surname campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="nome_responsavel"
-                                    id="nome"
-                                    placeholder="Nome"
-                                    required="required">
-                            </label>
-                            <label class="name campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="sobrenome_responsavel"
-                                    id="sobrenome"
-                                    placeholder="Sobrenome"
-                                    required="required">
-                            </label>
-                            <label class="email campo col-12">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="email_responsavel"
-                                    id="email"
-                                    placeholder="exemplo@gmail.com"
-                                    required="required">
-                            </label>
+                        <div class="form-responsavel">
+                            <label for="nome" class="form-label mt-4 d-flex">Responsavel:</label>
+                            <div class="responsavel d-flex">
+                                <div class="name campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="nome_responsavel" id="nome" placeholder="Nome" required="required">
+                                </div>
+                                <div class="surname campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="sobrenome_responsavel" id="sobrenome" placeholder="Sobrenome" required="required">
+                                </div>
+                                <div class="email campo col-12 col-md-8">
+                                    <input class="form-control" type="text" name="email_responsavel" id="email" placeholder="exemplo@gmail.com" required="required">
+                                </div>
+                            </div>
                         </div>
-
+            
                         <!-- Aluno -->
-                        <div for="nome" class="form-label ml-3 mt-4">Aluno:</div>
-                        <div class="matricula d-flex">
-                            <label class="surname campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="nome_aluno"
-                                    id="nome"
-                                    placeholder="Nome"
-                                    required="required">
-                            </label>
-                            <label class="name campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="sobrenome_aluno"
-                                    id="sobrenome"
-                                    placeholder="Sobrenome"
-                                    required="required">
-                            </label>
-                            <label class="campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="telefone"
-                                    id="telefone"
-                                    placeholder="Telefone residencial"
-                                    required="required">
-                            </label>
-                            <label class="campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="celular"
-                                    id="telefone"
-                                    placeholder="Celular"
-                                    required="required">
-                            </label>
+                        <div class="form-aluno">
+                            <label for="nome" class="form-label mt-4 d-flex">Aluno:</label>
+                            <div class="aluno d-flex">
+                                <div class="name campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="nome_aluno" id="nome" placeholder="Primeiro nome" required="required">
+                                </div>
+                                <div class="surname campo col-6 col-md-4">
+                                    <input class="form-control" type="text" name="sobrenome_aluno" id="sobrenome" placeholder="Sobrenome" required="required">
+                                </div>
+                            </div>
+                            <div class="aluno d-flex">
+                                <div class="telefone campo col-12 col-md-4">
+                                    <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Telefone residencial" required="required">
+                                </div>
+                                <div class="celular campo col-12 col-md-4">
+                                    <input class="form-control" type="text" name="celular" id="celular" placeholder="Celular" required="required">
+                                </div>
+                            </div>
                         </div>
-
-                        <!-- Período -->
-
-                        <div for="nome" class="form-label ml-3 mt-4">Periodo:</div>
-                        <div class="matricula d-flex">
-                            <label class="surname campo col-6">
-                                <input
-                                    class="form-control"
-                                    type="text"
-                                    name="nome"
-                                    id="periodo"
-                                    placeholder="manhã/tarde/noite"
-                                    required="required">
-                            </label>
-                            <!-- Data -->
-                            <label class="surname campo col-6">
-                                <input
-                                    class="form-control"
-                                    id="date"
-                                    name="data_desejada"
-                                    type="date"
-                                    placeholder="data desejada">
-                            </label>
-                        </div>
+            
+                            <!-- Período -->
+                            <div class="agenda row">
+                                <div class="periodo col-10 col-lg-11">
+                                    <label for="periodo" class="form-label-periodo mt-4">Período:</label>
+                                    <div class="periodo campo col-12 col-md-8">
+                                        <input class="form-control" type="text" name="periodo" id="periodo" placeholder="Período desejado" required="required">
+                                    </div>
+                                </div>
+                                
+                                <div class="data col-10 col-lg-11">
+                                    <label for="data" class="form-label-data mt-4">Data:</label>
+                                    <div class="data campo col-12 col-md-8">
+                                        <input class="form-control" id="data" name="data" type="text" 
+                                        placeholder="DD/MM/AAAA" 
+                                        onfocus="this.type='date'" 
+                                        onblur="if (!this.value) this.type='text'">
+                                    </div>
+                                </div>
+                            </div>
+                
                         <!-- Botão Enviar -->
-                        <button type="submit" class="btn enviar" data-button="data-button">Enviar</button>
+                        <button type="submit" class="btn enviar" data-button>Enviar</button>
                     </section>
                 </form>
             </div>
