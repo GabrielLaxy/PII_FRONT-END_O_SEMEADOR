@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=yy, initial-scale=1.0">
@@ -29,7 +30,20 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
     </head>
+
     <body>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <div class="buttonzap">
+            <a
+                href='https://api.whatsapp.com/send?phone=11973668766&'
+                class="iconzap"
+                target='_blank'>
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
         <header class="header">
             <nav class="nav-bar">
                 <div class="logo">
@@ -97,12 +111,11 @@
             </div>
 
             <div class="container">
-                <script defer src="/js/enviar_email.js"></script>
+                <script defer="defer" src="/js/enviar_email.js"></script>
                 <form
                     action="https://formsubmit.co/ajax/92a165f75dcbcf40aeee92803d67e4bb"
                     method="POST"
-                    data-form
-                    >
+                    data-form="data-form">
                     <section class="agendar">
                         <div class="titulo">
                             <div class="agende-text row">
@@ -117,125 +130,190 @@
                         <div for="nome" class="form-label ml-3 mt-4">Responsavel:</div>
                         <div class="matricula d-flex">
                             <label class="surname campo col-6">
-                                <input class="form-control" type="text" name="nome_responsavel" id="nome" placeholder="Nome do Responsavel" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome_responsavel"
+                                    id="nome"
+                                    placeholder="Nome"
+                                    required="required">
                             </label>
                             <label class="name campo col-6">
-                                <input class="form-control" type="text" name="sobrenome_responsavel" id="sobrenome" placeholder="Sobrenome" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="sobrenome_responsavel"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required="required">
                             </label>
                             <label class="email campo col-12">
-                                <input class="form-control" type="text" name="email_responsavel" id="email" placeholder="exemplo@gmail.com" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="email_responsavel"
+                                    id="email"
+                                    placeholder="exemplo@gmail.com"
+                                    required="required">
                             </label>
                         </div>
-            
+
                         <!-- Aluno -->
                         <div for="nome" class="form-label ml-3 mt-4">Aluno:</div>
                         <div class="matricula d-flex">
                             <label class="surname campo col-6">
-                                <input class="form-control" type="text" name="nome_aluno" id="nome" placeholder="Primeiro nome" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome_aluno"
+                                    id="nome"
+                                    placeholder="Nome"
+                                    required="required">
                             </label>
                             <label class="name campo col-6">
-                                <input class="form-control" type="text" name="sobrenome_aluno" id="sobrenome" placeholder="Sobrenome" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="sobrenome_aluno"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required="required">
                             </label>
                             <label class="campo col-6">
-                                <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Telefone residencial" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="telefone"
+                                    id="telefone"
+                                    placeholder="Telefone residencial"
+                                    required="required">
                             </label>
                             <label class="campo col-6">
-                                <input class="form-control" type="text" name="celular" id="telefone" placeholder="Celular" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="celular"
+                                    id="telefone"
+                                    placeholder="Celular"
+                                    required="required">
                             </label>
                         </div>
-            
+
                         <!-- Período -->
+
                         <div for="nome" class="form-label ml-3 mt-4">Periodo:</div>
                         <div class="matricula d-flex">
                             <label class="surname campo col-6">
-                                <input class="form-control" type="text" name="nome" id="periodo" placeholder="Período desejado" required="required">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome"
+                                    id="periodo"
+                                    placeholder="manhã/tarde/noite"
+                                    required="required">
                             </label>
-                        </div>
-            
-                        <!-- Data -->
-                        <div for="nome" class="form-label ml-3 mt-4">Data:</div>
-                        <div class="matricula d-flex">
+                            <!-- Data -->
                             <label class="surname campo col-6">
-                                <input class="form-control" id="date" name="data_desejada" type="date">
+                                <input
+                                    class="form-control"
+                                    id="date"
+                                    name="data_desejada"
+                                    type="date"
+                                    placeholder="data desejada">
                             </label>
                         </div>
                         <!-- Botão Enviar -->
-                        <button type="submit" class="btn enviar" data-button>Enviar</button>
+                        <button type="submit" class="btn enviar" data-button="data-button">Enviar</button>
                     </section>
                 </form>
             </div>
-            
 
-    <footer class="bg text-white pt-1 pb-4">
-        <div class="containertext-center text-md-left">
-            <div class="row mx-3">
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img
-                        class="text-uppercase mb-4 font-weight-bold text-warning"
-                        src="/IMAGENS/Logo-Semeador-50-anos white.svg"
-                        alt="Logo do oSemeador">
+            <footer class="bg text-white pt-1 pb-4">
+                <div class="containertext-center text-md-left">
+                    <div class="row mx-3">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <img
+                                class="text-uppercase mb-4 font-weight-bold text-warning"
+                                src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                                alt="Logo do oSemeador">
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <h1>Horários</h1>
+                            <p>segunda a sexta:
+                                <br>
+                                07:30 - 17:00
+                            </p>
+                            <br>
+                            <h1>Endereço</h1>
+                            <p>R. dos Meninos, 555 -
+                                <br>
+                                Nova Gerti, São Caetano
+                                <br>
+                                do Sul - SP, 09580-300
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <h1>Contato</h1>
+                            <p>(11)4238-3100
+                                <br>
+                                (11) 4238-9511
+                                <br>
+                                adm.osemeador@3remetodista.org.br
+                            </p>
+                            <br>
+                            <h1>Siga-nos</h1>
+                            <div class="footer-social-media">
+                                <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                                </a>
+                                <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                            <ul>
+                                <li>
+                                    <h1>Acesso Rápido</h1>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="index.html">Página Inicial</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="fotos.html">Fotos e Projetos</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="doacao.html">Doações</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="contato.html">Contato</a>
+                                </li>
+                                <li class="footer-item">
+                                    <a class="footer-link" href="matricula.html">Matrícula</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr class="mb-4">
+
+                    </div>
+
+                </footer>
+                <div class="copy d-flex mx-auto mt-">
+                    <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <h1>Horários</h1>
-                    <p>segunda a sexta:
-                        <br>
-                        07:30 - 17:00</p>
-                    <br>
-                    <h1>Endereço</h1>
-                    <p>R. dos Meninos, 555 -
-                        <br>
-                        Nova Gerti, São Caetano
-                        <br>
-                        do Sul - SP, 09580-300</p>
-                </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <h1>Contato</h1>
-                    <p>(11) 1111-1111
-                        <br>
-                        (22) 2222-2222
-                        <br>
-                        lorem@impsum.com.br</p>
-                    <br>
-                    <h1>Siga-nos</h1>
-                    <div class="footer-social-media">
-                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
-                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                        </a>
-                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
-                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                        </a>
+                <script src="js/scripts.js"></script>
+                <div vw="vw" class="enabled">
+                    <div vw-access-button="vw-access-button" class="active"></div>
+                    <div vw-plugin-wrapper="vw-plugin-wrapper">
+                        <div class="vw-plugin-top-wrapper"></div>
                     </div>
                 </div>
-                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                    <ul>
-                        <li>
-                            <h1>Acesso Rápido</h1>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Página Inicial</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Fotos e Projetos</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Doações</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Contato</a>
-                        </li>
-                        <li class="footer-item">
-                            <a class="footer-link" href="#">Matrícula</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <hr class="mb-4">
-
-            </div>
-
-        </footer>
-        <div class="copy d-flex mx-auto mt-">
-            <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
-        </div>
-    </body>
-</html>
+                <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                <script>
+                    new window
+                        .VLibras
+                        .Widget('https://vlibras.gov.br/app');
+                </script>
+            </body>
+        </html>

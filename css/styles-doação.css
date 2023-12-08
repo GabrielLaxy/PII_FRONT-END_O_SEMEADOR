@@ -303,6 +303,7 @@ body {
     width: 100vh;
     height: 79vh;
     
+    
 }
 
 .formulario {
@@ -935,3 +936,33 @@ label {
     font-weight: 500;
     padding-top: 20px;
 } 
+
+
+/* zap */
+.iconzap {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+  }
+  
+  .iconzap .fab{
+    padding-top: 9px;
+  }
+  
+  .iconzap:hover{
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
+  }

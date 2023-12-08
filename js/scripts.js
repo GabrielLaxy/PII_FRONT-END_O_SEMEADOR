@@ -181,5 +181,10 @@ $( document ).ready(function() {
         scrollTop: $(scrollTo).offset().top - 70
     }, 1500);
   });
+  
+  // let input1 = $("_subject");
+  // let input2 = $("codigo-barras");
+  // if (input1.val == '' || input2 == '')
+  // alert("Por favor, preencha os campos!")
 
 });

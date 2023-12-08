@@ -14,14 +14,14 @@
         <script defer="defer" src="/js/script.js"></script>
         <link rel="stylesheet" href="/css/styles-matricula.css">
         <!-- Conexão - fonte -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link
-                rel="preconnect"
-                href="https://fonts.gstatic.com"
-                crossorigin="crossorigin">
-            <link
-                href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
-                rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
         <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
         <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -48,6 +48,18 @@
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     </head>
     <body>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <div class="buttonzap">
+            <a
+                href='https://api.whatsapp.com/send?phone=11973668766&'
+                class="iconzap"
+                target='_blank'>
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
         <header class="header">
             <nav class="nav-bar">
                 <div class="logo">
@@ -119,15 +131,16 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row"> 
+        <div class="row">
             <div class="imagem-matricula col-8">
                 <div class="titulos-banner d-flex">
                     <h1>MATRÍCULE-SE</h1>
                     <h3>Venha Conhecer o semeador!</h3>
                 </div>
-                <div class="row redirect-preencha" >
+                <div class="row redirect-preencha">
                     <img src="/IMAGENS/Rectangle_White.png" alt="retangulo" class="retangulo">
-                    <p>Preencha o formulário ao lado e <br> 
+                    <p>Preencha o formulário ao lado e
+                        <br>
                         agende sua visita</p>
                 </div>
             </div>
@@ -141,68 +154,75 @@
                         <p>Preencha os dados abaixo:</p>
                         <img class="rectangle-matricula" src="/IMAGENS/Rectangle-matricula.png" alt="">
                     </div>
-                    <label for="nome" class="form-label ml-3 mt-4">Responsável:</label>
-                    <form class="matricula d-flex" >
-                        <div class="surname campo col-6 ">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="nome"
-                                id="nome"
-                                placeholder="Primeiro nome"
-                                required="required">
+                    <script defer="defer" src="/js/enviar_email.js"></script>
+                    <form
+                        action="https://formsubmit.co/ajax/92a165f75dcbcf40aeee92803d67e4bb"
+                        method="POST"
+                        data-form="data-form">
+                        <input type="hidden" name="_subject" value="Nova requisição de matrícula!">
+                        <label for="nome" class="form-label ml-3 mt-4">Responsável:</label>
+                        <div class="matricula d-flex">
+                            <div class="surname campo col-6 ">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome"
+                                    id="nome"
+                                    placeholder="Primeiro nome"
+                                    required="required">
+                            </div>
+                            <div class="name campo col-6">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="sobrenome"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required="required">
+                            </div>
+                            <div class="email campo col-12">
+                                <for="email" class="endereço de email col-12"></for>
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="email"
+                                    id="email"
+                                    placeholder="exemplo@gmail.com"
+                                    required="required">
+                            </div>
+                            <div class="campo col-12">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="telefone"
+                                    id="telefone"
+                                    placeholder="telefone do responsável"
+                                    required="required">
+                            </div>
                         </div>
-                        <div class="name campo col-6">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="sobrenome"
-                                id="sobrenome"
-                                placeholder="Sobrenome"
-                                required="required">
-                        </div>     
-                        <div class="email campo col-12">
-                            <for="email" class = "endereço de email col-12"></for>
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="email"
-                                id="email"
-                                placeholder="exemplo@gmail.com"
-                                required="required">
+                        <label for="nome" class="form-label ml-3 mt-4">Aluno:</label>
+                        <div class="matricula d-flex">
+                            <div class="surname campo col-6 ">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome"
+                                    id="nome"
+                                    placeholder="Primeiro nome"
+                                    required="required">
+                            </div>
+                            <div class="name campo col-6">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="sobrenome"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required="required">
+                            </div>
                         </div>
-                        <div class="campo col-12">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="telefone"
-                                id="telefone"
-                                placeholder="telefone do responsável"
-                                required="required">
-                        </div>
+                        <button type="submit" class="btn enviar" data-button="data-button">Enviar</button>
                     </form>
-                    <label for="nome" class="form-label ml-3 mt-4">Aluno:</label>
-                    <form class="matricula d-flex" >
-                        <div class="surname campo col-6 ">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="nome"
-                                id="nome"
-                                placeholder="Primeiro nome"
-                                required="required">
-                        </div>
-                        <div class="name campo col-6">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="sobrenome"
-                                id="sobrenome"
-                                placeholder="Sobrenome"
-                                required="required">
-                        </div>
-                    </form>
-                    <button type="submit" class="btn enviar">Enviar</button>
                 </div>
             </div>
         </div>
@@ -220,22 +240,25 @@
                     <h1>Horários</h1>
                     <p>segunda a sexta:
                         <br>
-                        07:30 - 17:00</p>
+                        07:30 - 17:00
+                    </p>
                     <br>
                     <h1>Endereço</h1>
                     <p>R. dos Meninos, 555 -
                         <br>
                         Nova Gerti, São Caetano
                         <br>
-                        do Sul - SP, 09580-300</p>
+                        do Sul - SP, 09580-300
+                    </p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
                     <h1>Contato</h1>
-                    <p>(11) 1111-1111
+                    <p>(11)4238-3100
                         <br>
-                        (22) 2222-2222
+                        (11) 4238-9511
                         <br>
-                        lorem@impsum.com.br</p>
+                        adm.osemeador@3remetodista.org.br
+                    </p>
                     <br>
                     <h1>Siga-nos</h1>
                     <div class="footer-social-media">
@@ -253,51 +276,51 @@
                             <h1>Acesso Rápido</h1>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-link" href="#">Página Inicial</a>
+                            <a class="footer-link" href="index.html">Página Inicial</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-link" href="#">Fotos e Projetos</a>
+                            <a class="footer-link" href="fotos.html">Fotos e Projetos</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-link" href="#">Doações</a>
+                            <a class="footer-link" href="doacao.html">Doações</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-link" href="#">Contato</a>
+                            <a class="footer-link" href="contato.html">Contato</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-link" href="#">Matrícula</a>
+                            <a class="footer-link" href="matricula.html">Matrícula</a>
                         </li>
                     </ul>
                 </div>
 
                 <hr class="mb-4">
-                
+
             </div>
-            
+
         </footer>
         <div class="copy d-flex mx-auto mt-">
-                <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
+            <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
         </div>
 
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-            <script
-                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-            <script
-                src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-            <script src="js/scripts.js"></script>
-            <div vw="vw" class="enabled">
-                <div vw-access-button="vw-access-button" class="active"></div>
-                <div vw-plugin-wrapper="vw-plugin-wrapper">
-                    <div class="vw-plugin-top-wrapper"></div>
-                </div>
+        <script src="js/scripts.js"></script>
+        <div vw="vw" class="enabled">
+            <div vw-access-button="vw-access-button" class="active"></div>
+            <div vw-plugin-wrapper="vw-plugin-wrapper">
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-            <script>
-                new window
-                    .VLibras
-                    .Widget('https://vlibras.gov.br/app');
-            </script>
-        </body>
-    </main>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window
+                .VLibras
+                .Widget('https://vlibras.gov.br/app');
+        </script>
+    </body>
+</main>
 </html>

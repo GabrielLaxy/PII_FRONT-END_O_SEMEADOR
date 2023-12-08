@@ -97,186 +97,222 @@
             </div>
             <div class="banner container-fluid">
                 <div class="banner-content row">
-                    <img
-                        class="ml-4 d-none d-md-block"
-                        src="/IMAGENS/Rectangle Orange.png"
-                        alt="">
+                    <img class="ml-4 d-none d-md-block" src="/IMAGENS/Rectangle Orange.png" alt="">
                     <h1 class="ml-2">DOE SEU CUPOM FISCAL</h1>
                 </div>
                 <h6 class="m-0 ml-md-4">Faça uma doação utilizando o número do código barras do seu cupom fiscal.</h6>
             </div>
         </header>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <div class="buttonzap">
+            <a
+                href='https://api.whatsapp.com/send?phone=11973668766&'
+                class="iconzap"
+                target='_blank'>
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
         <div class="passo-a-passo container-fluid">
             <div class="col-12">
                 <h3 class="subtitle" id="explications">ENTENDA COMO FUNCIONA A DOAÇÃO DO O SEMEADOR:</h3>
                 <div class="tutorial d-flex">
-                    <img src="/IMAGENS/Rectangle_Black_Vertical.png" class="retangulo-tutorial mr-3" width="2" height="275" alt="retangulo">
+                    <img
+                        src="/IMAGENS/Rectangle_Black_Vertical.png"
+                        class="retangulo-tutorial mr-3"
+                        width="2"
+                        height="275"
+                        alt="retangulo">
                     <div class="texto">
                         <p class="descricao-semeador">
-                        Você sabia que as suas notas fiscais podem render uma quantia de volta em
-                        dinheiro?
-                        a nossa escola aceita doações de notas fiscais de compras feitas em qualquer
-                        estabelecimento.
-                        para realizar esta doação, você precisa recusar quando o atendente do
-                        estabelecimento
-                        perguntar se você deseja Nota Fiscal Paulista, em seguida existem duas maneiras
-                        de prosseguir:
-                        <br>
-                        <br>
-                        <div class="passos">
-                        • 1: você insere os seus dados e o número que fica em baixo do código de barras da
-                        nota fiscal;
-                        </br>
-                        <br>
-                        • 2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal, o
-                        importante é aparecer o código de barras para podermos utilizá-lo;
-                        </br>
-                        <br>
+                            Você sabia que as suas notas fiscais podem render uma quantia de volta em
+                            dinheiro? a nossa escola aceita doações de notas fiscais de compras feitas em
+                            qualquer estabelecimento. para realizar esta doação, você precisa recusar quando
+                            o atendente do estabelecimento perguntar se você deseja Nota Fiscal Paulista, em
+                            seguida existem duas maneiras de prosseguir:
+                            <br>
+                            <br>
+                            <div class="passos">
+                                • 1: você insere os seus dados e o número que fica em baixo do código de barras
+                                da nota fiscal;
+                            </br>
+                            <br>
+                                • 2: você pode simplesmente tirar uma foto de boa qualidade da sua nota fiscal,
+                                o importante é aparecer o código de barras para podermos utilizá-lo;
+                            </br>
+                            <br>
                         </div>
                         Se você quiser fazer uma doação voluntária de qualquer quantia de dinheiro, você
-                        pode utilizar
-                        o CNPJ da nossa instituição para realizar uma transferência PIX.
-                        </p>
-                    </div>
+                        pode utilizar o CNPJ da nossa instituição para realizar uma transferência PIX.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- formulario para doação de cupom fiscal -->
-        <div class="formulario-completo container-fluid">
-            <div class="all d-flex justify-content-center">
-                <div class="formulario-img d-flex">
-                    <div class="form-data ml-xxl-2 d-flex">
-                        <h1 id="insert-data">INSIRA SEUS DADOS</h1>
-                        <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
-                    </div>
-                    <div class="d-flex">
-                        <div class="formulario1 col-12 col-xl-5">
-                            <form class="formulario row col-12 pt-3 px-0" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
-                                <div class="codigo campo col-lg-10 col-sm-8 col-8">
+    </div>
+    <!-- formulario para doação de cupom fiscal -->
+    <div class="formulario-completo container-fluid">
+        <div class="all d-flex justify-content-center">
+            <div class="formulario-img">
+                <div class="form-data ml-xxl-2">
+                    <h1 id="insert-data">INSIRA SEUS DADOS</h1>
+                    <img id="seta" src="IMAGENS\seta-png.png" alt="seta" width="35" height="35">
+                </div>
+                <div class="d-flex">
+                    <div class="formulario1 col-12 col-xl-5">
+                        <script defer="defer" src="/js/enviar_email.js"></script>
+                        <form
+                            action="https://formsubmit.co/ajax/92a165f75dcbcf40aeee92803d67e4bb"
+                            method="POST"
+                            enctype="multipart/form-data"
+                            data-form>
+                            <input type="hidden" name="_subject" value="Nova cupom!">
+                            <div
+                                class="formulario row col-12 pt-3 px-0"
+                                action="mailto:gabrielmoreno19@hotmail.com.br"
+                                method="post"
+                                enctype="text/plain">
+                                <div class="codigo campo col-lg-10 col-sm-8 col-8" style="margin-top: 200px !important;">
                                     <label for="codigo" class="form-label-codigo">Número do código de barras:</label>
-                                    <input class="form-control" type="text" maxlenght="30" name="codigo" id="codigo" placeholder="XXX-XXXXX-XXXX-X" required>
-                                </div>
-                            </form>
-                            <div class="ou row">
-                                <img src="/IMAGENS/Rectangle (ou).png" class="retangulo-ou" alt="retangulo">
-                                <p class="ou">OU</p>
-                                <img src="/IMAGENS/Rectangle (ou).png" class="retangulo-ou" alt="retangulo">
-                            </div>
-                            <div class="imagem-codigo d-flex col-12 ">
-                                <label class="file" for="input-file"><img src="/IMAGENS/Frame 3.png" width="150" alt=""><input id="input-file" type="file" name="codigo-barras" id="codigo-barras"></label>
-                                <label class="file-preto" for="input-file"><img src="/IMAGENS/Frame 3-Preto.png" width="150" alt=""><input id="input-file" type="file" name="codigo-barras" id="codigo-barras"></label>
-                                <div class="redirect-upload d-flex">
-                                    <div class="row">
-                                        <img src="IMAGENS\seta-branca-png.png" class="seta-branca" width="15" height="15" alt="seta">
-                                        <img src="/IMAGENS/seta-png.png" class="seta-preta" width="15" height="15" alt="seta">
-                                        <p>ARRASTE UMA IMAGEM</p>
-                                    </div>
-                                    <div class="buttons col-12 d-flex">
-                                        <button type="submit" class="btn upload">Realizar upload</button>
-                                        <button type="submit" class="btn enviar" >Enviar</button>
-                                    </div>
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        maxlenght="30"
+                                        name="codigo"
+                                        id="codigo"
+                                        placeholder="XXX-XXXXX-XXXX-X"
+                                        required="required">
                                 </div>
                             </div>
-                        </div>
-                        <div class="imagem-form" id="imagem">
-                            <img src="/IMAGENS/mulher-esta-contando-dinheiro-com-seu-telefone 1.png" alt="">
-                        </div>
+                           
+                            <div class="buttons col-12 d-flex">
+                            <button type="submit" class="btn enviar" data-button="data-button" style="margin-top: 100px !important;">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="imagem-form" id="imagem">
+                        <img src="/IMAGENS/mulher-esta-contando-dinheiro-com-seu-telefone 1.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="rascunho">
-            <img src="/IMAGENS/Rectangle-white-horizontal.png" width="250" height="4" alt="retangulo">
-            <p>Além do cupom fiscal, aprenda a doar com agilidade e segurança <br> usando o Pix.</p>
-        </div>
-        
-        <div class="container">
-            <div class="dados-pix d-flex col-12">
-                <div class="dados row">
-                    <h2>DADOS PARA O PIX</h2>
-                    <img src="/IMAGENS/seta-png.png" width="35" height="35" alt="seta">
+    </div>
+    <div class="rascunho">
+        <img
+            src="/IMAGENS/Rectangle-white-horizontal.png"
+            width="250"
+            height="4"
+            alt="retangulo">
+        <p>Além do cupom fiscal, aprenda a doar com agilidade e segurança
+            <br>
+            usando o Pix.</p>
+    </div>
+
+    <div class="container">
+        <div class="dados-pix d-flex col-12">
+            <div class="dados row">
+                <h2>DADOS PARA O PIX</h2>
+                <img src="/IMAGENS/seta-png.png" width="35" height="35" alt="seta">
+            </div>
+            <div class="pix d-flex flex-direction-sm-column flex-direction-md-row">
+                <div class="qrcode d-flex ">
+                    <p>Escaneie o
+                        <strong>QR CODE:</strong>
+                    </p>
+                    <img
+                        src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=48.569.263.0001%2F42&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L"
+                        width="220"
+                        height="220"
+                        alt="qr code"/>
                 </div>
-                <div class="pix d-flex flex-direction-sm-column flex-direction-md-row">
-                    <div class="qrcode d-flex ">
-                        <p>Escaneie o <strong>QR CODE:</strong></p>
-                        <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=48.569.263.0001%2F42&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" width="220" height="220" alt="qr code" />
-                    </div>
-                    <div class="dados-ou-pix d-flex col-sm-12 col-lg-1 mt-5 mt-lg-0 ml-lg-5">
-                        <p>OU</p>
-                    </div>
-                    <div class="cnpj col-sm-12 col-lg-6 d-flex">
-                        <p class="p1">Escreva o <strong>CNPJ</strong> abaixo:</p>
-                        <p class="p2"><strong>CNPJ:</strong>48.569.263.0001/42</p>
-                    </div>
+                <div class="dados-ou-pix d-flex col-sm-12 col-lg-1 mt-5 mt-lg-0 ml-lg-5">
+                    <p>OU</p>
+                </div>
+                <div class="cnpj col-sm-12 col-lg-6 d-flex">
+                    <p class="p1">Escreva o
+                        <strong>CNPJ</strong>
+                        abaixo:</p>
+                    <p class="p2">
+                        <strong>CNPJ:</strong>48.569.263.0001/42</p>
                 </div>
             </div>
         </div>
-        <footer class="bg text-white pt-1 pb-4">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row mx-3">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <img
-                            class="text-uppercase mb-4 font-weight-bold text-warning"
-                            src="/IMAGENS/Logo-Semeador-50-anos white.svg"
-                            alt="Logo do oSemeador">
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                        <h1>Horários</h1>
-                        <p>segunda a sexta:
-                            <br>
-                            07:30 - 17:00</p>
+    </div>
+    <footer class="bg text-white pt-1 pb-4">
+        <div class="containertext-center text-md-left">
+            <div class="row mx-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img
+                        class="text-uppercase mb-4 font-weight-bold text-warning"
+                        src="/IMAGENS/Logo-Semeador-50-anos white.svg"
+                        alt="Logo do oSemeador">
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Horários</h1>
+                    <p>segunda a sexta:
                         <br>
-                        <h1>Endereço</h1>
-                        <p>R. dos Meninos, 555 -
-                            <br>
-                            Nova Gerti, São Caetano
-                            <br>
-                            do Sul - SP, 09580-300</p>
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                        <h1>Contato</h1>
-                        <p>(11) 1111-1111
-                            <br>
-                            (22) 2222-2222
-                            <br>
-                            lorem@impsum.com.br</p>
+                        07:30 - 17:00
+                    </p>
+                    <br>
+                    <h1>Endereço</h1>
+                    <p>R. dos Meninos, 555 -
                         <br>
-                        <h1>Siga-nos</h1>
-                        <div class="footer-social-media">
-                            <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
-                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                            </a>
-                            <a class="m-2" href="https://www.facebook.com/escolaosemeador">
-                                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
-                        <ul>
-                            <li>
-                                <h1>Acesso Rápido</h1>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Página Inicial</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Fotos e Projetos</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Doações</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Contato</a>
-                            </li>
-                            <li class="footer-item">
-                                <a class="footer-link" href="#">Matrícula</a>
-                            </li>
-                        </ul>
+                        Nova Gerti, São Caetano
+                        <br>
+                        do Sul - SP, 09580-300
+                    </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <h1>Contato</h1>
+                    <p>(11)4238-3100
+                        <br>
+                        (11) 4238-9511
+                        <br>
+                        adm.osemeador@3remetodista.org.br
+                    </p>
+                    <br>
+                    <h1>Siga-nos</h1>
+                    <div class="footer-social-media">
+                        <a class="m-2" href="https://www.instagram.com/metodistaosemeador/">
+                            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                        </a>
+                        <a class="m-2" href="https://www.facebook.com/escolaosemeador">
+                            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                        </a>
                     </div>
                 </div>
+                <div class="col-md-2 col-lg-2 col-xl-3 mx-auto mt-5">
+                    <ul>
+                        <li>
+                            <h1>Acesso Rápido</h1>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="index.html">Página Inicial</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="fotos.html">Fotos e Projetos</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="doacao.html">Doações</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="footer-item">
+                            <a class="footer-link" href="matricula.html">Matrícula</a>
+                        </li>
+                    </ul>
+                </div>
+
                 <hr class="mb-4">
+
             </div>
+
         </footer>
+        <div class="copy d-flex mx-auto mt-">
+            <p>&#169 Copyright 1974-2023 | Escola oSemeador</p>
+        </div>
         <script src="js/scripts.js"></script>
         <div vw="vw" class="enabled">
             <div vw-access-button="vw-access-button" class="active"></div>
@@ -290,8 +326,5 @@
                 .VLibras
                 .Widget('https://vlibras.gov.br/app');
         </script>
-
     </body>
-</html>
-</body>
 </html>

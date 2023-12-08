@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 * {
     padding: 0;
@@ -293,6 +292,10 @@ body {
 
 /* Sobre a escola */
 
+#services-area{
+    margin-bottom: 50px;
+}
+
 #about-area{
     justify-content: space-around;
     margin-bottom: 50px;
@@ -332,6 +335,58 @@ body {
 #about-area h1 {
     text-align: center;
 }
+
+/* Trabalhe conosco */
+
+#apply-area {
+    height: 500px;
+  }
+  
+  #apply-area .container-fluid, #apply-area .row {
+    height: 100%;
+  }
+  
+  #apply-area .apply-box {
+    padding: 70px 50px;
+    text-align: center;
+  }
+  
+  #company-img {
+    background-image: url('../img/empresa.jpg');
+    background-size: cover;
+    height: 100%;
+  }
+  
+  #pattern-img h4, #pattern-img p {
+    color: #FFF;
+  }
+  
+  #pattern-img h4 {
+    margin-top: 8%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  #pattern-img p {
+    margin-bottom: 20px;
+  }
+  
+  #apply-btn {
+    display: block;
+    height: auto;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: #FFF;
+  }
+  
+  #apply-btn:hover {
+    border-color: #65DAF9;
+    background-color: #65DAF9;
+  }
+  
 
 
 /* Serviços */
@@ -419,3 +474,32 @@ body {
     padding-top: 20px;
 }
 
+
+/* zap */
+.iconzap {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+  }
+  
+  .iconzap .fab{
+    padding-top: 9px;
+  }
+  
+  .iconzap:hover{
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
+  }
