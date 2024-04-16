@@ -1,4 +1,4 @@
-const GOOGLE_API_FOLDER_ID = '1ejcs2HtVGNu5p2pu61LpFKl1p7sjBRuJ';
+const GOOGLE_API_FOLDER_ID = '';
 
 async function captura_url(numLinks) {
     try {
