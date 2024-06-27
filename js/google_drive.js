@@ -1,4 +1,4 @@
-const GOOGLE_API_FOLDER_ID = '1ejcs2HtVGNu5p2pu61LpFKl1p7sjBRuJ';
+const GOOGLE_API_FOLDER_ID = '';
 
 async function captura_url(numLinks) {
     try {
@@ -48,7 +48,7 @@ gapi.load('client', () => {
     gapi
         .client
         .init(
-            {apiKey: 'AIzaSyB-aAWRW8qS2LhNiqeGKXYkfYhtzYMjvXQ', discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']}
+            {apiKey:, discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest']}
         )
         .then(() => {
             captura_url(9)
