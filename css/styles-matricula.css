@@ -116,6 +116,14 @@ body {
     color: white;
 }
 
+.agendar-button button:focus {
+    outline: 0;
+}
+
+.mobile-menu .agendar-button button:focus{
+    outline: 0;
+}
+
 .mobile-menu .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
@@ -239,6 +247,7 @@ body {
     font-size: 50px;
 }
 
+
 .titulo {
     flex-direction: column;
     margin-left: 1rem;
@@ -259,6 +268,39 @@ body {
     color: white; 
     background-size: cover;
     height: 100vh;
+}
+
+@media screen and (max-width:1150px) {
+    .matricula-text img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .imagem-matricula{
+        display: none;
+    }
+
+    .matricula-text img {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+
+    .matricula-text h1{
+        font-size: 30px;
+        margin-top: 7px;
+    }
+
+    .formulario {
+        margin-block: 55px;
+        margin-bottom: 100px;
+        margin-inline: 50px;
+    }
+
+    .formulario button {
+        margin-top: 55px;
+    }
 }
 
 .titulos-banner h1{
@@ -425,45 +467,17 @@ input::placeholder {
 }
 
 
-/* BOTAO */
 
-.enviar {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 20px;
-    background: #6D6D6D;
-    color: white;
-    display: block;
-    justify-content: center;
+.btn-matricular {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
 }
 
-.enviar:disabled {
-    cursor: not-allowed;
-    background: #555b69;
-  }
-  
-  .success,
-  .error {
-    text-align: center;
-  }
-  
-  .success {
-    color: greenyellow;
-  }
-  
-  .error {
-    color: tomato;
-  }
-
-.enviar:hover {
-    color: white;
-    background-color: #3b3b3b;
-
+.btn-matricular:hover {
+    background-color: #218838;
 }
 
-
-/* zap */
 .iconzap {
     position: fixed;
     bottom: 60px;
@@ -481,10 +495,7 @@ input::placeholder {
     box-shadow: 2px 2px 2px #c0bdbd;
   }
   
-  .iconzap .fab{
-    padding-top: 9px;
-  }
-  
+
   .iconzap:hover{
     background-color: #fff;
     color: #029e3b;

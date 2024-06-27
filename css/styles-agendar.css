@@ -281,12 +281,27 @@ box-shadow: 12px 15px 23px 3px rgba(209,209,209,0.72);
     transform: rotate(90deg);
     margin-top: 12px;
     margin-left: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .agende-text h1{
     font-weight: 700;
     font-size: 50px;
 }
+
+@media (max-width: 500px) {
+    .agende-text h1{
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .seta{ 
+        width: 24px;
+        height: 24px;
+        margin-top: 7px;
+    }
+  }
 
 .agende-text {
     justify-content: center;
@@ -487,6 +502,12 @@ input::placeholder {
 
 }
 
+
+@media (max-width: 500px) {
+    .enviar{
+        padding-inline: 30px;
+    }
+  }
 
 
 /* footer */

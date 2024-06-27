@@ -117,6 +117,14 @@ body {
     color: white;
 }
 
+.agendar-button button:focus {
+    outline: 0;
+}
+
+.mobile-menu .agendar-button button:focus{
+    outline: 0;
+}
+
 .mobile-menu .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
@@ -234,7 +242,7 @@ body {
 
 #mainSlider .carousel-inner,
 #mainSlider .carousel-item {
-    height: 60vh;
+    height: 70vh;
     opacity: 96%;
 }
 
@@ -292,10 +300,6 @@ body {
 
 /* Sobre a escola */
 
-#services-area{
-    margin-bottom: 50px;
-}
-
 #about-area{
     justify-content: space-around;
     margin-bottom: 50px;
@@ -334,6 +338,7 @@ body {
 
 .compromisso-text {
     margin-top: 120px;
+    margin-inline: 180px;
 }
 
 .video {
@@ -348,8 +353,8 @@ body {
     flex-direction: column;
 }
 
-.intro{
-    margin-bottom: 90px;
+.compromissos{
+    margin-inline: 100px;
 }
 
 @media screen and (max-width:532px) {
@@ -442,15 +447,6 @@ body {
     }
 }
 
-@media screen and (max-width:991px) {       
-    .service-box {
-        margin-top: 0px
-    }
-    .escola {
-        margin-top: 100px;
-    }
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -467,58 +463,6 @@ body {
 #about-area h1 {
     text-align: center;
 }
-
-/* Trabalhe conosco */
-
-#apply-area {
-    height: 500px;
-  }
-  
-  #apply-area .container-fluid, #apply-area .row {
-    height: 100%;
-  }
-  
-  #apply-area .apply-box {
-    padding: 70px 50px;
-    text-align: center;
-  }
-  
-  #company-img {
-    background-image: url('../img/empresa.jpg');
-    background-size: cover;
-    height: 100%;
-  }
-  
-  #pattern-img h4, #pattern-img p {
-    color: #FFF;
-  }
-  
-  #pattern-img h4 {
-    margin-top: 8%;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
-  
-  #pattern-img p {
-    margin-bottom: 20px;
-  }
-  
-  #apply-btn {
-    display: block;
-    height: auto;
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    background-color: transparent;
-    border-color: #FFF;
-  }
-  
-  #apply-btn:hover {
-    border-color: #65DAF9;
-    background-color: #65DAF9;
-  }
-  
 
 
 /* Serviços */
@@ -559,6 +503,15 @@ body {
 
 .service-box{
     margin-top: 100px;
+}
+
+@media screen and (max-width:991px) {       
+    .service-box {
+        margin-top: 10px
+    }
+    .colegio {
+        margin-top: 100px;
+    }
 }
 
 /* Footer */
@@ -606,8 +559,6 @@ body {
     padding-top: 20px;
 }
 
-
-/* zap */
 .iconzap {
     position: fixed;
     bottom: 60px;
@@ -625,10 +576,7 @@ body {
     box-shadow: 2px 2px 2px #c0bdbd;
   }
   
-  .iconzap .fab{
-    padding-top: 9px;
-  }
-  
+
   .iconzap:hover{
     background-color: #fff;
     color: #029e3b;

@@ -117,6 +117,14 @@ body {
     color: white;
 }
 
+.agendar-button button:focus {
+    outline: 0;
+}
+
+.mobile-menu .agendar-button button:focus{
+    outline: 0;
+}
+
 .mobile-menu .agendar-button button {
     border: solid 1px #6D6D6D;
     background-color: white;
@@ -245,7 +253,8 @@ body {
 
 @media screen and (max-width:600px) {
     .banner h1 {
-        font-size: 40px;
+        font-size: 35px;
+        padding-left: 25px ;
     }
 
     .banner {
@@ -303,7 +312,6 @@ body {
     width: 100vh;
     height: 79vh;
     
-    
 }
 
 .formulario {
@@ -348,21 +356,25 @@ body {
     
 }
 
-@media screen and (min-width:1400) {
+.all {
+    margin-left: 100px;
+}
+
+@media screen and (min-width:1400px) {
     .all {
         margin-left: 200px;
     }
     
 }
 
-@media screen and (min-width:1200) {
+
+@media screen and (min-width:1200px) {
     .all {
         margin-left: 100px;
     }
-    
 }
 
-@media screen and (max-width:1200) {
+@media screen and (max-width:1200px) {
     .all {
         margin-left: 0px;
     }
@@ -937,8 +949,6 @@ label {
     padding-top: 20px;
 } 
 
-
-/* zap */
 .iconzap {
     position: fixed;
     bottom: 60px;
@@ -956,10 +966,7 @@ label {
     box-shadow: 2px 2px 2px #c0bdbd;
   }
   
-  .iconzap .fab{
-    padding-top: 9px;
-  }
-  
+
   .iconzap:hover{
     background-color: #fff;
     color: #029e3b;
