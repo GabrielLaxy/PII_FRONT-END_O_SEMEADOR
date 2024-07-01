@@ -109,12 +109,8 @@
             </div>
 
             <div class="container">
-                <script defer src="/js/enviar_email.js"></script>
                 <form
                     class="mensagem-enviada"
-                    action="https://formsubmit.co/ajax/92a165f75dcbcf40aeee92803d67e4bb"
-                    method="POST"
-                    data-form
                     >
                     <section class="agendar ">
                         <div class="titulo">
@@ -177,6 +173,7 @@
                                         <input class="form-control" id="data" name="data" type="text" 
                                         placeholder="DD/MM/AAAA" 
                                         onfocus="this.type='date'" 
+                                        required="required"
                                         onblur="if (!this.value) this.type='text'">
                                     </div>
                                 </div>

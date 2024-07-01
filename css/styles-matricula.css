@@ -391,7 +391,7 @@ input::placeholder {
 
 }
 
-    .enviar {
+    .enviarMatricula {
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
@@ -401,7 +401,7 @@ input::placeholder {
         display: block;
 }
 
-.enviar:hover {
+.enviarMatricula:hover {
     color: white;
     background-color: #3b3b3b;
 

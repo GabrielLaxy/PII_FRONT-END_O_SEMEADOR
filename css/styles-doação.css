@@ -445,14 +445,14 @@ form label {
     flex-direction: column;
 }
 
-.enviar {
+.enviarCodigo {
     margin-top: 10px;
     padding-block: 10px;
     padding-inline: 2px ;
     background: #D46412;
     color: #ffffff;
 }
-.enviar:hover {
+.enviarCodigo:hover {
     color: white;
     background-color: #af5210;
 }
@@ -652,7 +652,7 @@ label {
         border-radius: 0px;
     }
 
-    .enviar {
+    .enviarCodigo {
         margin-top: 10px;
         padding-block: 10px;
         padding-inline: 2px ;
@@ -660,7 +660,7 @@ label {
         color: #242424;
         border: 1px solid #242424;
     }
-    .enviar:hover {
+    .enviarCodigo:hover {
         color: white;
         background-color: #242424;
     }

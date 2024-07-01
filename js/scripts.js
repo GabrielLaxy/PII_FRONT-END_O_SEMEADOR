@@ -1,190 +1,135 @@
-$( document ).ready(function() {
 
-  // Progress bar
-  let containerA = document.getElementById("circleA");
+document.addEventListener('DOMContentLoaded', function () {
+  const enviar = document.querySelector('.enviar');
+  
+  enviar.addEventListener('click', function (event) {
+      event.preventDefault(); // Previne o envio do formulário imediatamente
+      const inputs = document.querySelectorAll('input[required], textarea[required]');
+      let allFilled = true;
 
-  let circleA = new ProgressBar.Circle(containerA, {
-
-    color: '#65DAF9',
-    strokeWidth: 8,
-    duration: 1400,
-    from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
-
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-
-      var value = Math.round(circle.value() * 60);
-      circle.setText(value);
-
-    }
-
-  });
-
-  let containerB = document.getElementById("circleB");
-
-  let circleB = new ProgressBar.Circle(containerB, {
-
-    color: '#65DAF9',
-    strokeWidth: 8,
-    duration: 1600,
-    from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
-
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-
-      var value = Math.round(circle.value() * 254);
-      circle.setText(value);
-
-    }
-
-  });
-
-  let containerC = document.getElementById("circleC");
-
-  let circleC = new ProgressBar.Circle(containerC, {
-
-    color: '#65DAF9',
-    strokeWidth: 8,
-    duration: 1800,
-    from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
-
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-
-      var value = Math.round(circle.value() * 32);
-      circle.setText(value);
-
-    }
-
-  });
-
-  let containerD = document.getElementById("circleD");
-
-  let circleD = new ProgressBar.Circle(containerD, {
-
-    color: '#65DAF9',
-    strokeWidth: 8,
-    duration: 2000,
-    from: { color: '#aaa'},
-    to: { color: '#65DAF9'},
-
-    step: function(state, circle) {
-      circle.path.setAttribute('stroke', state.color);
-
-      var value = Math.round(circle.value() * 5423);
-      circle.setText(value);
-
-    }
-
-  });
-
-  // iniciando loaders quando a usuário chegar no elemento
-  let dataAreaOffset = $('#data-area').offset();
-  // stop serve para a animação não carregar mais que uma vez
-  let stop = 0;
-
-  $(window).scroll(function (e) {
-
-    let scroll = $(window).scrollTop();
-
-    if(scroll > (dataAreaOffset.top - 500) && stop == 0) {
-      circleA.animate(1.0);
-      circleB.animate(1.0);
-      circleC.animate(1.0);
-      circleD.animate(1.0);
-
-      stop = 1;
-    }
-
-  });
-
-  // Parallax
-
-  // setTimeout serve para carregar primeiro as imagens
-  setTimeout(function() {
-    $('#data-area').parallax({imageSrc: 'img/cidadeparallax.png'});
-    $('#apply-area').parallax({imageSrc: 'img/pattern.png'});
-  }, 200);
-
-  // Filtro portfólio
-
-  $('.filter-btn').on('click', function() {
-
-    let type = $(this).attr('id');
-    let boxes = $('.project-box');
-
-    $('.main-btn').removeClass('active');
-    $(this).addClass('active');
-
-    if(type == 'dsg-btn') {
-      eachBoxes('dsg', boxes);
-    } else if(type == 'dev-btn') {
-      eachBoxes('dev', boxes);
-    } else if(type == 'seo-btn') {
-      eachBoxes('seo', boxes);
-    } else {
-      eachBoxes('all', boxes);
-    }
-
-  });
-
-  function eachBoxes(type, boxes) {
-
-    if(type == 'all') {
-      $(boxes).fadeIn();
-    } else {
-      $(boxes).each(function() {
-        if(!$(this).hasClass(type)) {
-          $(this).fadeOut('slow');
-        } else {
-          $(this).fadeIn();
-        }
+      inputs.forEach(function (input) {
+          if (!input.value) {
+              allFilled = false;
+              input.classList.add('is-invalid');
+          } else {
+              input.classList.remove('is-invalid');
+          }
       });
-    }
+
+      if (allFilled) {
+          alert('Mensagem enviada!');
+          event.target.closest('form').reset();
+      } else {
+          alert('Por favor, preencha todos os campos obrigatórios.');
+      }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const enviar = document.querySelector('.enviarMatricula');
+
+  enviar.addEventListener('click', function (event) {
+      event.preventDefault(); // Previne o envio do formulário imediatamente
+      const inputs = document.querySelectorAll('input[required], textarea[required]');
+      let allFilled = true;
+
+      inputs.forEach(function (input) {
+          if (!input.value) {
+              allFilled = false;
+              input.classList.add('is-invalid');
+          } else {
+              input.classList.remove('is-invalid');
+          }
+      });
+
+      if (allFilled) {
+          alert('Mensagem enviada!');
+          document.getElementById('matriculaForm').reset();
+      } else {
+          alert('Por favor, preencha todos os campos obrigatórios.');
+      }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const enviar = document.querySelector('.enviarCodigo');
+  const codigoInput = document.getElementById('codigoInput');
+  const inputFile = document.getElementById('input-file');
+  const inputFilePreto = document.getElementById('input-file-preto');
+  const selectedImage = document.getElementById('selected-image');
+  const selectedImagePreto = document.getElementById('selected-image-preto');
+  let lastUploadedFileName = ''; // Variável para armazenar o último nome de arquivo carregado
+
+  enviar.addEventListener('click', function (event) {
+      event.preventDefault(); // Previne o envio do formulário imediatamente
+
+      const codigoFilled = codigoInput.value.trim() !== '';
+      const inputFileFilled = inputFile.files.length > 0 || inputFilePreto.files.length > 0;
+      let newFileUploaded = false;
+
+      // Verifica se um novo arquivo foi carregado comparando o nome do arquivo
+      if (inputFile.files.length > 0) {
+          const currentFileName = inputFile.files[0].name;
+          if (currentFileName !== lastUploadedFileName) {
+              newFileUploaded = true;
+              lastUploadedFileName = currentFileName; // Atualiza o nome do último arquivo carregado
+          }
+      } else if (inputFilePreto.files.length > 0) {
+          const currentFileName = inputFilePreto.files[0].name;
+          if (currentFileName !== lastUploadedFileName) {
+              newFileUploaded = true;
+              lastUploadedFileName = currentFileName; // Atualiza o nome do último arquivo carregado
+          }
+      }
+
+      if (codigoFilled || (inputFileFilled && newFileUploaded)) {
+          alert('Doação enviada!');
+          document.getElementById('codigoForm').reset();
+          selectedImage.src = '/IMAGENS/Frame 3.png'; // Retorna à imagem inicial
+          selectedImagePreto.src = '/IMAGENS/Frame 3-Preto.png'; // Retorna à imagem inicial
+      } else {
+          alert('Por favor, preencha o número do código de barras ou faça o upload de uma imagem.');
+      }
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  function handleImageUpload(inputFile, selectedImage) {
+      inputFile.addEventListener('change', function () {
+          const file = inputFile.files[0];
+          if (file) {
+              const reader = new FileReader();
+              reader.onload = function (e) {
+                  const img = new Image();
+                  img.onload = function () {
+                      const canvas = document.createElement('canvas');
+                      const ctx = canvas.getContext('2d');
+
+                      const targetWidth = 150;
+                      const scaleFactor = targetWidth / img.width;
+                      const targetHeight = img.height * scaleFactor;
+
+                      canvas.width = targetWidth;
+                      canvas.height = targetHeight;
+
+                      ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+
+                      selectedImage.src = canvas.toDataURL('image/jpeg');
+                  };
+                  img.src = e.target.result;
+              };
+              reader.readAsDataURL(file);
+          }
+      });
   }
 
-  // scroll para as seções
+  const inputFile = document.getElementById('input-file');
+  const selectedImage = document.getElementById('selected-image');
+  handleImageUpload(inputFile, selectedImage);
 
-  let navBtn = $('.nav-item');
-
-  let bannerSection = $('#mainSlider');
-  let aboutSection = $('#about-area');
-  let servicesSection = $('#services-area');
-  let teamSection = $('#team-area');
-  let portfolioSection = $('#portfolio-area');
-  let contactSection = $('#contact-area');
-
-  let scrollTo = '';
-
-  $(navBtn).click(function() {
-
-    let btnId = $(this).attr('id');
-
-    if(btnId == 'about-menu') {
-      scrollTo = aboutSection;
-    } else if(btnId == 'services-menu') {
-      scrollTo = servicesSection;
-    } else if(btnId == 'team-menu') {
-      scrollTo = teamSection;
-    } else if(btnId == 'portfolio-menu') {
-      scrollTo = portfolioSection;
-    } else if(btnId == 'contact-menu') {
-      scrollTo = contactSection;
-    } else {
-      scrollTo = bannerSection;
-    }
-
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $(scrollTo).offset().top - 70
-    }, 1500);
-  });
-  
-  // let input1 = $("_subject");
-  // let input2 = $("codigo-barras");
-  // if (input1.val == '' || input2 == '')
-  // alert("Por favor, preencha os campos!")
-
+  const inputFilePreto = document.getElementById('input-file-preto');
+  const selectedImagePreto = document.getElementById('selected-image-preto');
+  handleImageUpload(inputFilePreto, selectedImagePreto);
 });

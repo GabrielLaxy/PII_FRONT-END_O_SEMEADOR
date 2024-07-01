@@ -144,7 +144,7 @@
                         <img class="rectangle-matricula" src="/IMAGENS/Rectangle-matricula.png" alt="">
                     </div>
                     <label for="nome" class="form-label ml-3 mt-4">Responsável:</label>
-                    <form class="matricula d-flex" >
+                    <form id="matriculaForm" class="matricula d-flex" >
                         <div class="surname campo col-6 ">
                             <input
                                 class="form-control"
@@ -182,35 +182,35 @@
                                 placeholder="telefone do responsável"
                                 required="required">
                         </div>
-                    </form>
-                    <label for="nome" class="form-label ml-3 mt-4">Aluno:</label>
-                    <form class="matricula d-flex" >
-                        <div class="surname campo col-6 ">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="nome"
-                                id="nome"
-                                placeholder="Primeiro nome"
-                                required="required">
+                        <label for="nome" class="form-label ml-3 mt-4">Aluno:</label>
+                        <div id="matriculaForm" class="matricula d-flex" >
+                            <div class="surname campo col-6 ">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="nome"
+                                    id="nome"
+                                    placeholder="Primeiro nome"
+                                    required="required">
+                            </div>
+                            <div class="name campo col-6">
+                                <input
+                                    class="form-control"
+                                    type="text"
+                                    name="sobrenome"
+                                    id="sobrenome"
+                                    placeholder="Sobrenome"
+                                    required="required">
+                            </div>
                         </div>
-                        <div class="name campo col-6">
-                            <input
-                                class="form-control"
-                                type="text"
-                                name="sobrenome"
-                                id="sobrenome"
-                                placeholder="Sobrenome"
-                                required="required">
-                        </div>
+                        <button type="submit" class="btn enviarMatricula">Enviar</button>
                     </form>
-                    <button type="submit" class="btn enviar">Enviar</button>
                 </div>
             </div>
         </div>
     </div>
     <footer class="bg text-white pt-1 pb-4">
-        <div class="containertext-center text-md-left">
+        <div class="container text-center text-md-left">
             <div class="row mx-3">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <img
