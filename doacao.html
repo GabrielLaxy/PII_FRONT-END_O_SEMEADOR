@@ -154,10 +154,10 @@
                     </div>
                     <div class="d-flex">
                         <div class="formulario1 col-12 col-xl-5">
-                            <form class="formulario row col-12 pt-3 px-0" action="mailto:gabrielmoreno19@hotmail.com.br" method="post" enctype="text/plain">
+                            <form id="codigoForm" class="formulario row col-12 pt-3 px-0" method="post" enctype="text/plain">
                                 <div class="codigo campo col-lg-10 col-sm-8 col-8">
-                                    <label for="codigo" class="form-label-codigo">Número do código de barras:</label>
-                                    <input class="form-control" type="text" maxlenght="30" name="codigo" id="codigo" placeholder="XXX-XXXXX-XXXX-X" required>
+                                    <label for="code" class="form-label-codigo">Número do código de barras:</label>
+                                    <input class="form-control" type="text" maxlenght="30" name="codigo" id="codigoInput" placeholder="XXX-XXXXX-XXXX-X" required>
                                 </div> <!-- codigo campo col-lg-10 col-sm-8 col-8 -->
                             </form> <!-- formulario row col-12 pt-3 px-0 -->
                             <div class="ou row">
@@ -166,17 +166,22 @@
                                 <img src="/IMAGENS/Rectangle (ou).png" class="retangulo-ou" alt="retangulo">
                             </div> <!-- ou row -->
                             <div class="imagem-codigo d-flex col-12">
-                                <label class="file" for="input-file"><img src="/IMAGENS/Frame 3.png" width="150" alt=""><input id="input-file" type="file" name="codigo-barras" id="codigo-barras"></label>
-                                <label class="file-preto" for="input-file"><img src="/IMAGENS/Frame 3-Preto.png" width="150" alt=""><input id="input-file" type="file" name="codigo-barras" id="codigo-barras"></label>
+                                <label class="file" for="input-file">
+                                    <img id="selected-image" src="/IMAGENS/Frame 3.png" height="150" alt="placeholder">
+                                    <input id="input-file" type="file" name="codigo-barras" style="display:none;">
+                                </label>
+                                <label class="file-preto" for="input-file">
+                                    <img id="selected-image-preto" src="/IMAGENS/Frame 3-Preto.png" height="150" alt="placeholder-preto">
+                                    <input id="input-file-preto" type="file" name="codigo-barras" style="display:none;">
+                                </label>
                                 <div class="redirect-upload d-flex">
                                     <div class="row">
                                         <img src="IMAGENS\seta-branca-png.png" class="seta-branca" width="15" height="15" alt="seta">
                                         <img src="/IMAGENS/seta-png.png" class="seta-preta" width="15" height="15" alt="seta">
-                                        <p>ARRASTE UMA IMAGEM</p>
+                                        <p>REALIZE O UPLOAD</p>
                                     </div> <!-- row -->
                                     <div class="buttons col-12 d-flex">
-                                        <button type="submit" class="btn upload">Realizar upload</button>
-                                        <button type="submit" class="btn enviar" >Enviar</button>
+                                        <button type="submit" class="btn enviarCodigo" >Enviar</button>
                                     </div> <!-- buttons col-12 d-flex -->
                                 </div> <!-- redirect-upload d-flex -->
                             </div> <!-- imagem-codigo d-flex col-12 -->
